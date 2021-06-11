@@ -1,0 +1,41 @@
+{% extends 'base.html' %} <!-- Add this for inheritance -->
+
+{% block pagecontent %}
+<main>
+    <div class="container-fluid px-4"> <!-- Content Container -->
+        <h2 class="mt-4">Generate</h2>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">Upload Files</li>
+        </ol>
+
+        <div class="card mb-4"> <!-- UPLOAD FILES -->
+            <div class="card-body">
+                
+                <form method ="post" enctype="multipart/form-data">
+                    {% csrf_token %} <!-- protection against Cross Site Request Forgeries -->
+                    <input type="file" name='testing'>
+                    <button type="submit">Upload file</button>
+                
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4"> <!-- SHOW UPLOADED FILES -->
+            <div class="card-body">
+                
+                <!-- List of uploaded documents -->
+                {% if documents %}
+                    <ul>
+                    {% for document in documents %}
+                        <li><a href="{{ document.upload_file.url }}">{{ document.upload_file.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No documents.</p>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</main>
+{% endblock %}

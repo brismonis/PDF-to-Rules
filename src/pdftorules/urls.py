@@ -1,0 +1,47 @@
+"""pdftorules URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from os import get_exec_path, name
+from django.contrib import admin
+from django.urls import path
+from django.urls import re_path
+from django.conf.urls import url
+from django.views.generic import TemplateView
+# nicht sicher was das bringt 
+from django.views.generic.base import RedirectView
+# reverse_lazy('name') gibt Pfad und hängt name an
+from django.urls import reverse_lazy
+from django.conf import settings
+from django.conf.urls.static import static
+import re
+
+# import your views
+# from generate.views import homepage_view, tables_view # , next_view usw
+from generate.views import tables_view
+from generate import views
+
+urlpatterns = [
+    path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'),
+    path('admin/', admin.site.urls),
+    path('home/', views.homepage_view, name='home'), # index.html
+    path('home/tables/', views.tables_view, name='tables'), # (?P<path>.*)$
+    # re_path('tables/', views.tables_view),
+    # url(r'^tables/$', TemplateView.as_view(tables_view), name='tables'),
+    
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# serving Django Media Files during development
+# if settings.DEBUG:
+#     urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

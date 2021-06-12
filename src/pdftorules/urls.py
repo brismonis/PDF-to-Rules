@@ -25,12 +25,10 @@ from django.views.generic import RedirectView
 from django.urls import reverse_lazy
 from django.conf import settings
 from django.conf.urls.static import static
-import re
-import generate
 
 # import your views
 # from generate.views import homepage_view, tables_view # , next_view usw
-from generate.views import tables_view
+# from generate.views import tables_view
 from generate import views
 
 # urlpatterns = patterns('',
@@ -46,9 +44,15 @@ from generate import views
 
 # ]
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('', include('comment.urls')),
+# ]
+
 urlpatterns = [
     path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'),
     path('admin/', admin.site.urls),
+    path('', include('generate.urls')),
     path('home/', views.homepage_view, name='home'), # index.html
     path('home/tables/', views.tables_view, name='tables'), # (?P<path>.*)$
     # re_path('tables/', views.tables_view),

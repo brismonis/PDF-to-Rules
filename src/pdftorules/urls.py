@@ -17,20 +17,34 @@ from os import get_exec_path, name
 from django.contrib import admin
 from django.urls import path
 from django.urls import re_path
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.views.generic import TemplateView
 # nicht sicher was das bringt 
-from django.views.generic.base import RedirectView
+from django.views.generic import RedirectView
 # reverse_lazy('name') gibt Pfad und hängt name an
 from django.urls import reverse_lazy
 from django.conf import settings
 from django.conf.urls.static import static
 import re
+import generate
 
 # import your views
 # from generate.views import homepage_view, tables_view # , next_view usw
 from generate.views import tables_view
 from generate import views
+
+# urlpatterns = patterns('',
+#         (r'^upload/', include('upload.urls')),
+#         (r'^$', 'upload.views.index'),
+#         (r'^admin/', include(admin.site.urls)),) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# urlpatterns = [
+#     # url(re('^admin/'), admin.site.urls),
+#     path('admin/', admin.site.urls),
+#     path('generate/', views.homepage_view, name='generate')
+#     # url('generate/', include(generate.site.urls, namespace='generate'))
+
+# ]
 
 urlpatterns = [
     path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'),
@@ -40,8 +54,10 @@ urlpatterns = [
     # re_path('tables/', views.tables_view),
     # url(r'^tables/$', TemplateView.as_view(tables_view), name='tables'),
     
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # serving Django Media Files during development
-# if settings.DEBUG:
-#     urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

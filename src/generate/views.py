@@ -15,7 +15,8 @@ from django.core.files.storage import FileSystemStorage
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
 
-from .models import Upload
+# Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
+from .models import *
 
 
 # creating homepage view
@@ -32,7 +33,7 @@ def tables_view(request):
     return render(request, "tables.html", {})
 
 # for Uploading PDF Files
-def upload_pdf(request):
+def upload_file(request):
     if request.method == 'POST':
         # files are uploaded to request.files
         print("log1")

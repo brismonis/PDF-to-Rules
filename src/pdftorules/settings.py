@@ -139,9 +139,10 @@ STATIC_URL = '/static/'
 
 # Add these new lines
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'templates/static'),
+    # man kann mehrere Directories für static files angeben
 )
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -150,13 +151,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-MEDIA_ROOT = os.path.join(BASE_DIR, 'files') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
 # URL that handles the media served from MEDIA_ROOT, used for managing stored files.
-MEDIA_URL = '/files/'
+MEDIA_URL = '/media/'
 # print(MEDIA_ROOT) /Users/susannebair/WebDev/pdftorules/src/files
 # print(MEDIA_URL) /files/
 
-DEFAULT_FILE_STORAGE = '/files'
-print(DEFAULT_FILE_STORAGE)
+# DEFAULT_FILE_STORAGE = '/files'
+# print(DEFAULT_FILE_STORAGE)
 # FILE_UPLOAD_MAX_MEMORY_SIZE: Default: 2621440 (i.e. 2.5 MB).
 # erst wenn was größer als 2.5 MB ist, wirds im Ordner gespeichert

@@ -8,5 +8,5 @@ class pdfs(models.Model):
     language = models.TextField
 
 class Upload(models.Model):
-    upload_file = models.FileField()    
-    upload_date = models.DateTimeField(auto_now_add =True)
+    upload_file = models.FileField() # speichert einen File in der DB  
+    # upload_date = models.DateTimeField(auto_now_add =True)

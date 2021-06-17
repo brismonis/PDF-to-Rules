@@ -11,7 +11,7 @@ from pdftorules.settings import MEDIA_ROOT, MEDIA_URL # Import TemplateView
 # from .forms import UploadFileForm # for Uploading PDF Files
 
 # function to handle an uploaded file.
-from .ocr import handle_uploaded_file
+from generate.ocr import ocr_file
 from django.core.files.storage import FileSystemStorage
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
@@ -28,6 +28,10 @@ def homepage_view(request, *args, **kwargs):
     # return HttpResponse("<h1>Hello</h1>") # prints Hello in path /home (kann man in urls.py festlegen)
     return render(request, "index.html", {})
 
+def ocr_view(request, *args, **kwargs):
+    # return HttpResponse("<h1>Hello</h1>") # prints Hello in path /home (kann man in urls.py festlegen)
+    return render(request, "ocr_view.html", {})
+
 # creating table view
 def tables_view(request):
     context = { 
@@ -36,9 +40,10 @@ def tables_view(request):
     # return HttpResponse("<h1>Hello</h1>") # prints Hello in path /home (kann man in urls.py festlegen)
     return render(request, "tables.html", {})
 
+# Method for displaying all uploaded Files in a List
 # class FileView(generic.ListView):
 #     model = Files
-#     template_name = 'comment/file.html'
+#     template_name = 'table.html' # where it's going to be displayed
 #     context_object_name = 'files'
 #     paginate_by = 6
 
@@ -56,14 +61,22 @@ def uploadFile(request):
 
         a = Files(filename=filename, pdf=pdf)
         a.save()
-        messages.success(request, 'Files Submitted successfully!')
+        messages.success(request, 'File submitted successfully!')
         return redirect('home') # TODO: weiterleiten 
     else:
-    	messages.error(request, 'Files was not Submitted successfully!')
+    	messages.error(request, 'Files was not submitted successfully, try again!')
     	return redirect('home') # wird zurückgeleitet zu home
 
 def myUpload(request):
 	return render(request, 'comment/myUpload.html') # TODO:
+
+def ocrFile(request):
+    # TODO: ruft ocr.py auf 
+    if request.method == 'POST':
+        #file = Files.objects.get()
+        return redirect('ocr_view')
+
+
 
 
 # def model_form_upload(request):

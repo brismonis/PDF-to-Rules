@@ -26,5 +26,7 @@ urlpatterns = [
 urlpatterns = [
  path('', views.homepage_view, name="home"),
  path('upload/', views.uploadFile, name='upload'),
+ path('processing/', views.ocrFile, name='ocr'),
+ path('ocr/', views.ocr_view, name='ocr_view'),
 
 ]

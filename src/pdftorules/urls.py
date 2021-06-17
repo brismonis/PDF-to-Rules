@@ -50,11 +50,11 @@ from generate import views
 # ]
 
 urlpatterns = [
-    path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'),
+    #path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'), # ohne Path leitet es zur admin Seite
     path('admin/', admin.site.urls),
     path('', include('generate.urls')),
-    path('home/', views.homepage_view, name='home'), # index.html
-    path('home/tables/', views.tables_view, name='tables'), # (?P<path>.*)$
+    #path('home/', views.homepage_view, name='home'), # index.html
+    path('tables/', views.tables_view, name='tables'), # (?P<path>.*)$
     # re_path('tables/', views.tables_view),
     # url(r'^tables/$', TemplateView.as_view(tables_view), name='tables'),
     

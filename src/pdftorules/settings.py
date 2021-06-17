@@ -139,7 +139,9 @@ STATIC_URL = '/static/'
 
 # Add these new lines
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'templates/static'),
+    os.path.join(BASE_DIR, 'static'),
+    # '/Users/susannebair/WebDev/pdftorules/src/static',
+    # 'src/static/js/scripts.js',
     # man kann mehrere Directories für static files angeben
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -151,6 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
 # URL that handles the media served from MEDIA_ROOT, used for managing stored files.
 MEDIA_URL = '/media/'

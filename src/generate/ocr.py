@@ -1,6 +1,6 @@
 
 
-def handle_uploaded_file(f):
+def ocr_file(f):
     print(f.name)
     #  Reading file from storage
     # file = default_storage.open(file_name)

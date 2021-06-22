@@ -19,18 +19,19 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table me-1"></i>
-                DataTable Example
+                Uploaded PDF Files
             </div>
             <div class="card-body">
                 <table id="datatablesSimple">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
+                            <th>Number</th>
+                            <th>Filename</th>
+                            <th>Authors</th>
+                            <th>PDF</th>
+                            <!-- <th>Age</th>
                             <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Salary</th> -->
                         </tr>
                     </thead>
                     <!-- <tfoot>
@@ -44,22 +45,28 @@
                         </tr>
                     </tfoot> -->
                     <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+
+                        <!-- DATEN AUS DB EINFÜGEN -->
+
+                        <!-- BEISPIEL -->
+                        <tr> 
+                            <td>0</td>
+                            <td>Filename</td>
+                            <td>Authors</td>
+                            <td>PDF name</td>
                         </tr>
-                        <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                        </tr>
+
+                        {% if files %}
+                            {% for file in files %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ file.filename }} </td>
+                                    <td> Authors </td>
+                                    <td> <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">View PDF</a></td>
+                                </tr>
+                            {% endfor %}
+                            {% endif %}
+                        
                     </tbody>
                 </table>
             </div>

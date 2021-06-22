@@ -4,6 +4,7 @@
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.utils.functional import empty
 from django.views import generic
 from django.views.generic import TemplateView
 
@@ -11,7 +12,7 @@ from pdftorules.settings import MEDIA_ROOT, MEDIA_URL # Import TemplateView
 # from .forms import UploadFileForm # for Uploading PDF Files
 
 # function to handle an uploaded file.
-from generate.ocr import ocr_file
+from .ocr import ocr_file
 from django.core.files.storage import FileSystemStorage
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
@@ -22,10 +23,35 @@ from .forms import UploadForm
 from django.template import RequestContext
 from django.contrib import messages
 
+# Um OCR anwenden zu können
+# import pytesseract
+# import pdf2image
+
+# GLOBAL VARIABLES
+newid = int()
+def set_newid(nid):
+    global newid
+    newid = nid
+
+def get_newid():
+    print(newid)
+
+# to get filename that was just uploaded
+globvar = ''
+def set_globvar(name):
+    global globvar   # Needed to modify global copy of globvar
+    globvar = name
+    
+def get_globvar():
+    print(globvar)
 
 # creating homepage view
 def homepage_view(request, *args, **kwargs):
     # return HttpResponse("<h1>Hello</h1>") # prints Hello in path /home (kann man in urls.py festlegen)
+    files = Files.objects.all()
+    context = { # auf DB zugreifen um es dann im html ausgeben zu können
+        "files":files
+    }                 
     return render(request, "index.html", {})
 
 def ocr_view(request, *args, **kwargs):
@@ -34,25 +60,37 @@ def ocr_view(request, *args, **kwargs):
 
 # creating table view
 def tables_view(request):
-    context = { 
-        # auf Datenbank zugreifen und dann in html ausgeben lassen
+    files = Files.objects.all()
+    context = { # auf DB zugreifen um es dann im html ausgeben zu können
+        "files":files
     }
     # return HttpResponse("<h1>Hello</h1>") # prints Hello in path /home (kann man in urls.py festlegen)
-    return render(request, "tables.html", {})
+    return render(request, "tables.html", context)
+
+# def single(request, slug):
+#     try:
+#         page = get_object_or_404(Pages, slug=slug)
+#         context = {'page': page}
+#         template = 'pages/page_detail.html'
+#         return render(request, template, context)
+#     except Pages.DoesNotExist:
+#         raise Http404
 
 # Method for displaying all uploaded Files in a List
-# class FileView(generic.ListView):
-#     model = Files
-#     template_name = 'table.html' # where it's going to be displayed
-#     context_object_name = 'files'
-#     paginate_by = 6
+class FileView(generic.ListView):
+    model = Files
+    template_name = 'tables.html' # where it's going to be displayed
+    context_object_name = 'tables'
+    paginate_by = 6
+    print (Files.objects.order_by('-id'))
 
-#     def get_queryset(self):
-#     	return Files.objects.order_by('-id')
+    def get_queryset(self):
+    	return Files.objects.order_by('-id')
 
 def uploadForm(request):
 	# return render(request, 'comment/upload.html') URPSRÜNGLICH
     return render(request, 'home')
+
 
 def uploadFile(request):
     if request.method == 'POST':
@@ -61,7 +99,10 @@ def uploadFile(request):
 
         a = Files(filename=filename, pdf=pdf)
         a.save()
-        messages.success(request, 'File submitted successfully!')
+        set_globvar(a.filename) # to find name of pdf again
+        #set_newid(a.id) # to find id of pdf again
+        path = MEDIA_ROOT + "/pdfs/" + a.filename
+        messages.success(request, 'File "' + a.filename + '" submitted successfully!')
         return redirect('home') # TODO: weiterleiten 
     else:
     	messages.error(request, 'Files was not submitted successfully, try again!')
@@ -70,11 +111,18 @@ def uploadFile(request):
 def myUpload(request):
 	return render(request, 'comment/myUpload.html') # TODO:
 
+def savingtempfile(filename):
+    return filename
+
 def ocrFile(request):
     # TODO: ruft ocr.py auf 
+    # thisfile = self.get
+    filename = globvar
+    print (filename)
     if request.method == 'POST':
-        #file = Files.objects.get()
+        #file = Files.objects.get(filename=test)
         return redirect('ocr_view')
+    
 
 
 

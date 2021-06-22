@@ -17,10 +17,12 @@ class Files(models.Model):
     pdf = models.FileField(upload_to='pdfs/')
     # cover = models.ImageField(upload_to='store/covers/', null=True, blank=True)
 
-    def __str__(self):
+    def get_filename(self):
         return self.filename
+        # return [self.filename for filename in Files._meta.fields] # only prints what is not null
+        
 
     def delete(self, *args, **kwargs):
         self.pdf.delete()
-        # self.cover.delete()
+        self.filename.delete()
         super().delete(*args, **kwargs)

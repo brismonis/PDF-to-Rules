@@ -46,7 +46,7 @@
                 {% if Files %}
                     <ul>
                     {% for file in Files %}
-                        <li><a href="{{ Files.url }}">{{ Files.filename }}</a></li>
+                        <li>{{ file.filename }}</li>
                     {% endfor %}
                     </ul>
                 {% else %}

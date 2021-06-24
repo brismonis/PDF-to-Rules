@@ -41,13 +41,13 @@
         <div class="container p-3 my-3 border"> <!-- SHOW UPLOADED FILES -->
         <!-- <div class="card mb-4"> 
             <div class="card-body"> -->
-                
                 <!-- List of uploaded files -->
-                {% if Files %}
+                <!-- TODO: IF DOES NOT WORK  -->
+                {% if fileId %}
                     <ul>
-                    {% for file in Files %}
-                        <li>{{ file.filename }}</li>
-                    {% endfor %}
+                    <!-- {% for file in files %} -->
+                        <li>{{ fileId }}</li>
+                    <!-- {% endfor %} -->
                     </ul>
                 {% else %}
                     <p>No file uploaded.</p>
@@ -56,10 +56,11 @@
         </div> -->
         </div>
 
-        <form action="{% url 'ocr' %}" method="POST">
+        <form action="{% url 'ocr' %}" name="fileId" value="{{fileId}}" method="POST">
             {% csrf_token %}
-            
-            <input type="submit" class="btn btn-primary btn-lg" value="Start OCR" style="float: right;">
+            <input type="text" name="fileId" value="{{fileId}}" style="display: none;"/>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="float: right;">Start OCR</button>
         </form>
 
 

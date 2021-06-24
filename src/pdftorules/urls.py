@@ -55,6 +55,9 @@ urlpatterns = [
     path('', include('generate.urls')),
     #path('home/', views.homepage_view, name='home'), # index.html
     path('tables/', views.tables_view, name='tables'), # (?P<path>.*)$
+    path('settings/', views.settings_view, name='settings'),
+    path('about/', views.about_view, name='about'),
+    re_path(r'^tables/', views.tables_view, name='tables'),
     # re_path('tables/', views.tables_view),
     # url(r'^tables/$', TemplateView.as_view(tables_view), name='tables'),
     

@@ -8,6 +8,7 @@ from django.utils.functional import empty
 from django.views import generic
 from django.views.generic import TemplateView
 from django.urls import reverse_lazy
+from pdf2image.pdf2image import convert_from_path
 
 from pdftorules.settings import MEDIA_ROOT, MEDIA_URL # Import TemplateView
 # from .forms import UploadFileForm # for Uploading PDF Files
@@ -21,7 +22,7 @@ from django.http import HttpResponseRedirect
 # Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
 from .models import Files
 from .forms import UploadForm
-from django.template import RequestContext
+from django.template import RequestContext, context
 from django.contrib import messages
 
 
@@ -56,8 +57,10 @@ def homepage_view(request, *args, **kwargs):
     return render(request, "index.html", context)
 
 def ocr_view(request, *args, **kwargs):
+    context = {
 
-    return render(request, "ocr_view.html", {})
+    }
+    return render(request, "ocr_view.html", context)
 
 # creating table view
 def tables_view(request):
@@ -138,90 +141,10 @@ def savingtempfile(filename):
 def ocrFile(request):
     # TODO: ruft ocr.py auf 
     # thisfile = self.get
-    fileId = request.POST.get('fileId')
+    fileId = request.POST.get('fileId') #getting file id from button
     foundFile = Files.objects.get(id=fileId)
-    print(foundFile.filename)
+    # print(foundFile.filename)
     if request.method == 'POST':
         #file = Files.objects.get(filename=test)
         ocr_file(foundFile)
         return redirect('ocr_view')
-    
-
-
-
-
-# def model_form_upload(request):
-#     if request.method == 'POST':
-#         form = UploadForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             print (form.errors)
-#             instance = UploadForm(request.FILES['myfile'])
-#             instance.save()
-#             return HttpResponseRedirect('home')
-#     else:
-#         form = UploadForm()
-#     return render(request, 'index.html', {'form': form})
-
-# # def list(request):
-#     # Handle file upload
-#     if request.method == 'POST':
-#         # form = UploadFileForm(request.POST, request.FILES)
-#         # if form.is_valid():
-#         newdoc = Upload(docfile = request.FILES['docfile'])
-#         newdoc.save()
-
-#             # Redirect to the document list after POST
-#             # return HttpResponseRedirect(reverse('generate.views.index'))
-#     # else:
-#     #     form = UploadFileForm() # A empty, unbound form
-
-#     # Load documents for the list page
-#     documents = Upload.objects.all()
-
-#     # Render list page with the documents and the form
-#     return render(
-#         'index.html',
-#         {'documents': documents},
-#         context_instance=RequestContext(request)
-#     )
-
-
-# for Uploading PDF Files
-# def upload_file(request):
-
-    # if request.method == 'POST':
-    #     # files are uploaded to request.files
-
-    #     print("log1")
-    #     uploaded_file = Upload(request.FILES['document']) # use that name in html
-    #     uploaded_file.save
-    #     documents = Upload.objects.all()
-    #     # handle_uploaded_file(uploaded_file)
-    #     #  Saving POST'ed file to storage
-    #     # file_name = default_storage.save(uploaded_file.name, uploaded_file)
-    #     print("log2")
-
-        # model = Upload
-        # fields = ['upload_file']
-        # success_url = reverse_lazy('fileupload')
-        # def get_context_data(self, **kwargs):
-        # context = super().get_context_data(**kwargs)
-        # context['documents'] = Upload.objects.all()
-        # return context
-
-
-        # what to do with it
-        # fs = FileSystemStorage
-        # fs.save(uploaded_file.name, uploaded_file)
-    # if request.method == 'POST':
-    #     form = UploadFileForm(request.POST, request.FILES)
-    #     if form.is_valid(): # checks if uploaded file is valid
-    #         # handle_uploaded_file(request.FILES['file']) # method from ocr.py
-    #         # return HttpResponseRedirect('/success/url/')
-    #         uploaded_file = request.FILES['document']
-    #         # what to do with it
-    #         fs = FileSystemStorage()
-    #         fs.save(uploaded_file.name, uploaded_file)
-    # else:
-    #     form = UploadFileForm()
-    # return render(request, 'index.html' )#, {'form': form})

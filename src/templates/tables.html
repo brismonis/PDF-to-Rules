@@ -29,10 +29,8 @@
                             <th>Filename</th>
                             <th>Authors</th>
                             <th>PDF</th>
-                            <!-- <th>OCR Result</th> -->
-                            <!-- <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th> -->
+                            <th>OCR Result</th>
+                            
                         </tr>
                     </thead>
                     <!-- <tfoot>
@@ -55,17 +53,17 @@
                             <td>Filename</td>
                             <td>Authors</td>
                             <td>PDF name</td>
-                            <!-- <td>OCR Result</td> -->
+                            <td>OCR Result</td>
                         </tr>
 
-                        {% if files %}
+                        {% if files %} 
                             {% for file in files %}
                                 <tr>
                                     <td>{{ forloop.counter }}</td>
                                     <td>{{ file.filename }} </td>
                                     <td> Authors </td>
                                     <td> <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">View PDF</a></td>
-                                    <!-- <td><a href="{{ file.ocrtext }}" class="btn btn-outline-primary" target="_blank">View OCR Result</a></td> -->
+                                    <td><a href="{{ file.ocrtext }}" class="btn btn-outline-primary" target="_blank">View OCR Result</a></td>
                                 </tr>
                             {% endfor %}
                             {% endif %}

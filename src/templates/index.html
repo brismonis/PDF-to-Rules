@@ -42,13 +42,9 @@
         <!-- <div class="card mb-4"> 
             <div class="card-body"> -->
                 <!-- List of uploaded files -->
-                <!-- TODO: IF DOES NOT WORK  -->
-                {% if fileId %}
-                    <ul>
-                    <!-- {% for file in files %} -->
-                        <li>{{ fileId }}</li>
-                    <!-- {% endfor %} -->
-                    </ul>
+                
+                {% if fileId != None %}
+                    {{ fileId.filename }}
                 {% else %}
                     <p>No file uploaded.</p>
                 {% endif %}
@@ -56,11 +52,13 @@
         </div> -->
         </div>
 
-        <form action="{% url 'ocr' %}" name="fileId" value="{{fileId}}" method="POST">
+        <form action="{% url 'ocr_view' %}" name="fileId" value="{{fileId}}" method="POST">
             {% csrf_token %}
-            <input type="text" name="fileId" value="{{fileId}}" style="display: none;"/>
+            <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/>
 
-            <button type="submit" class="btn btn-primary btn-lg" style="float: right;">Start OCR</button>
+            <button {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right;">Start OCR</button>
+            <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
+
         </form>
 
 

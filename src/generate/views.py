@@ -57,8 +57,15 @@ def homepage_view(request, *args, **kwargs):
     return render(request, "index.html", context)
 
 def ocr_view(request, *args, **kwargs):
+    foundFile = request.POST.get('fileId') #getting file id from button
+    print(foundFile)
+    file = Files.objects.get(id=foundFile)
+    
+    # if request.method == 'POST':
+    #     #file = Files.objects.get(filename=test)
+    #     ocr_file(foundFile)
     context = {
-
+        "foundFile":file
     }
     return render(request, "ocr_view.html", context)
 
@@ -126,7 +133,7 @@ def uploadFile(request, *args, **kwargs):
         # return HttpResponseRedirect(reverse_lazy('home', kwargs={'id': a.id}))
         # return redirect('home') # TODO: weiterleiten 
         return render(request, 'index.html', {
-            'fileId': a.id # passing ID to template to show and find file again
+            'fileId': a # passing ID to template to show and find file again
         })
     else:
     	messages.error(request, 'Files was not submitted successfully, try again!')
@@ -138,13 +145,18 @@ def myUpload(request):
 def savingtempfile(filename):
     return filename
 
-def ocrFile(request):
+def ocrFile(request, *args, **kwargs):
     # TODO: ruft ocr.py auf 
     # thisfile = self.get
-    fileId = request.POST.get('fileId') #getting file id from button
-    foundFile = Files.objects.get(id=fileId)
-    # print(foundFile.filename)
+    foundFile = request.POST.get('fileId') #getting file id from button
+    fid = foundFile.id
+    print (fid)
+    # foundFile = Files.objects.get(id=fileId)
+    # print(foundFile.filena me)
     if request.method == 'POST':
         #file = Files.objects.get(filename=test)
-        ocr_file(foundFile)
-        return redirect('ocr_view')
+        #ocr_file(foundFile)
+        return render(request, 'ocr_view.html', {
+            'fileId': fid # passing ID to template to show and find file again
+        })
+        #return redirect('ocr_view')

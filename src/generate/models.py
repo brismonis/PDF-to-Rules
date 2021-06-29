@@ -1,3 +1,4 @@
+import os
 from django.db import models
 
 # Create your models here.
@@ -15,14 +16,20 @@ class Files(models.Model):
     filename = models.CharField(max_length=100)
     # owner = models.CharField(max_length=100)
     pdf = models.FileField(upload_to='pdfs/')
-    # cover = models.ImageField(upload_to='store/covers/', null=True, blank=True)
+    ocrtext = models.CharField(blank=True, null=True)
 
     def get_filename(self):
         return self.filename
-        # return [self.filename for filename in Files._meta.fields] # only prints what is not null
+
+    def get_pdfpath(self):
+        return os.path.basename(self.pdf.path)
+
+    def get_ocrtext(self):
+        return self.ocrtext
         
 
     def delete(self, *args, **kwargs):
         self.pdf.delete()
         self.filename.delete()
+        self.ocrtext.delete()
         super().delete(*args, **kwargs)

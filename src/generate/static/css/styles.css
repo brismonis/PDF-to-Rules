@@ -4560,6 +4560,26 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
+/* .breadcrumb li+li:before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/")
+}
+
+.breadcrumb li a {
+  float: left;
+  padding-right: 0.5rem;
+  color: #0275d8;
+  text-decoration: none;
+}
+.breadcrumb li a:hover {
+  float: left;
+  padding-right: 0.5rem;
+  color: #01447e;
+  text-decoration: underline;
+} */
+
 .pagination, .dataTable-pagination ul {
   display: flex;
   padding-left: 0;

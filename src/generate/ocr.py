@@ -24,14 +24,21 @@ def ocr_file(f):
         text = str(((pytesseract.image_to_string(page))))
         ocred_text = ocred_text + text
 
-    print (ocred_text)
-    #f.ocrtext = ocred_text
-    #f.save()
+    #print (ocred_text)
+    #setattr(f, 'ocrtext', ocred_text)
+    #getting model field
+    f.ocrtext = ocred_text
+    f.save()
+    #ocrfield = Files.get_ocrtext(f)
+    #print (ocrfield)
+    
 
     # deleting JPGs after OCR
     del pages
     for f in os.listdir(JPG_path):
         os.remove(os.path.join(JPG_path, f))
+
+    #return (f.id)
 
     # TODO: show text in UI + save to DB
     

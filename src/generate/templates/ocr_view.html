@@ -8,7 +8,7 @@
             <ol class="breadcrumb">
                 <!-- <li><a href="{% url 'home' %}">Upload Files</a></li>
                 <li>OCR</li> -->
-              <li class="breadcrumb-item active" ><a href="{% url 'home' %}">Upload Files</a></li>
+              <li class="breadcrumb-item active" ><a href="{% url 'home' %}">Upload File</a></li>
               <li class="breadcrumb-item active" aria-current="page">OCR</li>
             </ol>
         </nav>
@@ -17,7 +17,20 @@
         <div class="container p-3 my-3 border">  
             {{foundFile.filename}}
         </div>
-    
+
+        <div class="container p-3 my-3 border">  
+            {{foundFile.ocrtext}}
+        </div>
+        
+        <!-- NLP / INDRA BUTTON + PASSING FILE ID -->
+        <form action="{% url 'ocr_view' %}" name="fileId" value="{{fileId}}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
+
+            <button {% if foundFile == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right;">Start NLP</button>
+            <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
+
+        </form>
     </div>
 </main>
 

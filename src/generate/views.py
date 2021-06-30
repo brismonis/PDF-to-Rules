@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 from pdf2image.pdf2image import convert_from_path
 
 from pdftorules.settings import MEDIA_ROOT, MEDIA_URL # Import TemplateView
-# from .forms import UploadFileForm # for Uploading PDF Files
+from .forms import FilesForm
 
 # function to handle an uploaded file.
 from .ocr import ocr_file
@@ -21,7 +21,6 @@ from django.http import HttpResponseRedirect
 
 # Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
 from .models import Files
-from .forms import UploadForm
 from django.template import RequestContext, context
 from django.contrib import messages
 
@@ -39,29 +38,34 @@ from django.db.utils import OperationalError
 
 # creating homepage view
 def homepage_view(request, *args, **kwargs):
-    #files = Files.objects.all()
+    # form not used
+    form = FilesForm(request.POST or None, request.FILES or None)
     context = { 
         # auf DB zugreifen um es dann im html ausgeben zu können
         #"files":files,
+        "form": form
     }                 
     return render(request, "index.html", context)
 
 #creating ocr view
 def ocr_view(request, *args, **kwargs):
-    # foundFile = request.POST.get('fileId') #getting file id from button
+    foundFile = request.POST.get('fileId') #getting file id from button
     # print(foundFile)
-    #file = Files.objects.get(id=foundFile)
-    #     ocr_file(foundFile)
+    file = Files.objects.get(id=foundFile)
+    ocr_file(file)
+    #updatedFileId = ocr_file(file)
+    #updatedFile = Files.objects.get(id=updatedFileId)
     context = {
-        #"foundFile":file
+        "foundFile":file,
+        #"updatedFile":updatedFile,
     }
     return render(request, "ocr_view.html", context)
 
 # creating table view
 def tables_view(request):
-    #files = Files.objects.all()
+    files = Files.objects.all()
     context = { # auf DB zugreifen um es dann im html ausgeben zu können
-        #"files":files
+        "files":files
     }
     return render(request, "tables.html", context)
 
@@ -86,12 +90,6 @@ def about_view(request, *args, **kwargs):
 #     def get_queryset(self):
 #     	return Files.objects.order_by('-id')
 
-# Method for displaying freshly uploaded file
-# class TempFileView(generic.ListView):
-#         template_name = 'index.html'
-#         def get_query(self):
-#             return Files.objects.filter(id=self.kwargs['id'])
-
 # def uploadForm(request):
 # 	# return render(request, 'comment/upload.html') URPSRÜNGLICH
 #     return render(request, 'home')
@@ -99,10 +97,12 @@ def about_view(request, *args, **kwargs):
 # Method for uploading and saving file to DB, also passing object to template
 def uploadFile(request, *args, **kwargs):
     if request.method == 'POST':
+        form = FilesForm(None, None)
+        #if form.is_valid():
         filename = request.POST['filename']
         pdf = request.FILES['pdf']
 
-        a = Files(filename=filename, pdf=pdf)
+        a = Files(filename=filename, pdf=pdf, user=request.user)
         a.save()
         # set_globvar(a.filename) # to find name of pdf again
         # set_newid(a.id) # to find id of pdf again
@@ -110,10 +110,11 @@ def uploadFile(request, *args, **kwargs):
         messages.success(request, 'File submitted successfully!')
         # return HttpResponseRedirect(reverse_lazy('home', kwargs={'id': a.id}))
         return render(request, 'index.html', {
-            'fileId': a # passing ID to template to show and find file again
+            'fileId': a, # passing ID to template to show and find file again
+            'form': form # for displaying form again
         })
     else:
-    	messages.error(request, 'Files was not submitted successfully, try again!')
+    	messages.warning(request, 'Files was not submitted successfully, try again!')
     	return redirect('home') # wird zurückgeleitet zu home
 
 # def myUpload(request):

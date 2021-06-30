@@ -1,18 +1,9 @@
 import os
 from django.db import models
-from django.utils.timezone import now
-#from datetime import datetime
+from django.utils import timezone
+from .validators import validate_file_extension
+from django.core.validators import FileExtensionValidator
 
-# Create your models here.
-# Komponenten auf einer Seite 
-# class pdfs(models.Model):
-#     title = models.TextField()
-#     pagerange = models.TextField()
-#     language = models.TextField()
-
-# class Upload(models.Model):
-#     upload_file = models.FileField(upload_to='media/') # speichert einen File in der DB  
-#     # upload_date = models.DateTimeField(auto_now_add =True)
 
 class Files(models.Model):
     filename = models.CharField(max_length=500)
@@ -20,10 +11,11 @@ class Files(models.Model):
     literature = models.CharField(blank=True, null=True, max_length=500)
     pubyear = models.CharField(blank=True, null=True, max_length=500)
     user = models.CharField(blank=True, null=True, max_length=500)
-    date = models.DateTimeField(default=now, editable=False, blank=True)
+    date = models.DateTimeField(default=timezone.now, editable=False, blank=True)
     note = models.CharField(blank=True, null=True, max_length=500)
-    pdf = models.FileField(upload_to='pdfs/')
+    pdf = models.FileField(upload_to='pdfs/', validators=[FileExtensionValidator( ['pdf'] ) ])
     ocrtext = models.TextField(blank=True, null=True) # TextField is for larger strings
+    rules = models.TextField(blank=True, null=True)
 
     def get_filename(self):
         return self.filename
@@ -44,4 +36,5 @@ class Files(models.Model):
         self.user.delete()
         self.date.delete()
         self.note.delete()
+        self.rules.delete()
         super().delete(*args, **kwargs)

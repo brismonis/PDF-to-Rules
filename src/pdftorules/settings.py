@@ -160,7 +160,6 @@ MEDIA_URL = '/media/'
 # print(MEDIA_ROOT) /Users/susannebair/WebDev/pdftorules/src/files
 # print(MEDIA_URL) /files/
 
-DEFAULT_FILE_STORAGE = '/media'
-# print(DEFAULT_FILE_STORAGE)
 # FILE_UPLOAD_MAX_MEMORY_SIZE: Default: 2621440 (i.e. 2.5 MB).
 # erst wenn was größer als 2.5 MB ist, wirds im Ordner gespeichert
+TIME_ZONE = 'Europe/Berlin'

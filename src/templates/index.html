@@ -6,19 +6,32 @@
         <h2 class="mt-4">Generate Rules</h2>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">Upload Files</li>
+              <li class="breadcrumb-item active" aria-current="page">Upload File</li>
             </ol>
         </nav>
 
-        {% if messages %} <!-- DISPLAYING MESSAGE: SUCCESS OR ERROR -->
-        <ul class="messages">
+        {% if messages %} <!-- DISPLAYING MESSAGE: SUCCESS OR WARNING -->   
             {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
+                {% if message.tags %} 
+                    <div class="alert alert-{{ message.tags }} role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}     
         {% endif %}
 
-        <div class="container p-3 my-3 border">
+        <div class="container-fluid p-3 my-3 border">
+            <h4>Upload File</h4>
+            <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+            <div class="form-group">
+                {{ form }}
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Submit">
+            </div>
+            </form>
+        </div>
+
+        <!-- <div class="container p-3 my-3 border">
         <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-group">
@@ -32,13 +45,12 @@
                     <input type="file" id="myFile" name="pdf" placeholder="Report Attachment" enctype="multipart/form-data" required="required"></div>
                 </div>          
             </div>
-        <!-- <div class="form-group"> -->
             <button type="submit" class="btn btn-success btn-lg"  href="">Add Now</button>
-        <!-- </div> -->
         </form>
-        </div>
+        </div> -->
 
-        <div class="container p-3 my-3 border"> <!-- SHOW UPLOADED FILES -->
+        <div class="container-fluid p-3 my-3 border"> <!-- SHOW UPLOADED FILES -->
+            <h4>File</h4>
         <!-- <div class="card mb-4"> 
             <div class="card-body"> -->
                 <!-- List of uploaded files -->

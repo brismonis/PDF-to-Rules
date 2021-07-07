@@ -13,11 +13,13 @@ class FilesForm(ModelForm):
         fields = ['filename', 'pdf']
         widgets = {
             'filename': TextInput(attrs={
+                'id':'id-filename',
                 'class': "form-control",
                 'style': 'max-width: 500px; margin-bottom: 10px',
                 'placeholder': 'Title of File'
                 }),
             'pdf': FileInput(attrs={
+                'id':'id-pdf',
                 'class': "form-control", 
                 'style': 'max-width: 500px; margin-bottom: 10px',
                 'placeholder': 'PDF File'

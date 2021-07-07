@@ -27,14 +27,14 @@ class Files(models.Model):
         return self.ocrtext
         
     def delete(self, *args, **kwargs):
-        self.pdf.delete()
-        self.filename.delete()
-        self.ocrtext.delete()
-        self.authors.delete()
-        self.literature.delete()
-        self.pubyear.delete()
-        self.user.delete()
-        self.date.delete()
-        self.note.delete()
-        self.rules.delete()
+        # self.pdf.delete()
+        # self.filename = None
+        # self.ocrtext = None
+        # self.authors = None
+        # self.literature = None
+        # self.pubyear = None
+        # self.user = None
+        # self.date = None
+        # self.note = None
+        # self.rules = None
         super().delete(*args, **kwargs)

@@ -18,17 +18,30 @@
             {% endfor %}     
         {% endif %}
 
+        
+
         <div class="container-fluid p-3 my-3 border">
             <h4>Upload File</h4>
             <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-            <div class="form-group">
+            <div class="form-group" id="upload-form">
                 {{ form }}
             </div>
             <div class="form-group">
-                <input class="btn btn-success" type="submit" value="Submit">
+                <input id='submit-btn' class="btn btn-success" type="submit" value="Submit" onclick='change()'>
             </div>
             </form>
+
+            <!-- PROGRESS BAR ATTEMPT -->
+            <!-- <div id="progessbar-upload" class="not-visible">Progress</div>
+                <div id="cancel-box" class="not-visible" >
+                <button id="cancel-btn" class="btn btn-danger">Cancel</button>
+                </div> -->
+
+                <!-- nur zum testen -->
+            <!-- <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div> -->
         </div>
 
         <!-- <div class="container p-3 my-3 border">
@@ -51,14 +64,18 @@
 
         <div class="container-fluid p-3 my-3 border"> <!-- SHOW UPLOADED FILES -->
             <h4>File</h4>
+            <!-- <br> -->
         <!-- <div class="card mb-4"> 
             <div class="card-body"> -->
                 <!-- List of uploaded files -->
                 
                 {% if fileId != None %}
-                    {{ fileId.filename }}
+                
+                <a href="{% url 'delete' id=fileId.id%}">
+                <button type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></a> {{fileId.filename}}
+
                 {% else %}
-                    <p>No file uploaded.</p>
+                <span class="text-muted">No file uploaded.</span>
                 {% endif %}
             <!-- </div>
         </div> -->

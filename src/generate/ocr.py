@@ -1,7 +1,6 @@
 # Um OCR anwenden zu können
 import os
 import pytesseract
-import pdf2image
 
 from pdftorules.settings import MEDIA_ROOT
 # Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
@@ -23,29 +22,14 @@ def ocr_file(f):
     for page in pages:
         text = str(((pytesseract.image_to_string(page))))
         ocred_text = ocred_text + text
-
-    #print (ocred_text)
-    #setattr(f, 'ocrtext', ocred_text)
-    #getting model field
+    
+    # Um Silbentrennung im Ergebnis zu meiden
+    #ocred_text = text.replace('-\n', '')
+    # Ergebnis in DB speichern
     f.ocrtext = ocred_text
     f.save()
-    #ocrfield = Files.get_ocrtext(f)
-    #print (ocrfield)
     
-
     # deleting JPGs after OCR
     del pages
     for f in os.listdir(JPG_path):
         os.remove(os.path.join(JPG_path, f))
-
-    #return (f.id)
-
-    # TODO: show text in UI + save to DB
-    
-
-    #  Reading file from storage
-    # file = default_storage.open(file_name)
-    # file_url = default_storage.url(file_name)
-    # with open('some/file/name.txt', 'wb+') as destination:
-    #     for chunk in f.chunks(): # Looping over UploadedFile.chunks() instead of using read() ensures that large files don’t overwhelm your system’s memory.
-    #         destination.write(chunk)

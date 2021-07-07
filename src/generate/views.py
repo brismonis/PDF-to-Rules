@@ -79,6 +79,18 @@ def about_view(request, *args, **kwargs):
     
     return render(request, "about_view.html", {})
 
+# creating about view
+def login_view(request, *args, **kwargs):
+    
+    return render(request, "login.html", {})
+
+def delete_file(request, id):
+    object = Files.objects.get(id=id)
+    object.delete()
+    #return render(request,'index.html')
+    return redirect('home')
+
+
 # Method for displaying all uploaded Files in a List
 # class FileView(generic.ListView):
 #     model = Files
@@ -97,6 +109,7 @@ def about_view(request, *args, **kwargs):
 # Method for uploading and saving file to DB, also passing object to template
 def uploadFile(request, *args, **kwargs):
     if request.method == 'POST':
+        
         form = FilesForm(None, None)
         #if form.is_valid():
         filename = request.POST['filename']

@@ -1,5 +1,7 @@
 {% extends 'base.html' %} <!-- Add this for inheritance -->
 <!-- mit href="{PROZENT url 'home' PROZENT} kann man auf andere URL verlinken -->
+<!-- {% load static %}
+
 
 {% block pagecontent %}
 <main>
@@ -22,9 +24,10 @@
                 Uploaded PDF Files
             </div>
             <div class="card-body">
-                <table id="datatablesSimple">
+                <table id="datatablesSimple" class="display">
                     <thead>
                         <tr>
+                            <!-- <th>Select</th> -->
                             <th>Number</th>
                             <th>Filename</th>
                             <th>Authors</th>
@@ -55,6 +58,7 @@
 
                         <!-- BEISPIEL -->
                         <tr> 
+                            <!-- <td>.</td> -->
                             <td>0</td>
                             <td>DUMMY</td>
                             <td>Authors</td>
@@ -70,7 +74,9 @@
 
                         {% if files %} 
                             {% for file in files %}
+                                
                                 <tr>
+                                    <!-- <td><input type="checkbox" aria-label="Checkbox" style="align-content: middle;"></td> -->
                                     <td>{{ forloop.counter }}</td>
                                     <td>{{ file.filename }} </td>
                                     <td> {{ file.authors }} </td>
@@ -91,13 +97,21 @@
                                         {% endif %}</td>
                                     <td>{{ file.note }}</td>
                                 </tr>
+                                
                             {% endfor %}
                             {% endif %}
                         
                     </tbody>
                 </table>
+
             </div>
+
         </div>
+        <button type="submit" class="btn btn-outline-danger btn-lg" style="float: left;"><i class="fas fa-trash-alt"></i></button>
+        <button type="submit" class="btn btn-primary btn-lg" style="float: right;">Download Rules</button>
+        <button type="submit" class="btn btn-secondary btn-lg" style="float: right; margin-right: 20px;">Select All</button>
+
     </div>
 </main>
+
 {% endblock %}

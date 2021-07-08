@@ -50,8 +50,11 @@ from generate import views
 # ]
 
 urlpatterns = [
+    # Key difference between path and re_path is that path uses route without regex
+    # You can use re_path for complex regex calls and use just path for simpler lookups
+    
     #path('', RedirectView.as_view(url=reverse_lazy('admin:index'), permanent=False), name='root'), # ohne Path leitet es zur admin Seite
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('', include('generate.urls')),
     #path('home/', views.homepage_view, name='home'), # index.html
     path('tables/', views.tables_view, name='tables'), # (?P<path>.*)$

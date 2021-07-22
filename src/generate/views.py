@@ -49,14 +49,14 @@ def homepage_view(request, *args, **kwargs):
 
 #creating ocr view
 def ocr_view(request, *args, **kwargs):
-    foundFile = request.POST.get('fileId') #getting file id from button
-    # print(foundFile)
-    file = Files.objects.get(id=foundFile)
-    ocr_file(file)
-    #updatedFileId = ocr_file(file)
-    #updatedFile = Files.objects.get(id=updatedFileId)
+    # foundFile = request.POST.get('fileId') #getting file id from button
+    # # print(foundFile)
+    # file = Files.objects.get(id=foundFile)
+    # ocr_file(file)
+    # #updatedFileId = ocr_file(file)
+    # #updatedFile = Files.objects.get(id=updatedFileId)
     context = {
-        "foundFile":file,
+        #"foundFile":file,
         #"updatedFile":updatedFile,
     }
     return render(request, "ocr_view.html", context)
@@ -79,11 +79,12 @@ def about_view(request, *args, **kwargs):
     
     return render(request, "about_view.html", {})
 
-# creating about view
+# creating login view
 def login_view(request, *args, **kwargs):
     
     return render(request, "login.html", {})
 
+# uploaded File can be deleted right away
 def delete_file(request, id):
     object = Files.objects.get(id=id)
     object.delete()
@@ -130,8 +131,27 @@ def uploadFile(request, *args, **kwargs):
     	messages.warning(request, 'Files was not submitted successfully, try again!')
     	return redirect('home') # wird zurückgeleitet zu home
 
-# def myUpload(request):
-# 	return render(request, 'comment/myUpload.html') # TODO:
+
+# This is a method to process the OCR-method before loading the ocr_view
+def processing(request, *args, **kwargs):
+    foundFile = request.POST.get('fileId') #getting file id from button
+    # print(foundFile)
+    file = Files.objects.get(id=foundFile)
+    #messages.info(request, 'Please wait for the OCR to finish!')
+    ocr_file(file)
+    if file.ocrtext is None:
+        messages.warning(request, 'OCR was not successfull, try again!')
+        return redirect('home')
+    else:
+        context = {
+                "foundFile":file,
+                #"updatedFile":updatedFile,
+            }
+        return render(request, "ocr_view.html", context)
+
+    #updatedFileId = ocr_file(file)
+    #updatedFile = Files.objects.get(id=updatedFileId)
+    
 
 # def savingtempfile(filename):
 #     return filename

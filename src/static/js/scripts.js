@@ -24,3 +24,29 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+
+// document.getElementById('sidebarToggle').addEventListener('click', navStatus);
+
+// // Prüfen ob die Navigation geöffnet oder geschlossen ist
+
+// function navStatus() {
+//   if (document.body.classList.contains('sb-sidenav-toggled')) {
+//    navClose();
+//  } 
+//  else {
+//    navOpen();
+//  }
+// }
+
+// // Wenn die Navi geschlossen wird, Klasse für »offen« entfernen
+
+// function navClose() {
+//   document.body.classList.remove('sb-sidenav-toggled');
+// }
+
+// // Wenn die Navi geöffnet wird, Klasse für »geschlossen« entfernen
+
+// function navOpen() {
+//   document.body.classList.add('sb-sidenav-toggled');
+// }

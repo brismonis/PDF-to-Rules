@@ -28,7 +28,8 @@ urlpatterns = [
  path('upload/', views.uploadFile, name='upload'), #links to uploadFile method
  #path('processing/', views.ocrFile, name='ocr'), #links to ocr method
  path('ocr/', views.ocr_view, name='ocr_view'), #links to ocr View
- path('delete/<int:id>', views.delete_file, name='delete'), #links to ocr View
+ path('processing/', views.processing, name='processing'), #links to ocr View
+ path('delete/<int:id>', views.delete_file, name='delete'), #deleting file after upload
  
  #url(r'^(?P<brand>\w+)/$', , name = 'tempfile_view'),
  #re_path(r'^(?P<id>\d+)/?$', views.TempFileView, name='tempfile_view'),

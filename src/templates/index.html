@@ -38,10 +38,7 @@
                 <button id="cancel-btn" class="btn btn-danger">Cancel</button>
                 </div> -->
 
-                <!-- nur zum testen -->
-            <!-- <div class="spinner-border text-primary" role="status">
-                <span class="sr-only">Loading...</span>
-            </div> -->
+            
         </div>
 
         <!-- <div class="container p-3 my-3 border">
@@ -81,11 +78,15 @@
         </div> -->
         </div>
 
-        <form action="{% url 'ocr_view' %}" name="fileId" value="{{fileId}}" method="POST">
+        <form action="{% url 'processing' %}" name="fileId" value="{{fileId}}" method="POST">
             {% csrf_token %}
             <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/>
 
-            <button {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right;">Start OCR</button>
+            <button id="spin" {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right;">Start OCR</button>
+                <!-- nur zum testen -->
+            <!-- <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div> -->
             <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
 
         </form>

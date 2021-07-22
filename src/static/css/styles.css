@@ -11283,3 +11283,28 @@ table.DataTable tr th.select-checkbox.selected::after {
   text-align: center;
   text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
 }
+
+/* for table buttons */
+/* div.dt-buttons{
+  position:relative;
+  float:right;
+  } */
+
+  .dataTables_filter { 
+    width: 500px;
+    float: left;
+  }
+  input.form-control.form-control-sm {
+    width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter{
+    float: left;
+  }
+.dataTables_wrapper .dataTables_length{
+    float: right;
+  }
+
+div.dataTables_wrapper div.dataTables_filter input {
+  width: 500%;
+}

@@ -20,7 +20,7 @@
 
         
 
-        <div class="container-fluid p-3 my-3 border">
+        <div class="container-fluid p-3 my-3 bg-light border">
             <h4>Upload File</h4>
             <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -59,7 +59,7 @@
         </form>
         </div> -->
 
-        <div class="container-fluid p-3 my-3 border"> <!-- SHOW UPLOADED FILES -->
+        <div class="container-fluid p-3 my-3 bg-light border"> <!-- SHOW UPLOADED FILES -->
             <h4>File</h4>
             <!-- <br> -->
         <!-- <div class="card mb-4"> 

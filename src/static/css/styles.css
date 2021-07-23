@@ -32,6 +32,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+    /* --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -4560,13 +4562,26 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
+/* eingefügt */
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+/* eingefügt */
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0;
+  /* changed padding from 0 0 */
+  padding: 0.45rem 1rem; 
   margin-bottom: 1rem;
   list-style: none;
   background-color: #eee;
+  border-radius: 0.25rem;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -11290,7 +11305,7 @@ table.DataTable tr th.select-checkbox.selected::after {
   float:right;
   } */
 
-  .dataTables_filter { 
+  /* .dataTables_filter { 
     width: 500px;
     float: left;
   }
@@ -11307,4 +11322,4 @@ table.DataTable tr th.select-checkbox.selected::after {
 
 div.dataTables_wrapper div.dataTables_filter input {
   width: 500%;
-}
+} */

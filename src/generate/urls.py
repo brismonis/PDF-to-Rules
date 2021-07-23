@@ -27,9 +27,10 @@ urlpatterns = [
  path('', views.homepage_view, name="home"), #links to homepage
  path('upload/', views.uploadFile, name='upload'), #links to uploadFile method
  #path('processing/', views.ocrFile, name='ocr'), #links to ocr method
- path('ocr/', views.ocr_view, name='ocr_view'), #links to ocr View
- path('processing/', views.processing, name='processing'), #links to ocr View
+ path('ocr-view/', views.ocr_view, name='ocr_view'), #links to ocr View
+ path('ocr/', views.processing, name='processing'), #links to ocr View
  path('delete/<int:id>', views.delete_file, name='delete'), #deleting file after upload
+ path('saved/', views.save_changes, name='save')
  
  #url(r'^(?P<brand>\w+)/$', , name = 'tempfile_view'),
  #re_path(r'^(?P<id>\d+)/?$', views.TempFileView, name='tempfile_view'),

@@ -91,6 +91,34 @@ def delete_file(request, id):
     #return render(request,'index.html')
     return redirect('home')
 
+# for saving edited text in ocr_view
+def save_changes(request, *args, **kwargs):
+    
+    #text = request.GET.get('txt')
+    #changes = request.POST['changes']
+    #print(text)
+    #print (changes)
+    if request.method == 'POST':
+        foundFile = request.POST.get('fileId') #getting file id from button
+        # print(foundFile)
+        file = Files.objects.get(id=foundFile)
+        #if request.POST.get('sms'):
+        # do something with text area data since SMS was checked
+        changedText = request.POST.get('my_textarea')
+        #print(changedText)
+        file.ocrtext = changedText
+        messages.success(request, 'Changes saved!')
+        return render(request, "ocr_view.html", {
+        "foundFile":file, # passing ID to template to show and find file again
+        #'form': form # for displaying form again
+        })
+    else:
+        messages.warning(request, 'Saving was not successfull, try again!')
+        return redirect("ocr_view.html") # wird zurückgeleitet zu home
+    # object = Files.objects.get(id=id)
+    # object.delete()
+    #return render(request,'index.html')
+    #return redirect('home')
 
 # Method for displaying all uploaded Files in a List
 # class FileView(generic.ListView):

@@ -13,14 +13,45 @@
             </ol>
         </nav>
 
+        {% if messages %} <!-- DISPLAYING MESSAGE: SUCCESS OR WARNING -->   
+            {% for message in messages %}
+                {% if message.tags %} 
+                    <div class="alert alert-{{ message.tags }} role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}     
+        {% endif %}
+
         <!-- CONTAINER -->
-        <div class="container p-3 my-3 border">  
-            {{foundFile.filename}}
+        <!-- <div class="container pt-3 my-3 border bg-dark text-white">  -->
+        <div class="container pt-3 my-3 border bg-light"> 
+            <p>Following text was extracted by the OCR for File "{{foundFile.filename}}". Please check for correctness. You can edit the text directly, don't forget to "Save Changes".</p>
         </div>
 
-        <div class="container p-3 my-3 border">  
-            {{foundFile.ocrtext}}
+
+        <form action="{% url 'save' %}" method="POST">
+            {% csrf_token %}
+            <textarea name="my_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">{{foundFile.ocrtext}}</textarea>
+            <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
+            <button type="submit" class="btn btn-primary btn-lg" style="float: left; margin-bottom: 3vw;">Save Changes</button>
+
+        </form>
+
+        <!-- <textarea id="txt" style="font-family: Arial;font-size: 12pt;width:100%;height:100vw">{{foundFile.ocrtext}}</textarea> -->
+
+        <!-- <form action="{% url 'save' %}" method="POST">
+            <input type="text" name="changes" value="txt">
+            <div id="txt" contenteditable="true">
+                {{foundFile.ocrtext}}
+            </div> 
+            </input>
+            
         </div>
+
+            {% csrf_token %}
+
+            <button {% if foundFile.ocrtext == TEXTAREA %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: left;">Save Changes</button>
+
+        </form> -->
         
         <!-- NLP / INDRA BUTTON + PASSING FILE ID -->
         <form action="{% url 'ocr_view' %}" name="fileId" value="{{fileId}}" method="POST">

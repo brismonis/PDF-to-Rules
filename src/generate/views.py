@@ -1,6 +1,4 @@
-# Create your views here.
-# to handle pages
-# include html files
+# Create your views here to handle pages and include html files.
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -15,6 +13,7 @@ from .forms import FilesForm
 
 # function to handle an uploaded file.
 from .ocr import ocr_file
+from .nlp import nlp_file
 from django.core.files.storage import FileSystemStorage
 from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
@@ -35,6 +34,16 @@ from django.db.utils import OperationalError
 # except OperationalError:
 #     pass  # happens when db doesn't exist yet, views.py should be
 #           # importable without this side effect
+
+from django.template import *
+from django.http import HttpRequest
+t = Template("{{ request.META.HTTP_REFERER }}")
+req = HttpRequest()
+# req.META
+# {}
+req.META['HTTP_REFERER'] = 'google.com'
+c = Context({'request': req})
+# t.render(c)
 
 # creating homepage view
 def homepage_view(request, *args, **kwargs):
@@ -60,6 +69,20 @@ def ocr_view(request, *args, **kwargs):
         #"updatedFile":updatedFile,
     }
     return render(request, "ocr_view.html", context)
+
+#creating ocr view
+def nlp_view(request, *args, **kwargs):
+    # foundFile = request.POST.get('fileId') #getting file id from button
+    # # print(foundFile)
+    # file = Files.objects.get(id=foundFile)
+    # ocr_file(file)
+    # #updatedFileId = ocr_file(file)
+    # #updatedFile = Files.objects.get(id=updatedFileId)
+    context = {
+        #"foundFile":file,
+        #"updatedFile":updatedFile,
+    }
+    return render(request, "nlp_view.html", context)
 
 # creating table view
 def tables_view(request):
@@ -91,7 +114,7 @@ def delete_file(request, id):
     #return render(request,'index.html')
     return redirect('home')
 
-# for saving edited text in ocr_view
+# Method for saving edited text in ocr_view
 def save_changes(request, *args, **kwargs):
     
     #text = request.GET.get('txt')
@@ -107,6 +130,7 @@ def save_changes(request, *args, **kwargs):
         changedText = request.POST.get('my_textarea')
         #print(changedText)
         file.ocrtext = changedText
+        file.save()
         messages.success(request, 'Changes saved!')
         return render(request, "ocr_view.html", {
         "foundFile":file, # passing ID to template to show and find file again
@@ -119,21 +143,6 @@ def save_changes(request, *args, **kwargs):
     # object.delete()
     #return render(request,'index.html')
     #return redirect('home')
-
-# Method for displaying all uploaded Files in a List
-# class FileView(generic.ListView):
-#     model = Files
-#     template_name = 'tables.html' # where it's going to be displayed
-#     context_object_name = 'tables'
-#     paginate_by = 6
-#     print (Files.objects.order_by('-id'))
-
-#     def get_queryset(self):
-#     	return Files.objects.order_by('-id')
-
-# def uploadForm(request):
-# 	# return render(request, 'comment/upload.html') URPSRÜNGLICH
-#     return render(request, 'home')
 
 # Method for uploading and saving file to DB, also passing object to template
 def uploadFile(request, *args, **kwargs):
@@ -161,7 +170,7 @@ def uploadFile(request, *args, **kwargs):
 
 
 # This is a method to process the OCR-method before loading the ocr_view
-def processing(request, *args, **kwargs):
+def processing_ocr(request, *args, **kwargs):
     foundFile = request.POST.get('fileId') #getting file id from button
     # print(foundFile)
     file = Files.objects.get(id=foundFile)
@@ -177,12 +186,29 @@ def processing(request, *args, **kwargs):
             }
         return render(request, "ocr_view.html", context)
 
-    #updatedFileId = ocr_file(file)
-    #updatedFile = Files.objects.get(id=updatedFileId)
-    
-
-# def savingtempfile(filename):
-#     return filename
+def processing_nlp(request, *args, **kwargs):
+    foundFile = request.POST.get('fileId') #getting file id from button
+    file = Files.objects.get(id=foundFile)
+    #all_statements = []
+    nlp_file(file)
+    if file.rules is None:
+        messages.warning(request, 'No Rules found!')
+        return redirect('home')
+    else:
+        context = {
+                "foundFile":file,
+                #"updatedFile":updatedFile,
+            }
+        return render(request, "nlp_view.html", context)
+    # if file.rules is None:
+    #     messages.warning(request, 'No rules found!')
+    #     return redirect('home')
+    # else:
+    #     context = {
+    #             "foundFile":file,
+    #             #"updatedFile":updatedFile,
+    #         }
+    #     return render(request, "nlp_view.html", context)
 
 # def ocrFile(request, *args, **kwargs):
 #     # TODO: ruft ocr.py auf 

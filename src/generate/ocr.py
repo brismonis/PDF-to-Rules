@@ -1,5 +1,5 @@
 # Um OCR anwenden zu können
-import os
+import os, re
 import pytesseract
 
 from pdftorules.settings import MEDIA_ROOT
@@ -64,23 +64,35 @@ def ocr_file(f):
         print("Exception raised when convert_from_path or convert_from_bytes is called using strict=True and the input PDF contained a syntax error. Simply use strict=False will usually solve this issue.")
     
 
-    image_counter = 0
+    image_counter = 1
     for page in pages:
         image_counter = image_counter + 1
     #print (image_counter)
     #file_limit = image_counter - 1
     #f = open(outfile, "a")
 
-    for i in range(0, image_counter):
-        if(i < 10):
-            filename = PDF_file+"0001-0"+str(i)+".jpg"
-        else:
+    for i in range(1, image_counter):
+        filename = ""
+        if(image_counter-1 >= 10):
+            if(i < 10):
+                filename = PDF_file+"0001-0"+str(i)+".jpg"
+            else:
+                filename = PDF_file+"0001-"+str(i)+".jpg"
+        elif(image_counter-1 < 10):
             filename = PDF_file+"0001-"+str(i)+".jpg"
-        text = str(((pytesseract.image_to_string(Image.open(os.path.join(JPG_path, filename))))))
+        filepath = os.path.join(JPG_path, filename)
+        #/Users/susannebair/WebDev/pdftorules/src/media/jpgs/gerctdfdg0001-1.jpg
+        text = str(((pytesseract.image_to_string(Image.open(filepath)))))
         text = text.replace('-\n', '')
+        #text = text.replace(r'\n+', '\n')
+        # word = re.sub(r'\n+', '\n', text).strip()
+        # print (word)
         ocred_text = ocred_text + text
         #f.write(text)
         os.remove(os.path.join(JPG_path, filename))
+
+    # for replacing multiple line breaks
+    word = re.sub(r'\n+', '\n', ocred_text).strip()
     
-    f.ocrtext = ocred_text
+    f.ocrtext = word
     f.save()

@@ -1,40 +1,89 @@
 # In this class we use INDRA to read Statements from text
+import os, json, time, threading, requests
+from pdftorules.settings import MEDIA_ROOT
+import concurrent.futures
+
 from indra.sources import reach
 from indra.sources import trips
 from .models import Files
 
+thread_local = threading.local()
+
+
+def get_session():
+    if not hasattr(thread_local, "session"):
+        thread_local.session = requests.Session()
+    return thread_local.session
+
 def nlp_file(f):
     # TODO: getting Object 
-    ocrtext = Files.get_ocrtext(f)
     all_statements = []
-    part_str = ""
-    max_index = 3000
+    PDF_file = Files.get_filename(f)
+    JSON_folder = os.path.join(MEDIA_ROOT, 'json') # path to json Folder
+    ocrtext = Files.get_ocrtext(f)
+    JSON_file = os.path.join(JSON_folder, PDF_file + '_reach.json')
+    # with open(JSON_file, 'x') as outfile:
+    #     json.dump(txt, outfile)
+
+    #all_statements = []
+    #part_str = ""
+    max_index = 100000
     index = 0
     string_length = len(ocrtext)
     print (string_length)
     if (string_length <= max_index):
-        reach_processor = reach.process_text(ocrtext) 
+        start_time = time.time()
+        reach_processor = reach.process_text(text=ocrtext, output_fname=JSON_file, url=reach.local_text_url)
+
+        
+        #stm = process_all_text(ocrtext, JSON_file)
+        #print(stm)
+        #all_statements.append(stm)
+        duration = time.time() - start_time
+        print(f"Processed in {duration} seconds")
+
         all_statements = reach_processor.statements
         print(all_statements)
-        #bis hier funktionert alles super
-    else:
+        
+    else: 
+        c = 1
         while ((index + max_index) <= string_length):
-            part_str = ocrtext[index:max_index]
-            reach_processor = reach.process_text(part_str)
+            partstr = ocrtext[index:max_index*c]
+            #print(partstr)
+            reach_processor = reach.process_text(text=partstr, output_fname=JSON_file)
+            #, output_fname=JSON_folder)
             #stm = reach_processor.statements
             all_statements = all_statements + reach_processor.statements
             #all_statements + stm
             #print(stm)
             index = index + max_index
-        part_str2 = ocrtext[index:string_length]
+            c = c + 1
+        partstr2 = str(ocrtext[index:string_length])
+        print(index)
         #print (part_str2) #gibt alles aus ??
-        reach_processor2 = reach.process_text(part_str2) 
+        reach_processor2 = reach.process_text(text=partstr2, output_fname=JSON_file)
+        #, output_fname=JSON_folder)
         #stm2 = reach_processor2.statements
         all_statements = all_statements + reach_processor2.statements
         print(all_statements)
     
     f.rules = all_statements
     f.save()
+
+def process_reach(text, json_dir):
+    print("**************************")
+    stm = []
+    session = get_session()
+    rp = reach.process_text(text=text, output_fname=json_dir)
+    stm = rp.statements
+    return stm
+
+
+
+def process_all_text(text, json_dir):
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        executor.map(process_reach, text, json_dir)
+
     
     # for st in reach_processor.statements:
     #     #print('%s with evidence "%s"' % (st, st.evidence[0].text))

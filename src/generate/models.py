@@ -3,6 +3,8 @@ from django.db import models
 from django.utils import timezone
 from .validators import validate_file_extension
 from django.core.validators import FileExtensionValidator
+from pdftorules.settings import MEDIA_ROOT
+
 
 
 class Files(models.Model):
@@ -37,4 +39,9 @@ class Files(models.Model):
         # self.date = None
         # self.note = None
         # self.rules = None
+        path_pdf = Files.get_pdfpath(self)
+        PDF_folder = os.path.join(MEDIA_ROOT, 'pdfs') # path to pdfs Folder
+        PDF_path = os.path.join(PDF_folder, path_pdf) # path to current object's PDF
+        if os.path.exists(PDF_path):
+            os.remove(PDF_path)
         super().delete(*args, **kwargs)

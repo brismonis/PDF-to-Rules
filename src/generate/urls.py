@@ -30,6 +30,7 @@ urlpatterns = [
  path('ocr-view/', views.ocr_view, name='ocr_view'), #links to ocr View
  path('ocr/', views.processing_ocr, name='processingOcr'), #links to ocr method
  path('delete/<int:id>', views.delete_file, name='delete'), #deleting file after upload
+ path('delete_table/<int:id>', views.delete_file_table, name='delete_table'), #deleting file after upload
  path('ocr/saved/', views.save_changes, name='save'),
  path('nlp-view/', views.nlp_view, name='nlp_view'),
  path('nlp/', views.processing_nlp, name='processingNlp'),

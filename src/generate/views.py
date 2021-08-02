@@ -1,5 +1,5 @@
 # Create your views here to handle pages and include html files.
-
+import time
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.utils.functional import empty
@@ -114,6 +114,12 @@ def delete_file(request, id):
     #return render(request,'index.html')
     return redirect('home')
 
+def delete_file_table(request, id):
+    object = Files.objects.get(id=id)
+    object.delete()
+    #return render(request,'index.html')
+    return redirect('tables')
+
 # Method for saving edited text in ocr_view
 def save_changes(request, *args, **kwargs):
     
@@ -152,8 +158,12 @@ def uploadFile(request, *args, **kwargs):
         #if form.is_valid():
         filename = request.POST['filename']
         pdf = request.FILES['pdf']
+        authors = request.POST['authors']
+        literature = request.POST['literature']
+        pubyear = request.POST['pubyear']
+        note = request.POST['note']
 
-        a = Files(filename=filename, pdf=pdf, user=request.user)
+        a = Files(filename=filename, pdf=pdf, user=request.user, authors=authors, literature=literature, pubyear=pubyear, note=note)
         a.save()
         # set_globvar(a.filename) # to find name of pdf again
         # set_newid(a.id) # to find id of pdf again
@@ -190,7 +200,10 @@ def processing_nlp(request, *args, **kwargs):
     foundFile = request.POST.get('fileId') #getting file id from button
     file = Files.objects.get(id=foundFile)
     #all_statements = []
+    start_time = time.time()
     nlp_file(file)
+    duration = time.time() - start_time
+    print(duration)
     if file.rules is None:
         messages.warning(request, 'No Rules found!')
         return redirect('home')

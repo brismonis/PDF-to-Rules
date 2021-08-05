@@ -2,7 +2,7 @@ from django.db.models import fields
 from django.forms import ModelForm
 from django.forms.widgets import Textarea
 from .models import *
-#from django import forms
+from django import forms
 from django.forms import ModelForm, TextInput, FileInput
   
   
@@ -32,7 +32,7 @@ class FilesForm(ModelForm):
                 'placeholder': 'Authors (Optional)'
                 }),
             'literature': TextInput(attrs={
-                'id':'id-authors',
+                'id':'id-lit',
                 'class': "form-control", 
                 'style': 'max-width: 80%; margin-bottom: 10px',
                 'placeholder': 'Literature (Optional)'
@@ -44,7 +44,7 @@ class FilesForm(ModelForm):
                 'placeholder': 'Publishing Year (Optional)'
                 }),
             'note': Textarea(attrs={
-                'id':'id-pubyear',
+                'id':'id-note',
                 'class': "form-control", 
                 'style': 'max-width: 80%; max-height:5vw; margin-bottom: 10px',
                 'placeholder': 'Notes (Optional)'

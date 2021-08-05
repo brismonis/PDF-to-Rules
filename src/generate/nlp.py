@@ -3,6 +3,7 @@ import os, json, time, threading, requests
 from pdftorules.settings import MEDIA_ROOT
 import concurrent.futures
 
+from indra.assemblers import sif
 from indra.sources import reach
 from indra.sources import trips
 from .models import Files
@@ -43,7 +44,7 @@ def nlp_file(f):
         print(f"Processed in {duration} seconds")
 
         all_statements = reach_processor.statements
-        print(all_statements)
+        #print(all_statements)
         
     else: 
         c = 1
@@ -65,24 +66,24 @@ def nlp_file(f):
         #, output_fname=JSON_folder)
         #stm2 = reach_processor2.statements
         all_statements = all_statements + reach_processor2.statements
-        print(all_statements)
+        #print(all_statements)
     
     f.rules = all_statements
     f.save()
 
-def process_reach(text, json_dir):
-    print("**************************")
-    stm = []
-    session = get_session()
-    rp = reach.process_text(text=text, output_fname=json_dir)
-    stm = rp.statements
-    return stm
+# def process_reach(text, json_dir):
+#     print("**************************")
+#     stm = []
+#     session = get_session()
+#     rp = reach.process_text(text=text, output_fname=json_dir)
+#     stm = rp.statements
+#     return stm
 
 
 
-def process_all_text(text, json_dir):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-        executor.map(process_reach, text, json_dir)
+# def process_all_text(text, json_dir):
+#     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+#         executor.map(process_reach, text, json_dir)
 
     
     # for st in reach_processor.statements:
@@ -93,7 +94,23 @@ def process_all_text(text, json_dir):
         # print('%s' % (st))
     
     #return (all_statements)
-    #TODO: INDRA-Rules umwandeln zu boolschen Funktionen 
+
+
+
+    #TODO: INDRA-Rules umwandeln zu boolschen Funktionen
+    #sif.assembler.SifAssembler(all_statements)
+    BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
+    BN_file = os.path.join(BN_folder, f.filename)
+    sa = sif.SifAssembler(stmts=all_statements)
+    sa.make_model()
+    #sa.save_model(fname=BN_file + "_2")
+    sa.print_boolean_net(out_file=BN_file)
+    #sifstring = sa.print_model
+    #sa2 = sif.SifAssembler(all_statements).save_model(fname=BN_file + ".txt")
+    #print(sa2)
+    #str = sa.print_boolean_net(out_file=BN_file)
+    #sa.make_model
+    #print(sifstring)
 
 
     #TODO: Boolsche Funktionen als csv speichern

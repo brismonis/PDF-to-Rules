@@ -1,5 +1,6 @@
 # Create your views here to handle pages and include html files.
 import time
+from PyPDF2.generic import PdfObject
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.utils.functional import empty
@@ -7,6 +8,7 @@ from django.views import generic
 from django.views.generic import TemplateView
 from django.urls import reverse_lazy
 from pdf2image.pdf2image import convert_from_path
+from PyPDF2 import PdfFileReader, PdfFileWriter
 
 from pdftorules.settings import MEDIA_ROOT, MEDIA_URL # Import TemplateView
 from .forms import FilesForm
@@ -131,8 +133,6 @@ def save_changes(request, *args, **kwargs):
         foundFile = request.POST.get('fileId') #getting file id from button
         # print(foundFile)
         file = Files.objects.get(id=foundFile)
-        #if request.POST.get('sms'):
-        # do something with text area data since SMS was checked
         changedText = request.POST.get('my_textarea')
         #print(changedText)
         file.ocrtext = changedText
@@ -150,6 +150,29 @@ def save_changes(request, *args, **kwargs):
     #return render(request,'index.html')
     #return redirect('home')
 
+def split_PDF(pdf, fr, to):
+    fr = int(fr)
+    to = int(to)
+    pdf_input = PdfFileReader(pdf)
+    #pdf_output = PdfFileWriter()
+    page_count = pdf_input.getNumPages()
+    #print (page_count)
+    if (page_count >= fr or page_count >= to or fr < to):
+        #now split pdf by given range
+        pdf_output = PdfFileWriter # Example a PDF file writer
+        for i in range(fr, to):
+            print(i)
+            pdf_output.addPage(pdf_input.getPage(i)) 
+        with open(pdf, "wb") as outputStream:
+            pdf_output.write(outputStream)
+        outputStream.close()
+        return pdf_output
+    else:
+
+        return 0    
+
+
+
 # Method for uploading and saving file to DB, also passing object to template
 def uploadFile(request, *args, **kwargs):
     if request.method == 'POST':
@@ -162,9 +185,17 @@ def uploadFile(request, *args, **kwargs):
         literature = request.POST['literature']
         pubyear = request.POST['pubyear']
         note = request.POST['note']
+        from_page = request.POST.get('from')
+        to_page = request.POST.get('to')
 
         a = Files(filename=filename, pdf=pdf, user=request.user, authors=authors, literature=literature, pubyear=pubyear, note=note)
+        print(a.get_pdfpath)
         a.save()
+
+        #pdf_ranged = split_PDF(a.pdf, from_page, to_page)
+
+
+        
         # set_globvar(a.filename) # to find name of pdf again
         # set_newid(a.id) # to find id of pdf again
         # path = MEDIA_ROOT + "/pdfs/" + a.filename
@@ -172,8 +203,19 @@ def uploadFile(request, *args, **kwargs):
         # return HttpResponseRedirect(reverse_lazy('home', kwargs={'id': a.id}))
         return render(request, 'index.html', {
             'fileId': a, # passing ID to template to show and find file again
-            'form': form # for displaying form again
+            'form': form, # for displaying form again
+            'from_page': from_page,
+            'to_page': to_page,
         })
+
+        # TODO: split pdf
+        # pdfname = pdf
+        # print(pdf)
+        # pdf_ranged = split_PDF(pdf, from_page, to_page, pdfname)
+        # print (pdf_ranged)
+        # if (pdf_ranged == 0):
+        #     messages.warning(request, 'File not uploaded: Page Range was not valid, please check and try again!')
+        #     return redirect('home') # wird zurückgeleitet zu home
     else:
     	messages.warning(request, 'Files was not submitted successfully, try again!')
     	return redirect('home') # wird zurückgeleitet zu home
@@ -182,10 +224,12 @@ def uploadFile(request, *args, **kwargs):
 # This is a method to process the OCR-method before loading the ocr_view
 def processing_ocr(request, *args, **kwargs):
     foundFile = request.POST.get('fileId') #getting file id from button
+    from_page = from_page = request.POST.get('from')
+    to_page = request.POST.get('to')
     # print(foundFile)
     file = Files.objects.get(id=foundFile)
     #messages.info(request, 'Please wait for the OCR to finish!')
-    ocr_file(file)
+    ocr_file(file, from_page, to_page)
     if file.ocrtext is None:
         messages.warning(request, 'OCR was not successfull, try again!')
         return redirect('home')

@@ -26,14 +26,45 @@
             <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
             
-            <div class="form-group" id="upload-form">
+            <!-- <div class="form-group" id="upload-form">
                 <div class=text-muted>
                 {{ form }}
+                </div>
+            </div> -->
+            <!-- Test -->
+            <div class="form-group" id="upload-form">
+                <div class=text-muted>
+                <label for="id-filename">Filename:</label>
+                {{ form.filename  }}
+                <label for="id-pdf">PDF:</label>
+                {{ form.pdf  }} 
+                <!-- <label for="id-pdf">Pages:</label> -->
+                <!-- <div style="float: right; margin-right: 20%;">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-bottom: 10px;"> 
+                        
+                    <input type="radio" onchange="showrange()" class="btn-check btn-sm" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label style="width: 10vw;" class="btn btn-outline-secondary btn-sm" for="btnradio1">All Pages</label>
+                
+                    <input type="radio"  onchange="showrange()" class="btn-check btn-sm" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label style=" border-bottom-right-radius: 3px; border-top-right-radius: 3px; width: 10vw;" class="btn btn-outline-secondary btn-sm" for="btnradio2">Range</label> 
+                    <div id="range" class="not-visible"> from <input name="from" class="border" style="border-radius: 3px; border: none; max-width: 3vw;" type="number" id="from" min="1"> to <input name="to" class="border" type="number" id="to" min="1" style="border-radius: 3px; border: none; max-width: 3vw;"></div>
+                </div>
+                </div>
+                <br> -->
+                <label for="id-authors">Authors:</label>
+                {{ form.authors }}
+                <label for="id-lit">Type of Literature: </label>
+                {{ form.literature }}
+                <label for="id-pubyear">Publishing Year: </label>
+                {{ form.pubyear }}
+                <label for="id-note">Notes: </label>
+                {{ form.note }}
+
                 </div>
             </div>
             
             <div class="form-group">
-                <input id='submit-btn' class="btn btn-success " type="submit" value="Submit">
+                <input {% if fileId != None %} disabled{% endif %} id='submit-btn' class="btn btn-success " type="submit" value="Submit">
             </div>
             </form>
 
@@ -71,11 +102,25 @@
             <div class="card-body"> -->
                 <!-- List of uploaded files -->
                 
-                {% if fileId != None %}
-                
-                <a href="{% url 'delete' id=fileId.id%}">
-                <button type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></a> {{fileId.filename}}
 
+        <form action="{% url 'processingOcr' %}" method="POST">
+            {% csrf_token %}
+                {% if fileId != None %}
+                <div onchange="showrange()">
+                    <a href="{% url 'delete' id=fileId.id%}">
+                    <button type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></a> {{fileId.filename}}
+                    <div style="float: right; margin-right: 20%;">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-bottom: 10px;"> 
+                                
+                            <input type="radio" onchange="showrange()" class="btn-check btn-sm" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label style="width: 10vw;" class="btn btn-outline-secondary btn-sm" for="btnradio1">All Pages</label>
+                        
+                            <input type="radio"  onchange="showrange()" class="btn-check btn-sm" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label style=" border-bottom-right-radius: 3px; border-top-right-radius: 3px; width: 10vw;" class="btn btn-outline-secondary btn-sm" for="btnradio2">Range</label> 
+                            <div id="range" class="not-visible"> from <input name="from" class="border" style="border-radius: 3px; border: none; max-width: 3vw;" type="number" id="from" min="1"> to <input name="to" class="border" type="number" id="to" min="1" style="border-radius: 3px; border: none; max-width: 3vw;"></div>
+                        </div>
+                    </div>
+                </div>
                 {% else %}
                 <span class="text-muted">No file uploaded.</span>
                 {% endif %}
@@ -83,11 +128,11 @@
         </div> -->
         </div>
 
-        <form action="{% url 'processingOcr' %}" name="fileId" value="{{fileId}}" method="POST">
-            {% csrf_token %}
+        <!-- <form action="{% url 'processingOcr' %}" name="fileId" value="{{fileId}}" method="POST"></form>
+            {% csrf_token %} -->
             <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/>
 
-            <button id="spin_ocr" {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right; margin-bottom: 4vw;">Start OCR</button>
+            <button onclick="checkrange()" id="spin_ocr" {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right; margin-bottom: 4vw;">Start OCR</button>
                 <!-- nur zum testen -->
             <!-- <div class="spinner-border text-primary" role="status">
                 <span class="sr-only">Loading...</span>

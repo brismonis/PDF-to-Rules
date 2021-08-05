@@ -43,19 +43,28 @@ from pdf2image.exceptions import (
 #         os.remove(os.path.join(JPG_path, f))
 
 # more efficient method
-def ocr_file(f):
-    
+def ocr_file(f, fr, to):
+    fr = int(fr)
+    to = int(to)
     PDF_file = Files.get_filename(f)
     JPG_path = os.path.join(MEDIA_ROOT, 'jpgs') # path to jpgs Folder
     path_pdf = Files.get_pdfpath(f)
     PDF_folder = os.path.join(MEDIA_ROOT, 'pdfs') # path to pdfs Folder
     PDF_path = os.path.join(PDF_folder, path_pdf) # path to current object's PDF
     ocred_text = ''
+    jpg_paths = []
     # Store all the pages of the PDF in a variable
-    first_page = 0 #TODO: Bereichauswahl im Template
-    last_page = 0
+    
     try:
-        pages = convert_from_path(PDF_path, 500,fmt='jpg', output_file=PDF_file, output_folder=JPG_path)
+        if fr is not None and to is not None:
+            pages = convert_from_path(PDF_path, 500,fmt='jpg', output_file=PDF_file, output_folder=JPG_path, paths_only=True, first_page=fr, last_page=to)
+            # save paths of converted jpgs to jpg_paths
+            jpg_paths = pages
+            #print(jpg_paths)
+        else:
+            pages = convert_from_path(PDF_path, 500,fmt='jpg', output_file=PDF_file, output_folder=JPG_path, paths_only=True)
+            # save paths of converted jpgs to jpg_paths
+            jpg_paths = pages
     except PDFPageCountError:
         print("An invalid PDF file path or a malformed or invalid PDF.")
     except PDFInfoNotInstalledError:
@@ -63,36 +72,48 @@ def ocr_file(f):
     except PDFSyntaxError:
         print("Exception raised when convert_from_path or convert_from_bytes is called using strict=True and the input PDF contained a syntax error. Simply use strict=False will usually solve this issue.")
     
-
     image_counter = 1
     for page in pages:
         image_counter = image_counter + 1
+
     #print (image_counter)
     #file_limit = image_counter - 1
     #f = open(outfile, "a")
 
-    for i in range(1, image_counter):
-        filename = ""
-        if(image_counter-1 >= 10):
-            if(i < 10):
-                filename = PDF_file+"0001-0"+str(i)+".jpg"
-            else:
-                filename = PDF_file+"0001-"+str(i)+".jpg"
-        elif(image_counter-1 < 10):
-            filename = PDF_file+"0001-"+str(i)+".jpg"
-        filepath = os.path.join(JPG_path, filename)
-        #/Users/susannebair/WebDev/pdftorules/src/media/jpgs/gerctdfdg0001-1.jpg
-        text = str(((pytesseract.image_to_string(Image.open(filepath)))))
+    for jp in jpg_paths:
+        print(jp)
+        text = str(((pytesseract.image_to_string(Image.open(jp)))))
         text = text.replace('-\n', '')
-        #text = text.replace(r'\n+', '\n')
-        # word = re.sub(r'\n+', '\n', text).strip()
-        # print (word)
         ocred_text = ocred_text + text
         #f.write(text)
-        os.remove(os.path.join(JPG_path, filename))
+        os.remove(jp)
 
-    # for replacing multiple line breaks
+ # for replacing multiple line breaks
     word = re.sub(r'\n+', '\n', ocred_text).strip()
     
     f.ocrtext = word
     f.save()
+
+
+    # for i in range(1, image_counter):
+    #     filename = ""
+    #     if(image_counter-1 >= 10):
+    #         if(i < 10):
+    #             #filename = PDF_file+"-"+"0001-0"+str(i)+".jpg"
+    #             filename = PDF_file+"-"+"0001-"+r''+str(i)+".jpg"
+    #         else:
+    #             filename = PDF_file+"-"+"0001-"+str(i)+".jpg"
+    #     elif(image_counter-1 < 10):
+    #         filename = PDF_file+"-"+"0001-"+str(i)+".jpg"
+    #     filepath = os.path.join(JPG_path, filename)
+    #     #/Users/susannebair/WebDev/pdftorules/src/media/jpgs/gerctdfdg0001-1.jpg
+    #     text = str(((pytesseract.image_to_string(Image.open(filepath)))))
+    #     text = text.replace('-\n', '')
+    #     #text = text.replace(r'\n+', '\n')
+    #     # word = re.sub(r'\n+', '\n', text).strip()
+    #     # print (word)
+    #     ocred_text = ocred_text + text
+    #     #f.write(text)
+    #     os.remove(os.path.join(JPG_path, filename))
+
+   

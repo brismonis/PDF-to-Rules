@@ -1,0 +1,16 @@
+PI3K = False
+AKT = False
+mTORC2 = False
+TSC2 = False
+MTOR = False
+mTORC1 = False
+GTPase = False
+RAC = False
+RHO = False
+
+AKT* = PI3K or mTORC2
+MTOR* = not (TSC2)
+mTORC1* = not (TSC2)
+GTPase* = PI3K or mTORC2 or TSC2
+RAC* = PI3K or TSC2 or mTORC2
+RHO* = mTORC2 or PI3K

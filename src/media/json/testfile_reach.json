@@ -1,0 +1,2424 @@
+{
+  "events" : {
+    "frames" : [ {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-5-12",
+      "text" : "Akt is activated by PI3K",
+      "arguments" : [ {
+        "text" : "Akt",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-5-19"
+      }, {
+        "text" : "PI3K",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-5-20"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 504,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activated",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 480,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-5",
+      "found-by" : "Positive_activation_syntax_2_verb",
+      "verbose-text" : "Akt is activated by PI3K."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-6-5",
+      "text" : "mTORC2 can also activate Akt",
+      "arguments" : [ {
+        "text" : "Akt",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-6-22"
+      }, {
+        "text" : "mTORC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-6-21"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 534,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 506,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-6",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "mTORC2 can also activate Akt independently (to enable\r\nintracellular glucose metabolism)."
+    }, {
+      "text" : "Akt phosphorylates and inhibits TSC2",
+      "frame-id" : "evem-api1-UAZ-r1-Reach-7-1",
+      "arguments" : [ {
+        "text" : "phosphorylates and inhibits TSC2",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api1-UAZ-r1-Reach-7-2"
+      }, {
+        "text" : "Akt",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-7-2"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 633,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 597,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api1-UAZ-r1-Reach-7",
+      "verbose-text" : "Akt phosphorylates and inhibits TSC2 (Tuberous Sclerosis Factor 2), as does mTORC2."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-7-2",
+      "text" : "phosphorylates and inhibits TSC2",
+      "arguments" : [ {
+        "text" : "TSC2",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-7-1"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 633,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 601,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-7",
+      "found-by" : "Phosphorylation_syntax_1a_verb",
+      "verbose-text" : "Akt phosphorylates and inhibits TSC2 (Tuberous Sclerosis Factor 2), as does mTORC2."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-8-4",
+      "text" : "TSC2 inhibits mTORC1 (mammalian Target of Rapamycin",
+      "arguments" : [ {
+        "text" : "mammalian Target of Rapamycin",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-8-28"
+      }, {
+        "text" : "TSC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-8-26"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 733,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 682,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-8",
+      "found-by" : "Negative_activation_syntax_1_verb",
+      "verbose-text" : "TSC2 inhibits mTORC1 (mammalian Target of Rapamycin complex 1)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-8-3",
+      "text" : "TSC2 inhibits mTORC1",
+      "arguments" : [ {
+        "text" : "mTORC1",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-8-27"
+      }, {
+        "text" : "TSC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-8-26"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 702,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 682,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-8",
+      "found-by" : "Negative_activation_syntax_1_verb",
+      "verbose-text" : "TSC2 inhibits mTORC1 (mammalian Target of Rapamycin complex 1)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-10",
+      "text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase",
+      "arguments" : [ {
+        "text" : "GTPase",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-41"
+      }, {
+        "text" : "PI3K",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-37"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1185,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1123,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-8",
+      "text" : "mTORC2 and TSC2 are able to activate Rac (a small GTPase",
+      "arguments" : [ {
+        "text" : "GTPase",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-41"
+      }, {
+        "text" : "mTORC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-38"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1185,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1129,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-9",
+      "text" : "TSC2 are able to activate Rac (a small GTPase",
+      "arguments" : [ {
+        "text" : "GTPase",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-41"
+      }, {
+        "text" : "TSC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-39"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1185,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1140,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-11",
+      "text" : "PI3K, mTORC2 and TSC2 are able to activate Rac",
+      "arguments" : [ {
+        "text" : "Rac",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-40"
+      }, {
+        "text" : "PI3K",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-37"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1169,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1123,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-6",
+      "text" : "TSC2 are able to activate Rac",
+      "arguments" : [ {
+        "text" : "Rac",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-40"
+      }, {
+        "text" : "TSC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-39"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1169,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1140,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-15-7",
+      "text" : "mTORC2 and TSC2 are able to activate Rac",
+      "arguments" : [ {
+        "text" : "Rac",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-40"
+      }, {
+        "text" : "mTORC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-15-38"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1169,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1129,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-18-13",
+      "text" : "mTORC2 are able to activate Rho (a small GTPase",
+      "arguments" : [ {
+        "text" : "GTPase",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-48"
+      }, {
+        "text" : "mTORC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-46"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1418,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1371,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K and mTORC2 are able to activate Rho (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-18-15",
+      "text" : "mTORC2 are able to activate Rho",
+      "arguments" : [ {
+        "text" : "Rho",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-47"
+      }, {
+        "text" : "mTORC2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-46"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1402,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1371,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K and mTORC2 are able to activate Rho (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-18-16",
+      "text" : "PI3K and mTORC2 are able to activate Rho (a small GTPase",
+      "arguments" : [ {
+        "text" : "GTPase",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-48"
+      }, {
+        "text" : "PI3K",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-45"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1418,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1362,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K and mTORC2 are able to activate Rho (a small GTPase)."
+    }, {
+      "frame-id" : "evem-api1-UAZ-r1-Reach-18-14",
+      "text" : "PI3K and mTORC2 are able to activate Rho",
+      "arguments" : [ {
+        "text" : "Rho",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-47"
+      }, {
+        "text" : "PI3K",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api1-UAZ-r1-Reach-18-45"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1402,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activate",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1362,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "PI3K and mTORC2 are able to activate Rho (a small GTPase)."
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-05T12:46:17Z",
+      "doc-id" : "api1",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-05T12:45:43Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "entities" : {
+    "frames" : [ {
+      "text" : "IGF",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-0-3",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 3,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "atlantic hagfish",
+        "object-type" : "db-reference",
+        "id" : "P22618"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "myxine glutinosa",
+        "object-type" : "db-reference",
+        "id" : "P22618"
+      } ]
+    }, {
+      "text" : "insulin receptor substrate",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-8",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 166,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "IRS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 140,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "IRS"
+      } ]
+    }, {
+      "text" : "cell membrane",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-6",
+      "type" : "cellular-component",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 109,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "object-type" : "db-reference",
+        "id" : "SL-0039"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 96,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "object-type" : "db-reference",
+        "id" : "SL-0039"
+      } ]
+    }, {
+      "text" : "Grb",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-9",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 176,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P10144"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 173,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P10144"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P10144"
+      } ]
+    }, {
+      "text" : "IRS",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-7",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 138,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "IRS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 135,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1"
+    }, {
+      "text" : "IGF",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-4",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 50,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 47,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P05019"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "atlantic hagfish",
+        "object-type" : "db-reference",
+        "id" : "P22618"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "myxine glutinosa",
+        "object-type" : "db-reference",
+        "id" : "P22618"
+      } ]
+    }, {
+      "text" : "SOS",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-10",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 184,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "SOS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 181,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1"
+    }, {
+      "text" : "tyrosine",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-1-5",
+      "type" : "site",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 72,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "UAZ-S-019"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 64,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uaz",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "UAZ-S-019"
+      } ]
+    }, {
+      "text" : "IRS",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-2-11",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 274,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "IRS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 271,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-2"
+    }, {
+      "text" : "Phosphoinositide",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-3-14",
+      "type" : "simple-chemical",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 341,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "chebi",
+        "object-type" : "db-reference",
+        "id" : "CHEBI:18179"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 325,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-3"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-3-13",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 323,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 319,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "IRS",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-3-12",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 280,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "IRS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 277,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-3"
+    }, {
+      "text" : "ROCK",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-4-17",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 429,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "ROCK"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 425,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-4"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-4-16",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 415,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 411,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-4",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "Rho",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-4-15",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 373,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RHO"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 370,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-4"
+    }, {
+      "text" : "PTEN",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-4-18",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 439,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P60484"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 435,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-4"
+    }, {
+      "text" : "Akt",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-5-19",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 483,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 480,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-5",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ]
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-5-20",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 504,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 500,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-5",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "glucose metabolism",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-6-23",
+      "type" : "bioprocess",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 593,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "go",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "GO:0006006"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 575,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "go",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "GO:0006006"
+      } ]
+    }, {
+      "text" : "Akt",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-6-22",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 534,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 531,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ]
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-6-21",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 512,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 506,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "Tuberous Sclerosis",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-7-24",
+      "type" : "disease",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 653,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "mesh",
+        "object-type" : "db-reference",
+        "id" : "D014402"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 635,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "mesh",
+        "object-type" : "db-reference",
+        "id" : "D014402"
+      } ]
+    }, {
+      "text" : "Akt",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-7-2",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 600,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 597,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ]
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-7-25",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 679,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 673,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "TSC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-7-1",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 633,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P49815"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 629,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-7"
+    }, {
+      "text" : "mammalian Target of Rapamycin",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-8-28",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 733,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P42345"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 704,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-8",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P42345"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P42345"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q9JLN9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q9JLN9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P42346"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P42346"
+      } ]
+    }, {
+      "text" : "TSC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-8-26",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 686,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P49815"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 682,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-8"
+    }, {
+      "text" : "mTORC1",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-8-27",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 702,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 696,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-8",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ]
+    }, {
+      "text" : "mTORC1",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-9-30",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 770,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 764,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-9",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ]
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-9-29",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 749,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 746,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-9"
+    }, {
+      "text" : "mTORC1",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-10-31",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 837,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 831,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-10",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC1"
+      } ]
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-11-35",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 922,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 916,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-11",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-11-33",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 891,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 888,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-11"
+    }, {
+      "text" : "TSC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-11-34",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 900,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P49815"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 896,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-11"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-11-32",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 863,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 859,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-11",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-14-36",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1096,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1090,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-14",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-15-38",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1135,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1129,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "GTPase",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-15-41",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1185,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "GTPase"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1179,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-15-37",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1127,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1123,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-15-40",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1169,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1166,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15"
+    }, {
+      "text" : "TSC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-15-39",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1144,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P49815"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1140,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-15"
+    }, {
+      "text" : "Rho",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-16-42",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1191,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RHO"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1188,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-16"
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-16-43",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1199,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1196,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-16"
+    }, {
+      "text" : "Rho",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-17-44",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1302,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RHO"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1299,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-17"
+    }, {
+      "text" : "Rho",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-18-47",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1402,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RHO"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1399,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-18-45",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1366,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1362,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "GTPase",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-18-48",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1418,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "GTPase"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1412,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18"
+    }, {
+      "text" : "mTORC2",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-18-46",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1377,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1371,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-18",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "mTORC2"
+      } ]
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-19-50",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1432,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1429,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-19"
+    }, {
+      "text" : "Rho",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-19-49",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1424,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RHO"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1421,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-19"
+    }, {
+      "text" : "Rac",
+      "frame-id" : "ment-api1-UAZ-r1-Reach-20-51",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1536,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1533,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api1-UAZ-r1-Reach-20"
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-05T12:46:17Z",
+      "doc-id" : "api1",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-05T12:45:43Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "sentences" : {
+    "frames" : [ {
+      "text" : "IGF is considered as an input of the network.\r IGF binds to its tyrosine kinase receptor on the cell membrane, the receptor sequesters IRS (insulin receptor substrate — via Grb and SOS, which are not included\r in the model). There is a negative feedback loop from S6K to IRS.\r IRS interacts with a regulatory domain of PI3K (Phosphoinositide 3 Kinase) and activates it. Rho forms an inhibitory feedback loop on PI3K (through ROCK and\r PTEN, which are not included in the model).\r Akt is activated by PI3K. mTORC2 can also activate Akt independently (to enable\r intracellular glucose metabolism).\r Akt phosphorylates and inhibits TSC2 (Tuberous Sclerosis Factor 2), as does mTORC2.\r TSC2 inhibits mTORC1 (mammalian Target of Rapamycin complex 1). Rac is needed for mTORC1 activation.\r S6K is one of the substrates of (activated by) mTORC1.\r Phosphorylation by PI3K as well as contact with Rac and TSC2 are needed for mTORC2 activation.\r It is unknown if all or just some factors are needed for activation. We therefore assume that the majority of these factors must be present. S6K inhibits mTORC2 through phosphorylation.\r PI3K, mTORC2 and TSC2 are able to activate Rac (a small GTPase). Rho and Rac inhibit each other and cannot exist in the same compartment at the same time. We therefore require Rho to beabsent in the majority of the last three time steps.\r PI3K and mTORC2 are able to activate Rho (a small GTPase). Rho and Rac inhibit each other and\r cannot exist in the same compartment at the same time. We therefore require Rac to be absent in the\r majority of the last three time steps.",
+      "frame-id" : "pass-api1-UAZ-r1-Reach",
+      "section-id" : "NoSection",
+      "frame-type" : "passage",
+      "is-title" : false,
+      "section-name" : "NoSection",
+      "object-type" : "frame",
+      "index" : "Reach",
+      "object-meta" : {
+        "component" : "nxml2fries",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "IGF is considered as an input of the network .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-0",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 45,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "IGF binds to its tyrosine kinase receptor on the cell membrane , the receptor sequesters IRS ( insulin receptor substrate — via Grb and SOS , which are not included  in the model ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-1",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 224,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 47,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "There is a negative feedback loop from S6K to IRS .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-2",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 275,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 225,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "IRS interacts with a regulatory domain of PI3K ( Phosphoinositide 3 Kinase ) and activates it .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-3",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 369,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 277,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Rho forms an inhibitory feedback loop on PI3K ( through ROCK and  PTEN , which are not included in the model ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-4",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 478,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 370,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Akt is activated by PI3K .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-5",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 505,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 480,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "mTORC2 can also activate Akt independently ( to enable  intracellular glucose metabolism ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-6",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 595,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 506,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Akt phosphorylates and inhibits TSC2 ( Tuberous Sclerosis Factor 2 ) , as does mTORC2 .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-7",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 680,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 597,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "TSC2 inhibits mTORC1 ( mammalian Target of Rapamycin complex 1 ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-8",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 745,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 682,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Rac is needed for mTORC1 activation .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-9",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 782,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 746,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "S6K is one of the substrates of ( activated by ) mTORC1 .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-10",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 838,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 784,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Phosphorylation by PI3K as well as contact with Rac and TSC2 are needed for mTORC2 activation .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-11",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 934,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 840,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "It is unknown if all or just some factors are needed for activation .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-12",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1004,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 936,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "We therefore assume that the majority of these factors must be present .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-13",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1076,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1005,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "S6K inhibits mTORC2 through phosphorylation .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-14",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1121,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1077,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PI3K , mTORC2 and TSC2 are able to activate Rac ( a small GTPase ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-15",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1187,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1123,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Rho and Rac inhibit each other and cannot exist in the same compartment at the same time .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-16",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1277,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1188,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "We therefore require Rho to beabsent in the majority of the last three time steps .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-17",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1360,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1278,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PI3K and mTORC2 are able to activate Rho ( a small GTPase ) .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-18",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1420,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1362,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Rho and Rac inhibit each other and  cannot exist in the same compartment at the same time .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-19",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1511,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1421,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "We therefore require Rac to be absent in the  majority of the last three time steps .",
+      "frame-id" : "sent-api1-UAZ-r1-Reach-20",
+      "passage" : "pass-api1-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1596,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api1-UAZ-r1-Reach",
+        "offset" : 1512,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-05T12:46:17Z",
+      "doc-id" : "api1",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-05T12:45:43Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  }
+}

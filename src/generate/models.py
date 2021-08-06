@@ -17,6 +17,7 @@ class Files(models.Model):
     note = models.CharField(blank=True, null=True, max_length=500)
     pdf = models.FileField(upload_to='pdfs/', validators=[FileExtensionValidator( ['pdf'] ) ])
     ocrtext = models.TextField(blank=True, null=True) # TextField is for larger strings
+    stm = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)
 
     def get_filename(self):

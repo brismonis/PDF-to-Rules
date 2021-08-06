@@ -44,8 +44,7 @@ from pdf2image.exceptions import (
 
 # more efficient method
 def ocr_file(f, fr, to):
-    fr = int(fr)
-    to = int(to)
+    print (fr)
     PDF_file = Files.get_filename(f)
     JPG_path = os.path.join(MEDIA_ROOT, 'jpgs') # path to jpgs Folder
     path_pdf = Files.get_pdfpath(f)
@@ -57,6 +56,8 @@ def ocr_file(f, fr, to):
     
     try:
         if fr is not None and to is not None:
+            fr = int(fr)
+            to = int(to)
             pages = convert_from_path(PDF_path, 500,fmt='jpg', output_file=PDF_file, output_folder=JPG_path, paths_only=True, first_page=fr, last_page=to)
             # save paths of converted jpgs to jpg_paths
             jpg_paths = pages
@@ -81,9 +82,9 @@ def ocr_file(f, fr, to):
     #f = open(outfile, "a")
 
     for jp in jpg_paths:
-        print(jp)
+        #print(jp)
         text = str(((pytesseract.image_to_string(Image.open(jp)))))
-        text = text.replace('-\n', '')
+        text = text.replace("-\n", '')
         ocred_text = ocred_text + text
         #f.write(text)
         os.remove(jp)

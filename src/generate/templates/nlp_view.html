@@ -3,11 +3,11 @@
 {% block pagecontent %}
 <main>
     <div class="container-fluid px-4 pt-1"> <!-- Content Container -->
-        <h2 class="mt-4">NLP with INDRA</h2>
+        <h2 class="mt-4">NLP with INDRA (REACH Reading System)</h2>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" ><a href="{% url 'home' %}">Upload File</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#">OCR</a></li>
+                <li class="breadcrumb-item active" aria-current="page">OCR</li>
                 <li class="breadcrumb-item active" aria-current="page">NLP</li>
             </ol>
         </nav>
@@ -20,9 +20,22 @@
             {% endfor %}     
         {% endif %}
 
-        <div class="container pt-3 my-3 border bg-light">    
-            <p>{{foundFile.rules}}</p>
+        <div class="container pt-3 my-3 border bg-light"> 
+            <p>Following rules were found in File "{{foundFile.filename}}" in {{duration}}.</p>
         </div>
+
+        <!-- <form action="{% url 'save_nlp' %}" method="POST">  TODO SAVE -->
+            <!-- {% for f in foundFile.rules %} 
+            {{f}}<br>
+            {% endfor %} -->
+            <textarea name="rules_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">BOOLEAN FUNCTIONS:
+{{foundFile.rules}}
+INDRA STATEMENTS:
+{% for f in foundFile.stm %}{{f}}
+{% endfor %}
+            </textarea>
+
+        <!-- </form> -->
 
         
 
@@ -32,7 +45,7 @@
             <!-- <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/> -->
 
             <button
-             type="submit" class="btn btn-primary btn-lg" style="float: right;">Upload new File</button>
+             type="submit" class="btn btn-primary btn-lg" style="float: right; margin-bottom: 4vw;">Upload new File</button>
             
         </form>
 

@@ -1,5 +1,5 @@
 # Create your views here to handle pages and include html files.
-import time
+import time, datetime
 from PyPDF2.generic import PdfObject
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -226,6 +226,10 @@ def processing_ocr(request, *args, **kwargs):
     foundFile = request.POST.get('fileId') #getting file id from button
     from_page = from_page = request.POST.get('from')
     to_page = request.POST.get('to')
+    if(from_page == '' or to_page == ''):
+        from_page = None
+        to_page = None
+
     # print(foundFile)
     file = Files.objects.get(id=foundFile)
     #messages.info(request, 'Please wait for the OCR to finish!')
@@ -247,6 +251,11 @@ def processing_nlp(request, *args, **kwargs):
     start_time = time.time()
     nlp_file(file)
     duration = time.time() - start_time
+    # duration = duration / 60
+    # minutes = round(duration, 2)
+    ty_res = time.gmtime(duration)
+    minutes = time.strftime("%M minutes and %S seconds",ty_res)
+    #minutes = str(datetime.timedelta(seconds=duration))
     print(duration)
     if file.rules is None:
         messages.warning(request, 'No Rules found!')
@@ -254,6 +263,7 @@ def processing_nlp(request, *args, **kwargs):
     else:
         context = {
                 "foundFile":file,
+                "duration": minutes
                 #"updatedFile":updatedFile,
             }
         return render(request, "nlp_view.html", context)

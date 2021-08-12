@@ -5,6 +5,11 @@ const table_selectAll = document.getElementById("table_selectAll")
 $(document).ready(function() {
     //var table = $('#datatablesSimple').DataTable();
     table = $('#datatablesSimple').DataTable( {
+        dom: 'Bfrtip',
+        stateSave: true,
+        buttons: [
+            'colvis'
+        ]
         // columnDefs: [ {
         //     orderable: false,
         //     className: 'select-checkbox',

@@ -15,7 +15,6 @@ PRKD1 = False
 PAK4
 RAC1
 PAK4 = False
-CFL1 = False
 RAC1 = False
 PAK1 RAC1 PAK1 = False
 PAK4 RAC1 PAK4 = False

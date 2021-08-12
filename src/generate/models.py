@@ -18,6 +18,7 @@ class Files(models.Model):
     pdf = models.FileField(upload_to='pdfs/', validators=[FileExtensionValidator( ['pdf'] ) ])
     ocrtext = models.TextField(blank=True, null=True) # TextField is for larger strings
     stm = models.TextField(blank=True, null=True)
+    evidence = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)
 
     def get_filename(self):
@@ -43,6 +44,13 @@ class Files(models.Model):
         path_pdf = Files.get_pdfpath(self)
         PDF_folder = os.path.join(MEDIA_ROOT, 'pdfs') # path to pdfs Folder
         PDF_path = os.path.join(PDF_folder, path_pdf) # path to current object's PDF
+        BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
+        JSON_folder = os.path.join(MEDIA_ROOT, 'json') # path to json Folder
+        fname = Files.get_filename(self)
+        JSON_file = os.path.join(JSON_folder, fname + '_reach.json')
+        BN_file = os.path.join(BN_folder, fname + "_boolnet")
         if os.path.exists(PDF_path):
             os.remove(PDF_path)
+            os.remove(BN_file)
+            os.remove(JSON_file)
         super().delete(*args, **kwargs)

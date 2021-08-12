@@ -29,11 +29,16 @@ def nlp_file(f):
     #trips_processor = trips.process_text(ocrtext) 
     reach_processor = reach.process_text(text=ocrtext, output_fname=JSON_file, url=reach.local_text_url)
     duration = time.time() - start_time
-    print(duration)
+    #print(duration)
     #all_statements = trips_processor.statements
     all_statements = reach_processor.statements
+    all_evidence = []
     for ev in all_statements:
-        print('%s with evidence "%s"' % (ev, ev.evidence[0].text))
+        #print('%s with evidence "%s"' % (ev, ev.evidence[0].text))
+        all_evidence.append(ev.evidence[0].text)
+
+    f.stm = all_statements
+    f.evidence = all_evidence
 
     # # OLD
     # max_index = 5000
@@ -76,7 +81,7 @@ def nlp_file(f):
     #     all_statements = all_statements + reach_processor2.statements
     #     #print(all_statements)
     
-    f.stm = all_statements
+    #f.stm = all_statements
     #f.save()
 
 # def process_reach(text, json_dir):
@@ -105,23 +110,29 @@ def nlp_file(f):
 
 
 
-    #TODO: INDRA-Rules umwandeln zu boolschen Funktionen
-    #sif.assembler.SifAssembler(all_statements)
+    #INDRA-Rules umwandeln zu boolschen Funktionen
     BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
     BN_file = os.path.join(BN_folder, f.filename)
     sa = sif.SifAssembler(stmts=all_statements)
-    sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=True)
-    sa.save_model(fname=BN_file + "_sifstring")
-    sa.print_boolean_net(out_file=BN_file + "_boolean")
+    sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=False)
+    #sa.save_model(fname=BN_file + "_sifstring")
+    sa.print_boolean_net(out_file=BN_file + "_boolnet")
     #bf = ''
-    readfile = open(BN_file + "_boolean", "r")
+    #Zeichen ersetzen, Ausgabe anpassen
+    readfile = open(BN_file + "_boolnet", "r")
     bf = readfile.read()
-    test = bf.replace(" not ", " ¬ ")
-    test = test.replace(" or ", " v ")
-    test = test.replace(" and ", " ∧ ")
-    print(test)
+    x = bf.split("\n\n")
+    print(x[1])
+    boolnet = x[1].replace(" not ", " ¬ ")
+    boonet = boolnet.replace("*", "")
+    boolnet = boolnet.replace(" or ", " v ")
+    boolnet = boolnet.replace(" and ", " ∧ ")
+    
+    #print(boolnet)
+
+
     readfile.close()
-    f.rules = test
+    f.rules = boolnet
     f.save
 
 

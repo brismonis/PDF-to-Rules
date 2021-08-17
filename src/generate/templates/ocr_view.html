@@ -23,14 +23,20 @@
 
         <!-- CONTAINER -->
         <!-- <div class="container pt-3 my-3 border bg-dark text-white">  -->
-        <div class="container-fluid pt-3 my-3 border bg-light"> 
+        <!-- <div class="container-fluid pt-3 my-3 border bg-light"> 
             <p>Following text was extracted by the OCR for File "{{foundFile.filename}}". Please check for correctness. You can edit the text directly, don't forget to "Save Changes".</p>
+        </div> -->
+
+        <div class="card mb-4 bg-light">
+            <div class="card-body">
+                Following text was extracted by the OCR for File "{{foundFile.filename}}". Please check for correctness. You can edit the text directly, don't forget to "Save Changes".
+            </div>
         </div>
 
 
         <form action="{% url 'save' %}" method="POST">
             {% csrf_token %}
-            <textarea name="my_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">{{foundFile.ocrtext}}</textarea>
+            <textarea id="my_textarea" name="my_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">{{foundFile.ocrtext}}</textarea>
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
             <button type="submit" class="btn btn-primary btn-lg" style="float: left; margin-bottom: 4vw;">Save Changes</button>
 
@@ -58,10 +64,21 @@
             {% csrf_token %}
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
 
-            <button id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right;">Start NLP</button>
+            <button id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
             <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
 
         </form>
+        
+        <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script> 
+        <!-- {% csrf_token %} -->
+        <button id="ocr_download" type="submit" class="btn btn-primary btn-lg" style="float: left;">Download OCR Result</button>
+        <button id="testen" value="{{foundFile.ocrtext}}" download="{{foundFile.filename}}" type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;">Testen</button>
+        <!-- UNTERES KLAPPT IN FIREFOX ABER NICHT SAFARI -->
+        <button id="testen2"  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">not in safari</a></button> 
+
+
+
+
     </div>
 </main>
 

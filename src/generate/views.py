@@ -1,12 +1,13 @@
 # Create your views here to handle pages and include html files.
-import time, datetime
+import time, datetime, csv
 from PyPDF2.generic import PdfObject
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.utils.functional import empty
 from django.views import generic
 from django.views.generic import TemplateView
 from django.urls import reverse_lazy
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from pdf2image.pdf2image import convert_from_path
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
@@ -292,3 +293,36 @@ def processing_nlp(request, *args, **kwargs):
 #             'fileId': fid # passing ID to template to show and find file again
 #         })
 #         #return redirect('ocr_view')
+
+
+def download_ocr(request, id):
+   # some code
+   if request.method == "POST":
+        if request.POST['request_name'] == 'download_ocr':
+            file_data = "some text"
+            response = HttpResponse(content_type='text/plain; charset=utf-8')
+            response['Content-Disposition'] = 'attachment; filename="output.txt"'
+            return response
+   
+# def download(request, id):
+#     object = Files.objects.get(id=id)
+#     #file_path = os.path.join(settings.MEDIA_ROOT, path)
+#     if os.path.exists(file_path):
+#         with open(file_path, 'rb') as fh:
+#             response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+#             response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
+#             return response
+#     raise Http404
+
+def download_csv(request):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(
+        content_type='text/csv',
+        headers={'Content-Disposition': 'attachment; filename="somefilename.csv"'},
+    )
+
+    writer = csv.writer(response)
+    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
+    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
+
+    return response

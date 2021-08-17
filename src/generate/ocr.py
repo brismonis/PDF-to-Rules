@@ -4,7 +4,7 @@ import pytesseract
 
 from pdftorules.settings import MEDIA_ROOT
 # Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
-from .models import Files
+from .models import Files, Setting
 from pdf2image import convert_from_path
 from PIL import Image
 #Exception Handling
@@ -52,6 +52,11 @@ def ocr_file(f, fr, to):
     PDF_path = os.path.join(PDF_folder, path_pdf) # path to current object's PDF
     ocred_text = ''
     jpg_paths = []
+
+    #TODO: Pass Language selection
+    #language = Setting.get_language(0)
+    language = "eng"
+    conf = r'--oem 3 --psm 1'
     # Store all the pages of the PDF in a variable
     
     try:
@@ -83,7 +88,8 @@ def ocr_file(f, fr, to):
 
     for jp in jpg_paths:
         #print(jp)
-        text = str(((pytesseract.image_to_string(Image.open(jp)))))
+        text = str(((pytesseract.image_to_string(Image.open(jp), lang=language, config=conf))))
+        # to remove hyphenation by hyphen
         text = text.replace("-\n", '')
         ocred_text = ocred_text + text
         #f.write(text)

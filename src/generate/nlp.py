@@ -1,5 +1,5 @@
 # In this class we use INDRA to read Statements from text
-import os, json, time, threading, requests
+import os, json, time, threading, requests, re
 from pdftorules.settings import MEDIA_ROOT
 import concurrent.futures
 
@@ -114,25 +114,42 @@ def nlp_file(f):
     BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
     BN_file = os.path.join(BN_folder, f.filename)
     sa = sif.SifAssembler(stmts=all_statements)
-    sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=False)
-    #sa.save_model(fname=BN_file + "_sifstring")
+    sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=True)
+    sa.save_model(fname=BN_file + "_sifstring")
     sa.print_boolean_net(out_file=BN_file + "_boolnet")
     #bf = ''
     #Zeichen ersetzen, Ausgabe anpassen
     readfile = open(BN_file + "_boolnet", "r")
     bf = readfile.read()
     x = bf.split("\n\n")
-    print(x[1])
-    boolnet = x[1].replace(" not ", " ¬ ")
-    boonet = boolnet.replace("*", "")
-    boolnet = boolnet.replace(" or ", " v ")
-    boolnet = boolnet.replace(" and ", " ∧ ")
+    #print(x[1])
+    bool_list = x[1].split("\n")
+    # boolnet = y.replace(" not ", " ¬ ")
+    # boolnet = boolnet.replace("*", "")
+    # boolnet = boolnet.replace(" or ", " v ")
+    # boolnet = boolnet.replace(" and ", " ∧ ")
+    # lines = boolnet.readlines() str' object has no attribute 'readlines'
+    # print(lines)
+    for bf in range(0, len(bool_list)-1):
+        
+        nb = bool_list[bf].replace(" not ", " ¬ ")
+        nb = nb.replace("*", "")
+        nb = nb.replace(" or ", " v ")
+        nb = nb.replace(" and ", " ∧ ")
+        #words = bf.split()
+        # removes repeating words by using regex
+        nb = re.sub(r'\b(.+)\s+\1\b', r'\1', nb)
+        bool_list[bf] = nb
+        #print(bf)
+        
+        #print (" ".join(sorted(set(words), key=words.index)))
+        #print(bf)
     
     #print(boolnet)
-
-
+    print("----------------------------")
+    print(bool_list)
     readfile.close()
-    f.rules = boolnet
+    f.rules = bool_list
     f.save
 
 

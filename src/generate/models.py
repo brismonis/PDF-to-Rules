@@ -5,6 +5,11 @@ from .validators import validate_file_extension
 from django.core.validators import FileExtensionValidator
 from pdftorules.settings import MEDIA_ROOT
 
+class Setting(models.Model):
+    default_language = models.CharField(max_length=20, default="eng")
+
+    def get_language(self):
+        return self.default_language
 
 
 class Files(models.Model):

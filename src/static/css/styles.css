@@ -11299,6 +11299,44 @@ table.DataTable tr th.select-checkbox.selected::after {
   text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
 }
 
+.nlp td, tr, th {
+  border: 1px solid black;
+  text-align: center;
+  /* width: 100%; */
+  /* column-width: 100%; */
+}
+.nlp table {
+  border-collapse: collapse;
+  /* align-items: center;
+  align-content: center; */
+  /* width: 100%; */
+}
+ .nlp td, th {
+  /* min-width: 30%; */
+  /* height: 21px; */
+}
+.nlp span {
+  width: 100%;
+  display: block;
+} 
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px 5px;
+  /* unten mehr hinzufügen ohne komma um mehr Spalten zu bekommen */
+  grid-template-columns: auto; 
+  /* background-color: #2196F3; */
+  padding: 10px;
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 10px; */
+  text-align: center;
+}
+
 /* for table buttons */
 /* div.dt-buttons{
   position:relative;

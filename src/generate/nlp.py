@@ -130,8 +130,10 @@ def nlp_file(f):
     # boolnet = boolnet.replace(" and ", " ∧ ")
     # lines = boolnet.readlines() str' object has no attribute 'readlines'
     # print(lines)
-    for bf in range(0, len(bool_list)-1):
-        
+    print("----------------------------")
+    rangel = len(bool_list) - 1
+    print(rangel)
+    for bf in range(0, rangel):
         nb = bool_list[bf].replace(" not ", " ¬ ")
         nb = nb.replace("*", "")
         nb = nb.replace(" or ", " v ")
@@ -139,6 +141,8 @@ def nlp_file(f):
         #words = bf.split()
         # removes repeating words by using regex
         nb = re.sub(r'\b(.+)\s+\1\b', r'\1', nb)
+        print(nb)
+        #print (len(nb))
         bool_list[bf] = nb
         #print(bf)
         
@@ -150,7 +154,7 @@ def nlp_file(f):
     print(bool_list)
     readfile.close()
     f.rules = bool_list
-    f.save
+    f.save()
 
 
 

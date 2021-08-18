@@ -26,7 +26,7 @@
 
         <div class="card mb-4 bg-light">
             <div class="card-body">
-                Following rules were found in File "{{foundFile.filename}}" in {{duration}}.
+                Following rules were found in File "{{foundFile.filename}}" in {{duration}}. They can be edited directly, do not forget to "Save Changes".
             </div>
         </div>
 
@@ -36,58 +36,68 @@
             {% endfor %} -->
 
         <!-- </form> -->
-        <table id="nlp-table" class="table table-striped table-bordered table-hover">
-            <tbody >
-                <tr >
-                    <th></th>
-                    <th>Index</th>
-                    <th>Rules</th>
-                    <th>Evidence</th>
-                    <th>Post processed</th>
-                </tr>
-                {% if foundFile %}
-                    {% for rule in foundFile.rules %}
-                        <tr>
-                            <td><button onclick="deleteRow(parentNode.parentNode.rowIndex)" type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></td>
-                            <td style="width: 30px;">{{ forloop.counter }}</td>
-                            <td><span><textarea name="{{forloop.counter}}" id="" style="font-family: Arial;font-size: 12pt; width: 100%; border: none; height: 30px; text-align: center; background: none;">{{ rule }}</textarea> </span></td>
-                            <td> Evidence </td>
-                            <td> <div>
-                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="">
-                              </div> </td>
-                            <!-- <td> <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">View PDF</a></td> -->
-                        </tr> 
-                    {% endfor %}
-                {% endif %}
-                
-                <!-- <tr>
-                    <th>{{ forloop.counter }}</th>
-                    <td><span id="A1" contenteditable>#####</span></td>
-                    <td><span id="B1" contenteditable></span></td>
-                    <td><span id="C1" contenteditable></span></td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td><span id="A2" contenteditable></span></td>
-                    <td><span id="B2" contenteditable></span></td>
-                    <td><span id="C2" contenteditable></span></td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td><span id="A3" contenteditable></span></td>
-                    <td><span id="B3" contenteditable></span></td>
-                    <td><span id="C3" contenteditable></span></td>
-                </tr> -->
+        <form action="{% url 'save_nlp' %}" method="POST" name="fileId" value="{{fileId}}">
+        {% csrf_token %}
+        
+            <table id="nlp-table" class="table table-striped table-bordered table-hover">
+                <tbody name="tbody">
+                    <tr >
+                        <th></th>
+                        <th>Nr.</th>
+                        <th>Rule</th>
+                        <th>Evidence</th>
+                        <th>Post processed</th>
+                    </tr>
+                    {% if foundFile != None %}
+                        {% for rule in foundFile.rules %}
+                            <tr>
+                                <td><button onclick="deleteRow(parentNode.parentNode.rowIndex)" type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></td>
+                                <td style="width: 20px;">{{ forloop.counter }}</td>
+                                <td><textarea name="value" id="value" style="font-family: Arial;font-size: 12pt; width: 100%; border: none; height: 30px; text-align: center; background: none;">{{ rule }}</textarea></td>
+                                <td> Evidence </td>
+                                <td> <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="">
+                                </div> </td>
+                                <!-- <td> <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">View PDF</a></td> -->
+                            </tr> 
+                        
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <!-- <tr>
+                        <th>{{ forloop.counter }}</th>
+                        <td><span id="A1" contenteditable>#####</span></td>
+                        <td><span id="B1" contenteditable></span></td>
+                        <td><span id="C1" contenteditable></span></td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td><span id="A2" contenteditable></span></td>
+                        <td><span id="B2" contenteditable></span></td>
+                        <td><span id="C2" contenteditable></span></td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td><span id="A3" contenteditable></span></td>
+                        <td><span id="B3" contenteditable></span></td>
+                        <td><span id="C3" contenteditable></span></td>
+                    </tr> -->
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-        <div class="wrapper" style="text-align: center;margin-bottom: 30px;"><button onclick="addRow()" style="position: absolute; " type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-plus"></i></button></div>
+            <div class="wrapper" style="text-align: center;margin-bottom: 30px;"><button onclick="addRow()" style="position: absolute; " type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-plus"></i></button></div>
 
-<br>
-        <!-- TODO -->
-        <button id="download_csv"  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-right: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">Download Rules (CSV)</a></button> 
+        
+            <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
+            <input type="text" name="duration" id="duration" value="{{duration}}" style="display: none;"/>
+            <button type="submit" class="btn btn-primary btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
 
+        </form>
+
+        <!-- TODO DOWNLOAS AS CSV-->
+        <button id=""  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-right: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">Download Rules (CSV)</a></button> 
+        {% csrf_token %}
 
         
 
@@ -101,15 +111,6 @@
             
         </form>
 
-
-
-        <textarea name="rules_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">BOOLEAN FUNCTIONS:
-            {% for a in foundFile.rules %}{{a}}
-            {% endfor %}
-            INDRA STATEMENTS:
-            {% for f in foundFile.stm %}{{f}}
-            {% endfor %}
-                        </textarea>
 
     </div>
 </main>

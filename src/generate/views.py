@@ -125,11 +125,6 @@ def delete_file_table(request, id):
 
 # Method for saving edited text in ocr_view
 def save_changes(request, *args, **kwargs):
-    
-    #text = request.GET.get('txt')
-    #changes = request.POST['changes']
-    #print(text)
-    #print (changes)
     if request.method == 'POST':
         foundFile = request.POST.get('fileId') #getting file id from button
         # print(foundFile)
@@ -150,6 +145,40 @@ def save_changes(request, *args, **kwargs):
     # object.delete()
     #return render(request,'index.html')
     #return redirect('home')
+
+def save_changes_nlp(request, *args, **kwargs):
+    if request.method == 'POST':
+        #getting file id from button
+        foundFile = request.POST.get('fileId') 
+        duration = request.POST.get('duration') 
+        print("...............................")
+        print(duration)
+        file = Files.objects.get(id=foundFile)
+        # list = file.rules
+        # list = list.replace("[","")
+        # list = list.replace("]","")
+        # list = list.replace("'","")
+        # nl = list.split(", ")
+        new_rules = request.POST.getlist('value')
+        
+        print(new_rules)
+        file.rules = new_rules
+        file.save()
+        
+        
+        print("...............................")
+        #changedText = request.POST.get('my_textarea')
+        #print(changedText)
+        #file.rules = changedText
+        #file.save()
+        messages.success(request, 'Changes saved!')
+        return render(request, "nlp_view.html", {
+        "foundFile":file, # passing ID to template to show and find file again
+        "duration": duration,
+        })
+    else:
+        messages.warning(request, 'Saving was not successfull, try again!')
+        return redirect("nlp_view.html") # wird zurückgeleitet zu home
 
 def split_PDF(pdf, fr, to):
     fr = int(fr)
@@ -225,7 +254,7 @@ def uploadFile(request, *args, **kwargs):
 # This is a method to process the OCR-method before loading the ocr_view
 def processing_ocr(request, *args, **kwargs):
     foundFile = request.POST.get('fileId') #getting file id from button
-    from_page = from_page = request.POST.get('from')
+    from_page = request.POST.get('from')
     to_page = request.POST.get('to')
     if(from_page == '' or to_page == ''):
         from_page = None
@@ -257,7 +286,7 @@ def processing_nlp(request, *args, **kwargs):
     ty_res = time.gmtime(duration)
     minutes = time.strftime("%M minutes and %S seconds",ty_res)
     #minutes = str(datetime.timedelta(seconds=duration))
-    print(duration)
+    #print(duration)
     if file.rules is None:
         messages.warning(request, 'No Rules found!')
         return redirect('home')

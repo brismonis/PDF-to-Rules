@@ -64,7 +64,7 @@
             {% csrf_token %}
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
 
-            <button function="spin_nlp()" id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
+            <button  id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
             <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
 
         </form>

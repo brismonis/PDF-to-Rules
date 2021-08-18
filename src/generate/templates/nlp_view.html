@@ -86,20 +86,23 @@
                 </tbody>
             </table>
 
-            <div class="wrapper" style="text-align: center;margin-bottom: 30px;"><button onclick="addRow()" style="position: absolute; " type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-plus"></i></button></div>
+            <div class="wrapper" style="text-align: center;margin-bottom: 3vw;"><button onclick="addRow()" style="position: absolute;" type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-plus"></i></button></div>
 
         
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
             <input type="text" name="duration" id="duration" value="{{duration}}" style="display: none;"/>
-            <button type="submit" class="btn btn-primary btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
+            <button type="submit" class="btn btn-success btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
 
         </form>
 
-        <!-- TODO DOWNLOAS AS CSV-->
-        <button id=""  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-right: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">Download Rules (CSV)</a></button> 
+        <!-- DOWNLOAS AS CSV-->
+        <form action="{% url 'download' %}" method="POST" name="fileId" value="{{fileId}}">
         {% csrf_token %}
-
+        <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
+        <button id=""  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-right: 10px;">Download Rules (CSV)</button> 
         
+
+        </form>
 
 
         <form action="{% url 'home' %}" method="POST">

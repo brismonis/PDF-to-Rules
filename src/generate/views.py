@@ -151,8 +151,6 @@ def save_changes_nlp(request, *args, **kwargs):
         #getting file id from button
         foundFile = request.POST.get('fileId') 
         duration = request.POST.get('duration') 
-        print("...............................")
-        print(duration)
         file = Files.objects.get(id=foundFile)
         # list = file.rules
         # list = list.replace("[","")
@@ -161,12 +159,10 @@ def save_changes_nlp(request, *args, **kwargs):
         # nl = list.split(", ")
         new_rules = request.POST.getlist('value')
         
-        print(new_rules)
+        #print(new_rules)
         file.rules = new_rules
         file.save()
         
-        
-        print("...............................")
         #changedText = request.POST.get('my_textarea')
         #print(changedText)
         #file.rules = changedText
@@ -219,14 +215,11 @@ def uploadFile(request, *args, **kwargs):
         to_page = request.POST.get('to')
 
         a = Files(filename=filename, pdf=pdf, user=request.user, authors=authors, literature=literature, pubyear=pubyear, note=note)
-        print(a.get_pdfpath)
+        #print(a.get_pdfpath)
         a.save()
 
         #pdf_ranged = split_PDF(a.pdf, from_page, to_page)
-
-
-        
-        # set_globvar(a.filename) # to find name of pdf again
+        #set_globvar(a.filename) # to find name of pdf again
         # set_newid(a.id) # to find id of pdf again
         # path = MEDIA_ROOT + "/pdfs/" + a.filename
         messages.success(request, 'File submitted successfully!')
@@ -343,15 +336,30 @@ def download_ocr(request, id):
 #             return response
 #     raise Http404
 
+# Method for downloading generated rules as csv file
 def download_csv(request):
+    foundFile = request.POST.get('fileId')
+    file = Files.objects.get(id=foundFile)
+    list = file.rules
+    list = list.replace("[","")
+    list = list.replace("]","")
+    list = list.replace("'","")
+    nl = list.split(", ")
+    #print("...............................")
+    #print(nl)
+
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(
         content_type='text/csv',
-        headers={'Content-Disposition': 'attachment; filename="somefilename.csv"'},
+        headers={'Content-Disposition': 'attachment; filename="rules.csv"'},
     )
-
+    
+    # Create the CSV writer using the HttpResponse as the "file"
     writer = csv.writer(response)
-    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
-    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
+    # Write a first row with header information
+    writer.writerow(["Rules in " + file.filename])
+    for i in nl:
+        #print(i)
+        writer.writerow([i])
 
     return response

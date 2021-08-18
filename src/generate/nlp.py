@@ -131,7 +131,7 @@ def nlp_file(f):
     # lines = boolnet.readlines() str' object has no attribute 'readlines'
     # print(lines)
     print("----------------------------")
-    rangel = len(bool_list) - 1
+    rangel = len(bool_list) - 2
     print(rangel)
     for bf in range(0, rangel):
         nb = bool_list[bf].replace(" not ", " ¬ ")

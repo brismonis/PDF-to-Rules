@@ -38,7 +38,7 @@
             {% csrf_token %}
             <textarea id="my_textarea" name="my_textarea" style="font-family: Arial;font-size: 12pt;width:100%;height:30vw">{{foundFile.ocrtext}}</textarea>
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
-            <button type="submit" class="btn btn-primary btn-lg" style="float: left; margin-bottom: 4vw;">Save Changes</button>
+            <button type="submit" class="btn btn-success btn-lg" style="float: left; margin-bottom: 4vw;">Save Changes</button>
 
         </form>
 

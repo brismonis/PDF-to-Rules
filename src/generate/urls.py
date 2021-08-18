@@ -35,6 +35,7 @@ urlpatterns = [
  path('nlp-view/', views.nlp_view, name='nlp_view'),
  path('nlp/', views.processing_nlp, name='processingNlp'),
  path('nlp/saved/', views.save_changes_nlp, name='save_nlp'),
+ path('nlp/download/', views.download_csv, name='download'),
 
  
  #url(r'^(?P<brand>\w+)/$', , name = 'tempfile_view'),

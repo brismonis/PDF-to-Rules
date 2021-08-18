@@ -56,6 +56,8 @@ class Files(models.Model):
         BN_file = os.path.join(BN_folder, fname + "_boolnet")
         if os.path.exists(PDF_path):
             os.remove(PDF_path)
+        if os.path.exists(BN_file):
             os.remove(BN_file)
+        if os.path.exists(JSON_file):
             os.remove(JSON_file)
         super().delete(*args, **kwargs)

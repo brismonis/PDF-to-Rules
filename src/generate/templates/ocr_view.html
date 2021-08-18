@@ -64,17 +64,17 @@
             {% csrf_token %}
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
 
-            <button id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
+            <button function="spin_nlp()" id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
             <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
 
         </form>
         
-        <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script> 
+        <!-- <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>  -->
         <!-- {% csrf_token %} -->
-        <button id="ocr_download" type="submit" class="btn btn-primary btn-lg" style="float: left;">Download OCR Result</button>
-        <button id="testen" value="{{foundFile.ocrtext}}" download="{{foundFile.filename}}" type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;">Testen</button>
+        <!-- <button id="ocr_download" type="submit" class="btn btn-primary btn-lg" style="float: left;">Download OCR Result</button> -->
+        <!-- <button id="testen" value="{{foundFile.ocrtext}}" download="{{foundFile.filename}}" type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;">Testen</button> -->
         <!-- UNTERES KLAPPT IN FIREFOX ABER NICHT SAFARI -->
-        <button id="testen2"  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">not in safari</a></button> 
+        <button id="testen2"  type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;"><a href="data:text/plain;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">Download OCR Result</a></button> 
 
 
 

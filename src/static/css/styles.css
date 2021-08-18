@@ -11300,13 +11300,13 @@ table.DataTable tr th.select-checkbox.selected::after {
 }
 
 .nlp td, tr, th {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   /* width: 100%; */
   /* column-width: 100%; */
 }
 .nlp table {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   /* align-items: center;
   align-content: center; */
   /* width: 100%; */

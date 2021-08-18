@@ -1,0 +1,70 @@
+PAK1 = False
+AURKA = False
+AURKA PAK1 = False
+SSH1 = False
+CFL1 = False
+LIMK1 = False
+PRKD1 = False
+AKT = False
+CASP9 = False
+cell migration = False
+Neoplasms = False
+TWIST1 = False
+CD44 = False
+PAK4 = False
+ROCK = False
+F_actin = False
+SSHI1L = False
+RHOA = False
+PAK4
+RAC1
+PAK4 = False
+RAC1 = False
+PAK1 RAC1 PAK1 = False
+PAK4 RAC1 PAK4 = False
+GSK3B = False
+AKT AKT = False
+STAT3 = False
+FUT3 = False
+OR = False
+CTNNB1 = False
+MYC = False
+MYC
+RB = False
+RB1 = False
+PI3K = False
+TCF7L2 = False
+CDH1 = False
+MYC
+CCND1 = False
+CCNE1 = False
+
+AURKA* = not ()
+SSH1* = AURKA
+CFL1* = (TCF7L2 or CD44) and not (LIMK1)
+LIMK1* = PAK4 or ROCK or PAK1
+PRKD1* = RHOA
+AKT* = STAT3 or PI3K
+CASP9* = not ()
+cell migration* = not (CFL1)
+Neoplasms* = CFL1
+TWIST1* = not (AURKA)
+CD44* = TWIST1
+SSHI1L* = F_actin
+RHOA* = not (PAK4
+RAC1
+PAK4)
+RAC1* = CFL1
+PAK1 RAC1 PAK1* = RAC1
+PAK4 RAC1 PAK4* = RAC1
+GSK3B* = not (PRKD1 or AKT AKT)
+STAT3* = CD44
+FUT3* = STAT3 or CTNNB1 or GSK3B or MYC
+OR* = GSK3B or CTNNB1 or MYC or STAT3
+RB1* = not (MYC
+RB)
+TCF7L2* = not (TCF7L2)
+CDH1* = not (CDH1 or TWIST1)
+MYC
+CCND1* = not (GSK3B)
+CCNE1* = CCNE1

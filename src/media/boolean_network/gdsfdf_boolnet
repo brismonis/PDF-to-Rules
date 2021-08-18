@@ -1,0 +1,19 @@
+RAS = False
+CFL1 = False
+Actin = False
+RAC1 = False
+AURKA = False
+SSH1 = False
+slingshot-1L = False
+KRAS = False
+RHOA = False
+TCF7L2 = False
+PRKD1 = False
+protein kinase = False
+
+CFL1* = RAS or AURKA
+Actin* = RAS or KRAS
+AURKA* = RAC1
+SSH1* = AURKA
+slingshot-1L* = AURKA
+TCF7L2* = RHOA or PRKD1 or protein kinase

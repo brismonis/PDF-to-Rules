@@ -35,9 +35,9 @@
                     <thead>
                         <tr>
                             <!-- <th>Select</th> -->
-                            <th>Delete</th>
-                            <th>Filename</th>
-                            <th>Authors</th>
+                            <th></th>
+                            <th>Title</th>
+                            <th>Author</th>
                             <th>Literature</th>
                             <th>Publishing Year</th>
                             <th>User</th>
@@ -46,6 +46,7 @@
                             <th>OCR Result</th>
                             <th>Rules</th>
                             <th>Notes</th>
+                            <th></th>
                             
                         </tr>
                     </thead>
@@ -61,22 +62,6 @@
                     </tfoot> -->
                     <tbody>
 
-                        <!-- DATEN AUS DB EINFÜGEN -->
-
-                        <!-- BEISPIEL -->
-                        <!-- <tr> 
-                            <td>0</td>
-                            <td>DUMMY</td>
-                            <td>Authors</td>
-                            <td>Literature</td>
-                            <td>Publishing Year</td>
-                            <td>User</td>
-                            <td>Date</td>
-                            <td>PDF name</td>
-                            <td>OCR Result</td>
-                            <td>Rules</td>
-                            <td>Notes</td>
-                        </tr> -->
 
                         {% if files %} 
                             {% for file in files %}
@@ -103,6 +88,8 @@
                                         <span class="text-muted">No Rules</span>
                                         {% endif %}</td>
                                     <td>{{ file.note }}</td>
+                                    <td><a href="{% url 'edit_table' id=file.id%}">
+                                        <button type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-pencil-alt"></i></button></a></td>
                                 </tr>
                                 
                             {% endfor %}

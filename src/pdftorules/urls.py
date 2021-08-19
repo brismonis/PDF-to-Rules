@@ -58,8 +58,10 @@ urlpatterns = [
     path('', include('generate.urls')),
     #path('home/', views.homepage_view, name='home'), # index.html
     path('tables/', views.tables_view, name='tables'), # (?P<path>.*)$
-    path('tables/view/<int:id>', views.view_rules, name='view_rules'),
-    path('tables/view/saved', views.save_changes_rules, name='save_rules'),
+    path('tables/rules/<int:id>', views.view_rules, name='view_rules'),
+    path('tables/rules/saved', views.save_changes_rules, name='save_rules'),
+    path('tables/edit/<int:id>', views.edit_table, name='edit_table'),
+    path('tables/edit/saved', views.save_changes_table, name='save_table'),
     path('settings/', views.settings_view, name='settings'),
     path('about/', views.about_view, name='about'),
     path('login/', views.login_view, name='login'),

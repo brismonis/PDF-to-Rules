@@ -22,7 +22,7 @@ from django.core.files.storage import default_storage
 from django.http import HttpResponseRedirect
 
 # Models importieren um auf Methoden und Datenbankeinträge zuzugreifen
-from .models import Files
+from .models import Files, Setting
 from django.template import RequestContext, context
 from django.contrib import messages
 
@@ -124,6 +124,27 @@ def delete_file_table(request, id):
     #return render(request,'index.html')
     return redirect('tables')
 
+def edit_table(request, id):
+    file = Files.objects.get(id=id)
+    return render(request, "table_edit.html", {
+        "fileId":file, # passing ID to template to show and find file again
+        #'form': form # for displaying form again
+    })
+
+# def save_table(request, *args, **kwargs):
+#     if request.method == 'POST':
+#         foundFile = request.POST.get('fileId') #getting file id from button
+#         att = request.POST.getlist('tableedit')
+#         print(att)
+#         # print(foundFile)
+#         file = Files.objects.get(id=foundFile)
+#         messages.success(request, 'Changes saved!')
+#         return redirect('view_rules', id=file.id)
+#     else:
+#         messages.warning(request, 'Saving was not successfull, try again!')
+#         return redirect("table_edit.html") # wird zurückgeleitet zu home
+
+
 def view_rules(request, id):
     file = Files.objects.get(id=id)
     list = file.rules
@@ -218,6 +239,31 @@ def save_changes_nlp(request, *args, **kwargs):
     else:
         messages.warning(request, 'Saving was not successfull, try again!')
         return redirect("nlp_view.html") # wird zurückgeleitet zu home
+
+def save_changes_table(request, *args, **kwargs):
+    if request.method == 'POST':
+        #getting file id from form
+        foundFile = request.POST.get('fileId') 
+        file = Files.objects.get(id=foundFile)
+        att = request.POST.getlist('tableedit')
+        print(att)
+        file.filename = att[0]
+        file.authors = att[1]
+        file.literature = att[2]
+        file.pubyear = att[3]
+        file.note = att[4]
+
+
+        file.save()
+        messages.success(request, 'Changes saved!')
+        return redirect('edit_table', id=file.id)
+        # return render(request, "rules_view.html", {
+        # "foundFile":file, # passing ID to template to show and find file again
+        # })
+    else:
+        messages.warning(request, 'Saving was not successfull, try again!')
+        return redirect("table_edit.html") # wird zurückgeleitet
+
 
 def save_changes_rules(request, *args, **kwargs):
     if request.method == 'POST':
@@ -446,3 +492,4 @@ def download_csv(request):
         writer.writerow([i])
 
     return response
+

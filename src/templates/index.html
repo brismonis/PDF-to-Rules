@@ -131,6 +131,7 @@
         <!-- <form action="{% url 'processingOcr' %}" name="fileId" value="{{fileId}}" method="POST"></form>
             {% csrf_token %} -->
             <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/>
+            
 
             <button onclick="checkrange()" id="spin_ocr" {% if fileId == None %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: right; margin-bottom: 4vw;">Start OCR</button>
                 <!-- nur zum testen -->

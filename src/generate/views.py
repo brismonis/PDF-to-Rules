@@ -1,5 +1,5 @@
 # Create your views here to handle pages and include html files.
-import time, datetime, csv
+import time, datetime, csv, re
 from PyPDF2.generic import PdfObject
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
@@ -120,8 +120,40 @@ def delete_file(request, id):
 def delete_file_table(request, id):
     object = Files.objects.get(id=id)
     object.delete()
+    messages.success(request, 'File "' + object.filename + '" deleted successfully.')
     #return render(request,'index.html')
     return redirect('tables')
+
+def view_rules(request, id):
+    file = Files.objects.get(id=id)
+    list = file.rules
+    list = list.replace("[","")
+    list = list.replace("]","")
+    list = list.replace("'","")
+    nl = list.split(", ")
+    file.rules = nl
+    # converting model TextField into array again
+    list = file.evidence
+    list = list.replace("[","")
+    list = list.replace("]","")
+    nl = []
+    nl = list.split("\'")
+    c = ''
+    b = ', '
+    while c in nl:
+        nl.remove(c)
+    while b in nl:
+        nl.remove(b)
+    list2 = []
+    for i in nl:
+        list2.append(i)
+    file.evidence = list2
+    #file.save()
+    #return render(request,'index.html')
+    return render(request, "rules_view.html", {
+        "foundFile":file, # passing ID to template to show and find file again
+        #'form': form # for displaying form again
+        })
 
 # Method for saving edited text in ocr_view
 def save_changes(request, *args, **kwargs):
@@ -148,18 +180,29 @@ def save_changes(request, *args, **kwargs):
 
 def save_changes_nlp(request, *args, **kwargs):
     if request.method == 'POST':
-        #getting file id from button
+        #getting file id and duration from form
         foundFile = request.POST.get('fileId') 
         duration = request.POST.get('duration') 
         file = Files.objects.get(id=foundFile)
-        # list = file.rules
-        # list = list.replace("[","")
-        # list = list.replace("]","")
-        # list = list.replace("'","")
-        # nl = list.split(", ")
+        # converting model TextField into array again
+        list = file.evidence
+        list = list.replace("[","")
+        list = list.replace("]","")
+        nl = []
+        nl = list.split("\'")
+        c = ''
+        b = ', '
+        while c in nl:
+            nl.remove(c)
+        while b in nl:
+            nl.remove(b)
+        list2 = []
+        for i in nl:
+            list2.append(i)
+
         new_rules = request.POST.getlist('value')
-        
-        #print(new_rules)
+
+        file.evidence = list2
         file.rules = new_rules
         file.save()
         
@@ -175,6 +218,45 @@ def save_changes_nlp(request, *args, **kwargs):
     else:
         messages.warning(request, 'Saving was not successfull, try again!')
         return redirect("nlp_view.html") # wird zurückgeleitet zu home
+
+def save_changes_rules(request, *args, **kwargs):
+    if request.method == 'POST':
+        #getting file id from form
+        foundFile = request.POST.get('fileId') 
+        file = Files.objects.get(id=foundFile)
+        # converting model TextField into array again
+        list = file.evidence
+        list = list.replace("[","")
+        list = list.replace("]","")
+        nl = []
+        nl = list.split("\'")
+        c = ''
+        b = ', '
+        while c in nl:
+            nl.remove(c)
+        while b in nl:
+            nl.remove(b)
+        list2 = []
+        for i in nl:
+            list2.append(i)
+        file.evidence = list2
+
+        new_rules = request.POST.getlist('value')
+        file.rules = new_rules
+        file.save()
+        
+        #changedText = request.POST.get('my_textarea')
+        #print(changedText)
+        #file.rules = changedText
+        #file.save()
+        messages.success(request, 'Changes saved!')
+        return redirect('view_rules', id=file.id)
+        # return render(request, "rules_view.html", {
+        # "foundFile":file, # passing ID to template to show and find file again
+        # })
+    else:
+        messages.warning(request, 'Saving was not successfull, try again!')
+        return redirect("rules_view.html") # wird zurückgeleitet zu home
 
 def split_PDF(pdf, fr, to):
     fr = int(fr)
@@ -286,7 +368,8 @@ def processing_nlp(request, *args, **kwargs):
     else:
         context = {
                 "foundFile":file,
-                "duration": minutes
+                "duration": minutes,
+                # "my_json":{i: i for i in range(100)},
                 #"updatedFile":updatedFile,
             }
         return render(request, "nlp_view.html", context)

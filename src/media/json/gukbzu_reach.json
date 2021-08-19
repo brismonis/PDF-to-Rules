@@ -1,0 +1,6128 @@
+{
+  "events" : {
+    "frames" : [ {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1716",
+      "text" : "PAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1712"
+      }, {
+        "text" : "PAK1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4423"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 33,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1715",
+      "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "PAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1716"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4420"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Negative_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1710",
+      "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1711"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4420"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Negative_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1723",
+      "text" : "phosphorylates AURKA\nTCF7L2",
+      "arguments" : [ {
+        "text" : "AURKA\nTCF7L2",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4428"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 65,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 38,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Phosphorylation_token_5_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1711",
+      "text" : "TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1712"
+      }, {
+        "text" : "TCF7L2",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4419"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 15,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1721",
+      "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1722"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4420"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Negative_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1725",
+      "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1712"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4420"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1712",
+      "text" : "CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4418"
+      } ],
+      "type" : "transcription",
+      "frame-type" : "event-mention",
+      "subtype" : "transcription",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "expression",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 76,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "expression_1",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1724",
+      "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2",
+      "arguments" : [ {
+        "text" : "phosphorylates AURKA\nTCF7L2",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1723"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-0-4420"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 65,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Negative_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-0-1722",
+      "text" : "phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1712"
+      }, {
+        "text" : "phosphorylates AURKA\nTCF7L2",
+        "argument-type" : "event",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-0-1723"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 91,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 38,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-1-1718",
+      "text" : "CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-1-4424"
+      } ],
+      "type" : "transcription",
+      "frame-type" : "event-mention",
+      "subtype" : "transcription",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 126,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "expression",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 111,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-1",
+      "found-by" : "expression_1",
+      "verbose-text" : "CD44 induces CFL1 expression [50,51]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-1-1717",
+      "text" : "CD44 induces CFL1 expression",
+      "arguments" : [ {
+        "text" : "CFL1 expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-1-1718"
+      }, {
+        "text" : "CD44",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-1-4425"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 126,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "induces",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 98,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-1",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "CD44 induces CFL1 expression [50,51]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-2-1731",
+      "text" : "LIMK inhibits CFL1",
+      "arguments" : [ {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-2-4432"
+      }, {
+        "text" : "LIMK",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-2-4431"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 154,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 136,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-2",
+      "found-by" : "Negative_activation_syntax_1_verb",
+      "verbose-text" : "LIMK inhibits CFL1 [52—57]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-4-1720",
+      "text" : "dephosphorylates CFL1",
+      "arguments" : [ {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-4-4426"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "dephosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 264,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "dephosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 243,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-4",
+      "found-by" : "Dephosphorylation_syntax_1a_verb",
+      "verbose-text" : "SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]."
+    }, {
+      "text" : "SSH1L dephosphorylates CFL1",
+      "frame-id" : "evem-api54-UAZ-r1-Reach-4-1719",
+      "arguments" : [ {
+        "text" : "dephosphorylates CFL1",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-4-1720"
+      }, {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-4-4427"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 264,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 237,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Dephosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api54-UAZ-r1-Reach-4",
+      "verbose-text" : "SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-5-1727",
+      "text" : "phosphorylates CFL1",
+      "arguments" : [ {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-5-4429"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 310,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 291,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-5",
+      "found-by" : "Phosphorylation_syntax_1a_verb",
+      "verbose-text" : "LIMK phosphorylates CFL1 [12,52,53,56,58]."
+    }, {
+      "text" : "LIMK phosphorylates CFL1",
+      "frame-id" : "evem-api54-UAZ-r1-Reach-5-1726",
+      "arguments" : [ {
+        "text" : "phosphorylates CFL1",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-5-1727"
+      }, {
+        "text" : "LIMK",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-5-4430"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 310,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 286,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api54-UAZ-r1-Reach-5",
+      "verbose-text" : "LIMK phosphorylates CFL1 [12,52,53,56,58]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-6-1735",
+      "text" : "dephosphorylation of SSH1L",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-6-4439"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "dephosphorylation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 428,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "dephosphorylation",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 402,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-6",
+      "found-by" : "Dephosphorylation_syntax_1a_noun",
+      "verbose-text" : "If SSH1L and LIMK are present,\nLIMK may restore phosphorylation, but the dephosphorylation of SSH1L is more pronounced [58—60]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-7-1729",
+      "text" : "TWIST1 upregulates CD44\nAURKA",
+      "arguments" : [ {
+        "text" : "TWIST1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-7-4440"
+      }, {
+        "text" : "CD44\nAURKA",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-7-4441"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 486,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "upregulates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 457,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "found-by" : "Positive_activation_token_1_verb",
+      "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-7-1734",
+      "text" : "dephosphorylation of PAK1",
+      "arguments" : [ {
+        "text" : "PAK1",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-7-4443"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "dephosphorylation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 564,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "dephosphorylation",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 539,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "found-by" : "Dephosphorylation_syntax_1a_noun",
+      "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-7-1732",
+      "text" : "dephosphorylation of PAK1, PAK4",
+      "arguments" : [ {
+        "text" : "PAK4",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-7-4444"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "dephosphorylation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 570,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "dephosphorylation",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 539,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "found-by" : "Dephosphorylation_syntax_1a_noun",
+      "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-7-1733",
+      "text" : "dephosphorylation of PAK1, PAK4 and ROCK",
+      "arguments" : [ {
+        "text" : "ROCK",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-7-4445"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "dephosphorylation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 579,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "dephosphorylation",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 539,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "found-by" : "Dephosphorylation_syntax_1a_noun",
+      "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-9-1730",
+      "text" : "F-actin enhances SSH1L",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-9-4450"
+      }, {
+        "text" : "F-actin",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-9-4449"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 730,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "enhances",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 708,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-9",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "F-actin enhances SSH1L activity [52,57,59,61]."
+    }, {
+      "text" : "PRKD1 phosphorylates SSH1L",
+      "frame-id" : "evem-api54-UAZ-r1-Reach-10-1708",
+      "arguments" : [ {
+        "text" : "phosphorylates SSH1L",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-10-1709"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-10-4417"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 781,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 755,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api54-UAZ-r1-Reach-10",
+      "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-10-1709",
+      "text" : "phosphorylates SSH1L",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-10-4416"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 781,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 761,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-10",
+      "found-by" : "Phosphorylation_syntax_1a_verb",
+      "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-11-1714",
+      "text" : "SSH1L expression",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-11-4421"
+      } ],
+      "type" : "transcription",
+      "frame-type" : "event-mention",
+      "subtype" : "transcription",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 850,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "expression",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 834,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-11",
+      "found-by" : "expression_1",
+      "verbose-text" : "In the presence of PIS3K, AURKA induces\nSSH1L expression [54,56,57]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-11-1713",
+      "text" : "AURKA induces\nSSH1L expression",
+      "arguments" : [ {
+        "text" : "SSH1L expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api54-UAZ-r1-Reach-11-1714"
+      }, {
+        "text" : "AURKA",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-11-4422"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 850,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "induces",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 820,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-11",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "In the presence of PIS3K, AURKA induces\nSSH1L expression [54,56,57]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-23-1728",
+      "text" : "RHOA activates PRKD1",
+      "arguments" : [ {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-23-4476"
+      }, {
+        "text" : "RHOA",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-23-4475"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1696,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1676,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-23",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "RHOA activates PRKD1 [11,52,53,65]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-24-1737",
+      "text" : "PAK4 inhibits RHOA",
+      "arguments" : [ {
+        "text" : "RHOA",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-24-4478"
+      }, {
+        "text" : "PAK4",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-24-4477"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "negative-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1730,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "inhibits",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1712,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-24",
+      "found-by" : "Negative_activation_syntax_1_verb",
+      "verbose-text" : "PAK4 inhibits RHOA [83]."
+    }, {
+      "frame-id" : "evem-api54-UAZ-r1-Reach-26-1736",
+      "text" : "CFL1 activates RAC1",
+      "arguments" : [ {
+        "text" : "RAC1",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-26-4482"
+      }, {
+        "text" : "CFL1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api54-UAZ-r1-Reach-26-4481"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1810,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "activates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1791,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-26",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK (here with delay) [85]."
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-19T14:57:04Z",
+      "doc-id" : "api54",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-19T14:56:57Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "entities" : {
+    "frames" : [ {
+      "text" : "TCF7L2",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-0-4419",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 21,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q9NQB0"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 15,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q9NQB0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q9NQB0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q924A0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q924A0"
+      } ]
+    }, {
+      "text" : "AURKA\nTCF7L2",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-0-4428",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 65,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ4155524B410A544346374C32"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 53,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0"
+    }, {
+      "text" : "PAK1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-0-4423",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 37,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 33,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q17850"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fission yeast",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "schizosaccharomyces pombe (strain 972 / atcc 24843)",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-0-4418",
+      "type" : "gene",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 80,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 76,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "PRKD1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-0-4420",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 5,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-1-4424",
+      "type" : "gene",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 115,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 111,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "CD44",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-1-4425",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 102,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 98,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q29423"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q29423"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis familiaris",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis lupus familiaris",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chinese hamster",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus barabensis griseus",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus griseus",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dog",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "equus caballus",
+        "object-type" : "db-reference",
+        "id" : "Q05078"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "golden hamster",
+        "object-type" : "db-reference",
+        "id" : "Q60522"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "hamadryas baboon",
+        "object-type" : "db-reference",
+        "id" : "P14745"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "horse",
+        "object-type" : "db-reference",
+        "id" : "Q05078"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mesocricetus auratus",
+        "object-type" : "db-reference",
+        "id" : "Q60522"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P15379"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P15379"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "papio hamadryas",
+        "object-type" : "db-reference",
+        "id" : "P14745"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P26051"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P26051"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-2-4431",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 140,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 136,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-2",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-2-4432",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 154,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 150,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-2",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-3-4435",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 204,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 200,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-3-4433",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 178,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 173,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-3-4434",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 187,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 183,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-4-4426",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 264,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 260,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-4",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-4-4427",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 242,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 237,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-4",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-5-4429",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 310,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 306,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-5",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-5-4430",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 290,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 286,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-5",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-6-4437",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 346,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 342,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-6-4438",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 364,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 360,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-6-4439",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 428,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 423,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-6-4436",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 337,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 332,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-6",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "CD44\nAURKA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4441",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 486,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ434434340A4155524B41"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 476,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7"
+    }, {
+      "text" : "PAK1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4443",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 564,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 560,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q17850"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fission yeast",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "schizosaccharomyces pombe (strain 972 / atcc 24843)",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      } ]
+    }, {
+      "text" : "PAK4",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4444",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 570,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 566,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q8BTW9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q8BTW9"
+      } ]
+    }, {
+      "text" : "ROCK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4445",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 579,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "ROCK"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 575,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7"
+    }, {
+      "text" : "RHOA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4446",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 599,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 595,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "aspergillus nidulans",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q22038"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis lupus familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dog",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "emericella nidulans (strain fgsc a4 / atcc 38163 / cbs 112.46 / nrrl 194 / m139)",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo pygmaeus abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sumatran orangutan",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      } ]
+    }, {
+      "text" : "TWIST1\nLIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4442",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 522,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ5457495354310A4C494D4B"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 511,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7"
+    }, {
+      "text" : "TWIST1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-7-4440",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 463,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15672"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 457,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-7",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15672"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15672"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "P13903"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "black crested gibbon",
+        "object-type" : "db-reference",
+        "id" : "Q8MIE7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bornean orangutan",
+        "object-type" : "db-reference",
+        "id" : "Q8MIB9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "brown lemur",
+        "object-type" : "db-reference",
+        "id" : "Q8MIF3"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "callithrix jacchus",
+        "object-type" : "db-reference",
+        "id" : "Q8MIH1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cebus capucinus",
+        "object-type" : "db-reference",
+        "id" : "Q8MIH8"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chimpanzee",
+        "object-type" : "db-reference",
+        "id" : "Q8MI03"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cotton-top tamarin",
+        "object-type" : "db-reference",
+        "id" : "Q8MIB5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "eulemur fulvus fulvus",
+        "object-type" : "db-reference",
+        "id" : "Q8MIF3"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gorilla gorilla gorilla",
+        "object-type" : "db-reference",
+        "id" : "Q8MI06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gray mouse lemur",
+        "object-type" : "db-reference",
+        "id" : "Q8MID5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "hylobates concolor",
+        "object-type" : "db-reference",
+        "id" : "Q8MIE7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "lemur murinus",
+        "object-type" : "db-reference",
+        "id" : "Q8MID5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca tonkeana",
+        "object-type" : "db-reference",
+        "id" : "Q7JGP2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "microcebus murinus",
+        "object-type" : "db-reference",
+        "id" : "Q8MID5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P26687"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P26687"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "nomascus concolor",
+        "object-type" : "db-reference",
+        "id" : "Q8MIE7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pan troglodytes",
+        "object-type" : "db-reference",
+        "id" : "Q8MI03"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo pygmaeus",
+        "object-type" : "db-reference",
+        "id" : "Q8MIB9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saguinus oedipus",
+        "object-type" : "db-reference",
+        "id" : "Q8MIB5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "tonkean macaque",
+        "object-type" : "db-reference",
+        "id" : "Q7JGP2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western lowland gorilla",
+        "object-type" : "db-reference",
+        "id" : "Q8MI06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "white-faced sapajou",
+        "object-type" : "db-reference",
+        "id" : "Q8MIH8"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "white-tufted-ear marmoset",
+        "object-type" : "db-reference",
+        "id" : "Q8MIH1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "P13903"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-8-4447",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 629,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 625,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-8",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-8-4448",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 639,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 634,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-8",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "F-actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-9-4449",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 715,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "F_actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 708,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-9"
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-9-4450",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 730,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 725,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-9",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "PRKD1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-10-4417",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 760,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 755,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-10",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-10-4416",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 781,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 776,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-10",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "AURKA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-11-4422",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 825,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 820,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-11",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      } ]
+    }, {
+      "text" : "PIS3K",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-11-4451",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 818,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ504953334B"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 813,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-11"
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-11-4421",
+      "type" : "gene",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 839,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 834,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-11",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-12-4452",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 867,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 863,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-12",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-12-4453",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 877,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 872,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-12",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-13-4454",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 950,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 946,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-13",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-13-4456",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1006,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1001,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-13",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Actin"
+      } ]
+    }, {
+      "text" : "ARP2/3",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-13-4455",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 961,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "Arp2_3_protein"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 955,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-13",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "Arp2_3_protein"
+      } ]
+    }, {
+      "text" : "RHOA/ROCK/DIA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-14-4457",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1039,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ52484F412F524F434B2F444941"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1026,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-14"
+    }, {
+      "text" : "F-actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-14-4458",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1067,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "F_actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1060,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-14"
+    }, {
+      "text" : "F-actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-15-4460",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1117,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "F_actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1110,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-15"
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-15-4459",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1102,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1098,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-15",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    }, {
+      "text" : "old ADP-F-actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-15-4461",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1155,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ6F6C64204144502D462D616374696E"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1140,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-15"
+    }, {
+      "text" : "actin",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-16-4462",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1189,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1184,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-16",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Actin"
+      } ]
+    }, {
+      "text" : "ARP2/3",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-17-4464",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1278,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "Arp2_3_protein"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1272,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "Arp2_3_protein"
+      } ]
+    }, {
+      "text" : "RAC1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-17-4463",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1270,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P63000"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1266,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-17"
+    }, {
+      "text" : "WAVE",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-17-4465",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1299,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q92558"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1295,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q92558"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q92558"
+      } ]
+    }, {
+      "text" : "RAC1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-17-4467",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1323,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P63000"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1319,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-17"
+    }, {
+      "text" : "WASP",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-17-4466",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1307,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P42768"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1303,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P42768"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P42768"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P70315"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P70315"
+      } ]
+    }, {
+      "text" : "KRAS",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-18-4468",
+      "modifications" : [ {
+        "type" : "mutation",
+        "object-type" : "modification",
+        "evidence" : "mutations"
+      } ],
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1358,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P01116"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1354,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-18",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P01116"
+      } ]
+    }, {
+      "text" : "KRAS",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-19-4469",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1462,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P01116"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1458,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-19",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P01116"
+      } ]
+    }, {
+      "text" : "RAS",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-21-4470",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1606,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAS"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1603,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-21"
+    }, {
+      "text" : "CD44 receptor",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-22-4472",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1626,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ43443434207265636570746F72"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1613,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-22"
+    }, {
+      "text" : "AKT",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-22-4474",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1653,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1650,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-22",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "AKT"
+      } ]
+    }, {
+      "text" : "PISK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-22-4473",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1649,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ5049534B"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1645,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-22"
+    }, {
+      "text" : "CD44",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-22-4471",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1617,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1613,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-22",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P16070"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q29423"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q29423"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis familiaris",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis lupus familiaris",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chinese hamster",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus barabensis griseus",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus griseus",
+        "object-type" : "db-reference",
+        "id" : "P20944"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dog",
+        "object-type" : "db-reference",
+        "id" : "Q28284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "equus caballus",
+        "object-type" : "db-reference",
+        "id" : "Q05078"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "golden hamster",
+        "object-type" : "db-reference",
+        "id" : "Q60522"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "hamadryas baboon",
+        "object-type" : "db-reference",
+        "id" : "P14745"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "horse",
+        "object-type" : "db-reference",
+        "id" : "Q05078"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mesocricetus auratus",
+        "object-type" : "db-reference",
+        "id" : "Q60522"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P15379"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P15379"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "papio hamadryas",
+        "object-type" : "db-reference",
+        "id" : "P14745"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P26051"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P26051"
+      } ]
+    }, {
+      "text" : "RHOA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-23-4475",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1680,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1676,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-23",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "aspergillus nidulans",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q22038"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis lupus familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dog",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "emericella nidulans (strain fgsc a4 / atcc 38163 / cbs 112.46 / nrrl 194 / m139)",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo pygmaeus abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sumatran orangutan",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      } ]
+    }, {
+      "text" : "PRKD1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-23-4476",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1696,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1691,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-23",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      } ]
+    }, {
+      "text" : "RHOA",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-24-4478",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1730,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1726,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-24",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P61586"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "aspergillus nidulans",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "P61585"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q22038"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "canis lupus familiaris",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dog",
+        "object-type" : "db-reference",
+        "id" : "P24406"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "emericella nidulans (strain fgsc a4 / atcc 38163 / cbs 112.46 / nrrl 194 / m139)",
+        "object-type" : "db-reference",
+        "id" : "Q9C3Y4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q9QUI0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pongo pygmaeus abelii",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P61589"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sumatran orangutan",
+        "object-type" : "db-reference",
+        "id" : "Q5REY6"
+      } ]
+    }, {
+      "text" : "PAK4",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-24-4477",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1716,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1712,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-24",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O96013"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q8BTW9"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q8BTW9"
+      } ]
+    }, {
+      "text" : "RAC",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-25-4479",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1740,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "RAC"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1737,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-25"
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-25-4480",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1763,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1759,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-25",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "RAC1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-26-4482",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1810,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P63000"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1806,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-26"
+    }, {
+      "text" : "DOCK",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-26-4484",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1828,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZ444F434B"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1824,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-26"
+    }, {
+      "text" : "PLD1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-26-4483",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1819,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P14314"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1815,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-26",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P14314"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13393"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P14314"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q13393"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "arabidopsis thaliana",
+        "object-type" : "db-reference",
+        "id" : "Q38882"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "aureobacterium luteolum",
+        "object-type" : "db-reference",
+        "id" : "Q76KC2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P36126"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "brassica oleracea var. capitata",
+        "object-type" : "db-reference",
+        "id" : "O82549"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cabbage",
+        "object-type" : "db-reference",
+        "id" : "O82549"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cardoon",
+        "object-type" : "db-reference",
+        "id" : "Q70EW5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "carica papaya",
+        "object-type" : "db-reference",
+        "id" : "P86387"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "castor bean",
+        "object-type" : "db-reference",
+        "id" : "Q41142"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chamnamul",
+        "object-type" : "db-reference",
+        "id" : "O04883"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chinese hamster",
+        "object-type" : "db-reference",
+        "id" : "O08684"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "common tobacco",
+        "object-type" : "db-reference",
+        "id" : "P93400"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cowpea",
+        "object-type" : "db-reference",
+        "id" : "O04865"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus barabensis griseus",
+        "object-type" : "db-reference",
+        "id" : "O08684"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cricetulus griseus",
+        "object-type" : "db-reference",
+        "id" : "O08684"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynara cardunculus",
+        "object-type" : "db-reference",
+        "id" : "Q70EW5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dictyostelium discoideum",
+        "object-type" : "db-reference",
+        "id" : "Q54UK0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dictyostelium discoideum",
+        "object-type" : "db-reference",
+        "id" : "Q54WR4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "dictyostelium discoideum",
+        "object-type" : "db-reference",
+        "id" : "Q54Z25"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fission yeast",
+        "object-type" : "db-reference",
+        "id" : "Q09706"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "loxosceles laeta",
+        "object-type" : "db-reference",
+        "id" : "E5D3Z8"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "maize",
+        "object-type" : "db-reference",
+        "id" : "Q43270"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "microbacterium luteolum",
+        "object-type" : "db-reference",
+        "id" : "Q76KC2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q9Z280"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse-ear cress",
+        "object-type" : "db-reference",
+        "id" : "Q38882"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q9Z280"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "nicotiana tabacum",
+        "object-type" : "db-reference",
+        "id" : "P93400"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "oryza sativa subsp. japonica",
+        "object-type" : "db-reference",
+        "id" : "Q43007"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "papaya",
+        "object-type" : "db-reference",
+        "id" : "P86387"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pimpinella brachycarpa",
+        "object-type" : "db-reference",
+        "id" : "O04883"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P70496"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P70496"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rice",
+        "object-type" : "db-reference",
+        "id" : "Q43007"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ricinus communis",
+        "object-type" : "db-reference",
+        "id" : "Q41142"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P36126"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "schizosaccharomyces pombe (strain 972 / atcc 24843)",
+        "object-type" : "db-reference",
+        "id" : "Q09706"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "scytodes laeta",
+        "object-type" : "db-reference",
+        "id" : "E5D3Z8"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "slime mold",
+        "object-type" : "db-reference",
+        "id" : "Q54UK0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "slime mold",
+        "object-type" : "db-reference",
+        "id" : "Q54WR4"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "slime mold",
+        "object-type" : "db-reference",
+        "id" : "Q54Z25"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "south american recluse spider",
+        "object-type" : "db-reference",
+        "id" : "E5D3Z8"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "spuriopimpinella brachycarpa",
+        "object-type" : "db-reference",
+        "id" : "O04883"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "vigna unguiculata",
+        "object-type" : "db-reference",
+        "id" : "O04865"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "zea mays",
+        "object-type" : "db-reference",
+        "id" : "Q43270"
+      } ]
+    }, {
+      "text" : "CFL1",
+      "frame-id" : "ment-api54-UAZ-r1-Reach-26-4481",
+      "modifications" : [ {
+        "type" : "Phosphorylation",
+        "object-type" : "modification",
+        "negated" : false
+      } ],
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1795,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1791,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api54-UAZ-r1-Reach-26",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P23528"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q5E9F7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "P34284"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "candida albicans (strain sc5314 / atcc mya-2876)",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "crab-eating macaque",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "cynomolgus monkey",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "macaca fascicularis",
+        "object-type" : "db-reference",
+        "id" : "Q4R5C0"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P18760"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "ovis aries",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P45592"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sheep",
+        "object-type" : "db-reference",
+        "id" : "Q6B7M7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "silurana tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P10668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "western clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus tropicalis",
+        "object-type" : "db-reference",
+        "id" : "Q6NX11"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "P78588"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "yeast",
+        "object-type" : "db-reference",
+        "id" : "Q5A446"
+      } ]
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-19T14:57:04Z",
+      "doc-id" : "api54",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-19T14:56:57Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "sentences" : {
+    "frames" : [ {
+      "text" : "PRKD1 inhibits TCF7L2 expression PAK1 phosphorylates AURKA TCF7L2 activates CFL1 expression [11]. CD44 induces CFL1 expression [50,51]. LIMK inhibits CFL1 [52—57]. If both, SSH1L and LIMK are active, CFL1 stays unphosphorylated [58—60]. SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]. LIMK phosphorylates CFL1 [12,52,53,56,58]. If SSH1L and LIMK are present, LIMK may restore phosphorylation, but the dephosphorylation of SSH1L is more pronounced [58—60]. TWIST1 upregulates CD44 AURKA inhibits degradation of TWIST1 LIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]. LIMK and SSH1L can build a complex that effectively dephosphorylates both [59,60]. F-actin enhances SSH1L activity [52,57,59,61]. PRKD1 phosphorylates SSH1L [52,53,61]. In the presence of PIS3K, AURKA induces SSH1L expression [54,56,57]. LIMK and SSH1L can build a complex that effectively dephosphorylates both [59,60]. CFL1 and ARP2/3 work in synergy to create new branched actin fibres [58,67—72]. RHOA/ROCK/DIA pathway polymerizes F-actin (here RHOA delay) [64,73—75]. CFL1 severs F-actin [52,65,67] preferring old ADP-F-actin [58,68,76,77]. Newly formed actin fibres are built, prolonged and thus converted into old ones. Downstream of RAC1, ARP2/3 is activated by WAVE or WASP (here by a RAC1 delay) [58,64,69]. Activating KRAS mutations are present in more than 90% of PDAC patients [3,46,78,79]. For this reason, the protein KRAS is assumed to be always active. Therefore, we modeled it as active (1). The PI3K-pathway is one of the main effector pathways downstream of RAS [80]. CD44 receptor binding activates PISK/AKT pathway [62,831,382]. RHOA activates PRKD1 [11,52,53,65]. PAK4 inhibits RHOA [83]. RAC‘1 is activated by PI3K [54,80,84]. Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK (here with delay) [85].",
+      "frame-id" : "pass-api54-UAZ-r1-Reach",
+      "section-id" : "NoSection",
+      "frame-type" : "passage",
+      "is-title" : false,
+      "section-name" : "NoSection",
+      "object-type" : "frame",
+      "index" : "Reach",
+      "object-meta" : {
+        "component" : "nxml2fries",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PRKD1 inhibits TCF7L2 expression PAK1 phosphorylates AURKA TCF7L2 activates CFL1 expression [ 11 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-0",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 97,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "CD44 induces CFL1 expression [ 50,51 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-1",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 135,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 98,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "LIMK inhibits CFL1 [ 52 — 57 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-2",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 163,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 136,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "If both , SSH1L and LIMK are active , CFL1 stays unphosphorylated [ 58 — 60 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-3",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 236,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 164,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "SSH1L dephosphorylates CFL1 [ 12,52 — 54,56 — 58,61 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-4",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 285,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 237,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "LIMK phosphorylates CFL1 [ 12,52,53,56,58 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-5",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 328,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 286,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "If SSH1L and LIMK are present , LIMK may restore phosphorylation , but the dephosphorylation of SSH1L is more pronounced [ 58 — 60 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-6",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 456,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 329,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "TWIST1 upregulates CD44 AURKA inhibits degradation of TWIST1 LIMK is activated by dephosphorylation of PAK1 , PAK4 and ROCK ( downstream of RHOA ) [ 48,53,55,59,61,64 — 66 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-7",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 624,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 457,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "LIMK and SSH1L can build a complex that effectively dephosphorylates both [ 59,60 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-8",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 707,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 625,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "F-actin enhances SSH1L activity [ 52,57,59,61 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-9",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 754,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 708,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PRKD1 phosphorylates SSH1L [ 52,53,61 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-10",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 793,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 755,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "In the presence of PIS3K , AURKA induces SSH1L expression [ 54,56,57 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-11",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 862,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 794,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "LIMK and SSH1L can build a complex that effectively dephosphorylates both [ 59,60 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-12",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 945,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 863,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "CFL1 and ARP2/3 work in synergy to create new branched actin fibres [ 58,67 — 72 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-13",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1025,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 946,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "RHOA/ROCK/DIA pathway polymerizes F-actin ( here RHOA delay ) [ 64,73 — 75 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-14",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1097,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1026,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "CFL1 severs F-actin [ 52,65,67 ] preferring old ADP-F-actin [ 58,68,76,77 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-15",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1170,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1098,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Newly formed actin fibres are built , prolonged and thus converted into old ones .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-16",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1251,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1171,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Downstream of RAC1 , ARP2/3 is activated by WAVE or WASP ( here by a RAC1 delay ) [ 58,64,69 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-17",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1342,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1252,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Activating KRAS mutations are present in more than 90 % of PDAC patients [ 3,46,78,79 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-18",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1428,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1343,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "For this reason , the protein KRAS is assumed to be always active .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-19",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1494,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1429,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Therefore , we modeled it as active ( 1 ) .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-20",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1534,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1495,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "The PI3K-pathway is one of the main effector pathways downstream of RAS [ 80 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-21",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1612,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1535,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "CD44 receptor binding activates PISK / AKT pathway [ 62,831,382 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-22",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1675,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1613,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "RHOA activates PRKD1 [ 11,52,53,65 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-23",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1711,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1676,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PAK4 inhibits RHOA [ 83 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-24",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1736,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1712,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "RAC ‘ 1 is activated by PI3K [ 54,80,84 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-25",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1775,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1737,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK ( here with delay ) [ 85 ] .",
+      "frame-id" : "sent-api54-UAZ-r1-Reach-26",
+      "passage" : "pass-api54-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1852,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api54-UAZ-r1-Reach",
+        "offset" : 1776,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-19T14:57:04Z",
+      "doc-id" : "api54",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-19T14:56:57Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  }
+}

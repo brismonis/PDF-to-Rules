@@ -18,6 +18,13 @@
                 .
             </div>
         </div> -->
+        {% if messages %} <!-- DISPLAYING MESSAGE: SUCCESS OR WARNING -->   
+            {% for message in messages %}
+                {% if message.tags %} 
+                    <div class="alert alert-{{ message.tags }} role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}     
+        {% endif %}
         <div class="card mb-4" id="body">
             <div class="card-header">
                 <i class="fas fa-table me-1"></i>
@@ -91,7 +98,7 @@
                                         <span class="text-muted">No OCR</span>
                                         {% endif %}</td></a></td>
                                     <td>{% if file.rules %}
-                                        <a href="{{ file.rules.url }}" download class="btn btn-outline-primary">Download Rules</a>
+                                        <a href="{% url 'view_rules' id=file.id%}" class="btn btn-outline-primary">View Rules</a>
                                         {% else %}
                                         <span class="text-muted">No Rules</span>
                                         {% endif %}</td>

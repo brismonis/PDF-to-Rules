@@ -32,13 +32,40 @@ def nlp_file(f):
     #print(duration)
     #all_statements = trips_processor.statements
     all_statements = reach_processor.statements
+    # test = []
+    # for b in all_statements:
+    #     test.append(str(b))
+    # for t in test:
+    #     t.replace("\n", ",")
+    # print("...........................")
+    # print(test)
+
+
     all_evidence = []
     for ev in all_statements:
         #print('%s with evidence "%s"' % (ev, ev.evidence[0].text))
-        all_evidence.append(ev.evidence[0].text)
+        evid = '%s with evidence "%s"' % (ev, ev.evidence[0].text)
+        e = str(evid).replace("\n", " ").replace(" \n", " ").replace("\n ", " ").replace(" \n ", " ")
+        #e = e + '\n'
+        print(e)
+        all_evidence.append(e)
+        
+        #Files.set_evidence(f, evid)
+        #Files.set_evidence(f, ('%s with evidence "%s"' % (ev, ev.evidence[0].text)))
 
+    #Files.set_evidence(f, all_evidence)
+    # print(Files.get_evidence(f))
+    # print (f.evidence)
+    print("----------------------------")
     f.stm = all_statements
     f.evidence = all_evidence
+    # print(f.stm)
+    # print("*****************************")
+    # for a in all_evidence:
+    #     f.evidence = f.evidence + a + "\n"
+    # #f.evidence = all_evidence
+    # print(f.evidence)
+    print("----------------------------")
 
     # # OLD
     # max_index = 5000
@@ -130,8 +157,8 @@ def nlp_file(f):
     # boolnet = boolnet.replace(" and ", " ∧ ")
     # lines = boolnet.readlines() str' object has no attribute 'readlines'
     # print(lines)
-    print("----------------------------")
-    rangel = len(bool_list) - 2
+    
+    rangel = len(bool_list) - 1
     print(rangel)
     for bf in range(0, rangel):
         nb = bool_list[bf].replace(" not ", " ¬ ")
@@ -150,7 +177,7 @@ def nlp_file(f):
         #print(bf)
     
     #print(boolnet)
-    print("----------------------------")
+    del bool_list[-1]
     print(bool_list)
     readfile.close()
     f.rules = bool_list

@@ -29,7 +29,7 @@
 
         <div class="card mb-4 bg-light">
             <div class="card-body">
-                Following text was extracted by the OCR for File "{{foundFile.filename}}". Please check for correctness. You can edit the text directly, don't forget to "Save Changes".
+                Following text was extracted by the OCR for File <b>"{{foundFile.filename}}"</b>. Please check for correctness. You can edit the text directly, don't forget to "Save Changes".
             </div>
         </div>
 
@@ -64,7 +64,7 @@
             {% csrf_token %}
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
 
-            <button  id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;">Start NLP</button>
+            <button  id="spin_nlp" type="submit" class="btn btn-primary btn-lg" style="float: right;">Start NLP</button>
             <!-- <button{% if fileId == None %} disabled{% endif %}>Approve</button> -->
 
         </form>

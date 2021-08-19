@@ -1,4 +1,4 @@
-import os
+import os, json
 from django.db import models
 from django.utils import timezone
 from .validators import validate_file_extension
@@ -25,6 +25,7 @@ class Files(models.Model):
     stm = models.TextField(blank=True, null=True)
     evidence = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)
+    #postproc = models.BooleanField()
 
     def get_filename(self):
         return self.filename
@@ -34,6 +35,12 @@ class Files(models.Model):
 
     def get_ocrtext(self):
         return self.ocrtext
+
+    def set_evidence(self, x):
+        self.evidence = json.dumps(x)
+
+    def get_evidence(self):
+        return json.loads(self.evidence)
         
     def delete(self, *args, **kwargs):
         # self.pdf.delete()
@@ -54,10 +61,13 @@ class Files(models.Model):
         fname = Files.get_filename(self)
         JSON_file = os.path.join(JSON_folder, fname + '_reach.json')
         BN_file = os.path.join(BN_folder, fname + "_boolnet")
+        SIF_file = os.path.join(BN_folder, fname + "_sifstring")
         if os.path.exists(PDF_path):
             os.remove(PDF_path)
         if os.path.exists(BN_file):
             os.remove(BN_file)
         if os.path.exists(JSON_file):
             os.remove(JSON_file)
+        if os.path.exists(SIF_file):
+            os.remove(SIF_file)
         super().delete(*args, **kwargs)

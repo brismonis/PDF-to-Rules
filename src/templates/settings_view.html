@@ -9,20 +9,40 @@
               <li class="breadcrumb-item active" aria-current="page">Settings</li>
             </ol>
         </nav> -->
+
+        {% if messages %} <!-- DISPLAYING MESSAGE: SUCCESS OR WARNING -->   
+            {% for message in messages %}
+                {% if message.tags %} 
+                    <div class="alert alert-{{ message.tags }} role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}     
+        {% endif %}
+
+        <form action="{% url 'save_lang' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
         <div class="card mb-4 bg-light">
             <div class="card-body">
                 <div class=text-muted>
                     <label for="selection">Default OCR Language:</label>
-                    <select id="selection" class="form-select" style="max-width: 80%;">
+                    <select id="selection" name="selection" class="form-select" style="max-width: 80%;">
+                        {% if selection %}
+                            <option selected>{{selection}}</option>
+                            {% if selection == "English" %}
+                                <option>German</option>
+                            {% else %}
+                                <option>English</option>
+                            {% endif %}
+                        {% else %}
                         <option selected>English</option>
                         <option>German</option>
+                        {% endif %}
                     </select>
                     </div>
             </div>
         </div>
 
-        <button onclick="setlang()" type="submit" class="btn btn-success btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
-
+        <button type="submit" class="btn btn-success btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
+        </form>
 
     </div>
 </main>

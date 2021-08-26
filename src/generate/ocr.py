@@ -52,10 +52,18 @@ def ocr_file(f, fr, to):
     PDF_path = os.path.join(PDF_folder, path_pdf) # path to current object's PDF
     ocred_text = ''
     jpg_paths = []
-
-    #TODO: Pass Language selection
-    #language = Setting.get_language(0)
     language = "eng"
+    try:
+        obj = Setting.objects.get(id=31)
+        setting = Setting.get_language(obj)
+        if(setting == "English"):
+            language = "eng"
+        else:
+            language = "deu"
+    except:
+        print("No Settings Object yet")
+
+    
     conf = r'--oem 3 --psm 1'
     # Store all the pages of the PDF in a variable
     

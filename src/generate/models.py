@@ -10,6 +10,9 @@ class Setting(models.Model):
 
     def get_language(self):
         return self.default_language
+    def set_language(self, txt):
+        self.default_language = txt
+        #return self.default_language
 
 
 class Files(models.Model):

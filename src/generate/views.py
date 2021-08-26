@@ -26,7 +26,7 @@ from .models import Files, Setting
 from django.template import RequestContext, context
 from django.contrib import messages
 
-from django.db.utils import OperationalError
+from django.db.utils import Error, OperationalError
 # format_list = [('', '(all)')]
 # geom_type_list = [('', '(all)')]
 # try:
@@ -97,8 +97,28 @@ def tables_view(request):
 
 # creating settings view
 def settings_view(request, *args, **kwargs):
+    setting = "English"
+    try:
+        obj = Setting.objects.get(id=31)
+        setting = Setting.get_language(obj)
+        print(setting)
+    except:
+        print("No Settings Object yet")
     
-    return render(request, "settings_view.html", {})
+        #Setting.set_language()
+    # finally:
+    #     setting.save()
+    # try:
+    #     setting = Setting.objects.get(id=0)
+    # except:
+    #     setting = "English"
+    #print(setting)
+    
+    
+    return render(request, "settings_view.html", {
+        "selection":setting, # passing ID to template to show and find file again
+        #'form': form # for displaying form again
+    })
 
 # creating about view
 def about_view(request, *args, **kwargs):
@@ -493,3 +513,55 @@ def download_csv(request):
 
     return response
 
+def save_language(request):
+    selection = request.POST.get('selection') 
+    #print(selection)
+    if(Setting.objects.filter(id=31).first() is None):
+        setting = Setting(default_language=selection)
+        setting.save()
+        print("case 1")
+    else:
+        newsetting = Setting.objects.get(id=31)
+        Setting.set_language(newsetting, selection)
+        newsetting.save()
+        print("case 2")
+
+    # try: 
+    #     settings = Setting.objects.all()
+    # except Error:
+    # try:
+    #     setting = Setting.objects.get(id=0)
+    #     setting = selection
+    #     # setting.save()
+    # except:
+    #     setting = Setting(default_language=selection)
+    #     # setting.save()
+    # setting.save()
+    #setting = object
+    #setting = selection
+    #obj = Setting(default_language=selection)
+    
+    # test = Setting.objects.filter(id=0).first()
+    # print(test)
+    # try:
+    #     obj = Setting.objects.get(id=1)
+    #     Setting.set_language(obj, selection)
+    #     obj.save()
+    #     #setting.save()
+    # except:
+    #     print("No Settings Object yet")
+    # else:
+    #     obj = Setting(default_language=selection)
+    #     obj.save()
+    # finally:
+    #     obj.save()
+    #obj.save()
+
+
+    #print(Setting.get_language(setting))
+    messages.success(request, 'Changes saved!')
+        # return HttpResponseRedirect(reverse_lazy('home', kwargs={'id': a.id}))
+    return render(request, 'settings_view.html', {
+        'selection': selection, # passing ID to template to show and find file again
+    })
+    #redirect ('settings')

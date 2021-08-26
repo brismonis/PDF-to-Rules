@@ -63,6 +63,7 @@ urlpatterns = [
     path('tables/edit/<int:id>', views.edit_table, name='edit_table'),
     path('tables/edit/saved', views.save_changes_table, name='save_table'),
     path('settings/', views.settings_view, name='settings'),
+    path('settings/saved/', views.save_language, name='save_lang'),
     path('about/', views.about_view, name='about'),
     path('login/', views.login_view, name='login'),
     # re_path(r'^tables/', views.tables_view, name='tables'),

@@ -23,13 +23,12 @@
         <!-- <div class="container-fluid pt-3 my-3 border bg-light"> 
             <p>Following rules were found in File "{{foundFile.filename}}" in {{duration}}.</p>
         </div> -->
-
         <div class="card mb-4 bg-light">
             <div class="card-body">
                 Following rules were found for File <b>"{{foundFile.filename}}"</b> in {{duration}}. They can be edited directly, do not forget to "Save Changes". Rules can also be edited in Tables.
             </div>
         </div>
-
+        
         <!-- <form action="{% url 'save_nlp' %}" method="POST">  TODO SAVE -->
             <!-- {% for f in foundFile.rules %} 
             {{f}}<br>
@@ -66,16 +65,15 @@
                     
                 </tbody>
             </table>
-
+            
             <div class="wrapper" style="text-align: center;margin-bottom: 4vw;"><button onclick="addRow()" style="position: absolute;" type="button" class="btn btn-outline-primary btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-plus"></i></button></div>
 
-        
             <input type="text" name="fileId" value="{{foundFile.id}}" style="display: none;"/>
             <input type="text" name="duration" id="duration" value="{{duration}}" style="display: none;"/>
             <button type="submit" class="btn btn-success btn-lg" style="float: left; margin-bottom: 4vw;margin-right: 10px;">Save Changes</button>
 
         </form>
-
+    <!-- <div class="row"> -->
         <!-- DOWNLOAS AS CSV-->
         <form action="{% url 'download' %}" method="POST" name="fileId" value="{{fileId}}">
         {% csrf_token %}
@@ -85,7 +83,7 @@
 
         </form>
 
-
+        <!-- <div class="container-fluid"> -->
         <form action="{% url 'home' %}" method="POST">
             {% csrf_token %}
             <!-- <input type="text" name="fileId" value="{{fileId.id}}" style="display: none;"/> -->
@@ -94,26 +92,38 @@
              type="submit" class="btn btn-primary btn-lg" style="float: right; margin-bottom: 4vw;">Upload new File</button>
             
         </form>
-        <br>
+    <!-- </div> -->
+        <!-- </div> -->
+        
+    
 
         <!-- SHOWING INDRA STATEMENTS IN TABLE -->
-        <table class="table table-striped table-bordered table-hover" style="text-align: left; margin-bottom: 4vw;">
-            <tbody>
-                <tr>
-                    <th>Nr.</th>
-                    <th>INDRA Statements with text evidence for File "{{foundFile.filename}}."</th>
-                </tr>
-                {% if foundFile != None %}
-                        {% for ev in foundFile.evidence %}
-                        <tr>
-                            <td style="width: 40px;">{{ forloop.counter }}</td>
-                            <td style="text-align: left;">{{ev}}</td>
-                        </tr>
-                    {% endfor %}
-                {% endif %}
+        <div class="card mb-4" style="display:block; margin-top: 11vw;">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                INDRA Statements with text evidence for File "{{foundFile.filename}}."
+            </div>
+            <div class="card-body">
+                <table id="datatableNLP" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <th>Nr.</th>
+                        <th>INDRA Statements</th>
+                    </thead>
+                    <tbody>
+                        
+                        {% if foundFile != None %}
+                                {% for ev in foundFile.evidence %}
+                                <tr>
+                                    <td style="width: 40px;">{{ forloop.counter }}</td>
+                                    <td style="text-align: left;">{{ev}}</td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
 
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 
     </div>

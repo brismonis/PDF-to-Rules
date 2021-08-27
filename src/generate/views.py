@@ -519,12 +519,12 @@ def save_language(request):
     if(Setting.objects.filter(id=31).first() is None):
         setting = Setting(default_language=selection)
         setting.save()
-        print("case 1")
+        #print("case 1")
     else:
         newsetting = Setting.objects.get(id=31)
         Setting.set_language(newsetting, selection)
         newsetting.save()
-        print("case 2")
+        #print("case 2")
 
     # try: 
     #     settings = Setting.objects.all()

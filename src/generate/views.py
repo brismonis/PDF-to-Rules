@@ -526,42 +526,8 @@ def save_language(request):
         newsetting.save()
         #print("case 2")
 
-    # try: 
-    #     settings = Setting.objects.all()
-    # except Error:
-    # try:
-    #     setting = Setting.objects.get(id=0)
-    #     setting = selection
-    #     # setting.save()
-    # except:
-    #     setting = Setting(default_language=selection)
-    #     # setting.save()
-    # setting.save()
-    #setting = object
-    #setting = selection
-    #obj = Setting(default_language=selection)
-    
-    # test = Setting.objects.filter(id=0).first()
-    # print(test)
-    # try:
-    #     obj = Setting.objects.get(id=1)
-    #     Setting.set_language(obj, selection)
-    #     obj.save()
-    #     #setting.save()
-    # except:
-    #     print("No Settings Object yet")
-    # else:
-    #     obj = Setting(default_language=selection)
-    #     obj.save()
-    # finally:
-    #     obj.save()
-    #obj.save()
-
-
-    #print(Setting.get_language(setting))
     messages.success(request, 'Changes saved!')
         # return HttpResponseRedirect(reverse_lazy('home', kwargs={'id': a.id}))
     return render(request, 'settings_view.html', {
         'selection': selection, # passing ID to template to show and find file again
     })
-    #redirect ('settings')

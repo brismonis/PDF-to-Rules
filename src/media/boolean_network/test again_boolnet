@@ -1,0 +1,6 @@
+PRKD1 = False
+SSH1 = False
+F_actin = False
+AURKA = False
+
+SSH1* = F_actin or AURKA

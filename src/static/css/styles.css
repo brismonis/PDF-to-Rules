@@ -3885,7 +3885,7 @@ textarea.form-control-lg {
   }
 }
 /* changed color from #0d6efd to #fff (User Icon) */
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, .nav-link:focus, .nav-link:active {
   color: #fff;
 }
 .nav-link.disabled {
@@ -11088,6 +11088,7 @@ body {
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
   color: #fff;
 }
+
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #fff;
 }

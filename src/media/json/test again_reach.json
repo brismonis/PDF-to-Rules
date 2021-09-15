@@ -1,0 +1,752 @@
+{
+  "events" : {
+    "frames" : [ {
+      "frame-id" : "evem-api45-UAZ-r1-Reach-0-1207",
+      "text" : "F-actin enhances SSH1L",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-0-4320"
+      }, {
+        "text" : "F-actin",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-0-4319"
+      } ],
+      "type" : "activation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-activation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 22,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "enhances",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-0",
+      "found-by" : "Positive_activation_syntax_1_verb",
+      "verbose-text" : "F-actin enhances SSH1L activity [52,57,59,61]."
+    }, {
+      "text" : "PRKD1 phosphorylates SSH1L",
+      "frame-id" : "evem-api45-UAZ-r1-Reach-1-1203",
+      "arguments" : [ {
+        "text" : "phosphorylates SSH1L",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api45-UAZ-r1-Reach-1-1204"
+      }, {
+        "text" : "PRKD1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-1-4316"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 73,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 47,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api45-UAZ-r1-Reach-1",
+      "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
+    }, {
+      "frame-id" : "evem-api45-UAZ-r1-Reach-1-1204",
+      "text" : "phosphorylates SSH1L",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-1-4315"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 73,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 53,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-1",
+      "found-by" : "Phosphorylation_syntax_1a_verb",
+      "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
+    }, {
+      "frame-id" : "evem-api45-UAZ-r1-Reach-2-1205",
+      "text" : "AURKA induces SSH1L expression",
+      "arguments" : [ {
+        "text" : "SSH1L expression",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api45-UAZ-r1-Reach-2-1206"
+      }, {
+        "text" : "AURKA",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-2-4318"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 141,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "induces",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 111,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-2",
+      "found-by" : "Positive_regulation_syntax_1_verb",
+      "verbose-text" : "In the presence of PI3K, AURKA induces SSH1L expression [54,56,57]."
+    }, {
+      "frame-id" : "evem-api45-UAZ-r1-Reach-2-1206",
+      "text" : "SSH1L expression",
+      "arguments" : [ {
+        "text" : "SSH1L",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api45-UAZ-r1-Reach-2-4317"
+      } ],
+      "type" : "transcription",
+      "frame-type" : "event-mention",
+      "subtype" : "transcription",
+      "is-direct" : false,
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 141,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "expression",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 125,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-2",
+      "found-by" : "expression_1",
+      "verbose-text" : "In the presence of PI3K, AURKA induces SSH1L expression [54,56,57]."
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T13:06:14Z",
+      "doc-id" : "api45",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T13:06:13Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "entities" : {
+    "frames" : [ {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-0-4320",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 22,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 17,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "F-actin",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-0-4319",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 7,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "object-type" : "db-reference",
+        "id" : "F_actin"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-0"
+    }, {
+      "text" : "PRKD1",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-1-4316",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 52,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 47,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15139"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q62101"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q9WTQ1"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-1-4315",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 73,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 68,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-1",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-2-4317",
+      "type" : "gene",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 130,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 125,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-2",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    }, {
+      "text" : "PI3K",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-2-4321",
+      "type" : "family",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 109,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 105,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-2",
+      "alt-xrefs" : [ {
+        "namespace" : "fplx",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "PI3K"
+      } ]
+    }, {
+      "text" : "AURKA",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-2-4318",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 116,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 111,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-2",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      } ]
+    }, {
+      "text" : "LIMK",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-3-4322",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 158,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 154,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P53667"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q8IR79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P53666"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P53668"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P53669"
+      } ]
+    }, {
+      "text" : "SSH1L",
+      "frame-id" : "ment-api45-UAZ-r1-Reach-3-4323",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 168,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 163,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api45-UAZ-r1-Reach-3",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q8WYL5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q76I79"
+      } ]
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T13:06:14Z",
+      "doc-id" : "api45",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T13:06:13Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "sentences" : {
+    "frames" : [ {
+      "text" : "F-actin enhances SSH1L activity [52,57,59,61]. PRKD1 phosphorylates SSH1L [52,53,61]. In the presence of PI3K, AURKA induces SSH1L expression [54,56,57]. LIMK and SSH1L can build a complex that effectively dephosphorylates both [59,60].",
+      "frame-id" : "pass-api45-UAZ-r1-Reach",
+      "section-id" : "NoSection",
+      "frame-type" : "passage",
+      "is-title" : false,
+      "section-name" : "NoSection",
+      "object-type" : "frame",
+      "index" : "Reach",
+      "object-meta" : {
+        "component" : "nxml2fries",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "F-actin enhances SSH1L activity [ 52,57,59,61 ] .",
+      "frame-id" : "sent-api45-UAZ-r1-Reach-0",
+      "passage" : "pass-api45-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 46,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "PRKD1 phosphorylates SSH1L [ 52,53,61 ] .",
+      "frame-id" : "sent-api45-UAZ-r1-Reach-1",
+      "passage" : "pass-api45-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 85,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 47,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "In the presence of PI3K , AURKA induces SSH1L expression [ 54,56,57 ] .",
+      "frame-id" : "sent-api45-UAZ-r1-Reach-2",
+      "passage" : "pass-api45-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 153,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 86,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "LIMK and SSH1L can build a complex that effectively dephosphorylates both [ 59,60 ] .",
+      "frame-id" : "sent-api45-UAZ-r1-Reach-3",
+      "passage" : "pass-api45-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 236,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api45-UAZ-r1-Reach",
+        "offset" : 154,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T13:06:14Z",
+      "doc-id" : "api45",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T13:06:13Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  }
+}

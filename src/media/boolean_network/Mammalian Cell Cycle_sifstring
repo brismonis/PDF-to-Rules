@@ -1,0 +1,11 @@
+cdk inhibitor 1 CDK
+CycD -1 PSMD9
+CycD -1 RB1
+Cyclin_E 1 RB1
+cycA 1 RB1
+cycA -1 Cdhl
+Cdhl -1 Cdc20O
+Cdhl -1 Cyclin_A
+Cyclin 1 CDC20
+CDC20 1 Cdhl
+ganS 1 CDC20

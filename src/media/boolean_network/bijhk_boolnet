@@ -1,0 +1,23 @@
+ccne1 = False
+PSMD9 = False
+cdk inhibitor = False
+CDK = False
+CycD = False
+RB1 = False
+Cyclin_E = False
+cycA = False
+Cdhl = False
+Cyclin = False
+CDC20 = False
+Cyclin_A = False
+ganS = False
+mitotic cell cycle = False
+anaphase = False
+
+PSMD9* = not (ccne1 or CycD or cycA)
+CDK* = cdk inhibitor
+RB1* = (Cyclin_E) and not (CycD or ccne1 or cycA)
+Cdhl* = (CDC20) and not (cycA)
+CDC20* = (Cyclin or ganS) and not (Cdhl)
+Cyclin_A* = not (Cdhl)
+anaphase* = mitotic cell cycle

@@ -1,0 +1,6 @@
+ganS = False
+CDC20 = False
+Cdhl = False
+
+CDC20* = ganS
+Cdhl* = CDC20

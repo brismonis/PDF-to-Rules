@@ -1,0 +1,1195 @@
+{
+  "events" : {
+    "frames" : [ {
+      "frame-id" : "evem-api37-UAZ-r1-Reach-0-1084",
+      "text" : "phosphorylates AURKA",
+      "arguments" : [ {
+        "text" : "AURKA",
+        "argument-type" : "entity",
+        "type" : "theme",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api37-UAZ-r1-Reach-0-3314"
+      } ],
+      "type" : "protein-modification",
+      "frame-type" : "event-mention",
+      "subtype" : "phosphorylation",
+      "is-direct" : true,
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 41,
+        "object-type" : "relative-pos"
+      },
+      "trigger" : "phosphorylates",
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 21,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-0",
+      "found-by" : "Phosphorylation_syntax_1a_verb",
+      "verbose-text" : "1 Introduction\r\nPAK1 phosphorylates AURKA."
+    }, {
+      "text" : "PAK1 phosphorylates AURKA",
+      "frame-id" : "evem-api37-UAZ-r1-Reach-0-1083",
+      "arguments" : [ {
+        "text" : "phosphorylates AURKA",
+        "argument-type" : "event",
+        "type" : "controlled",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "evem-api37-UAZ-r1-Reach-0-1084"
+      }, {
+        "text" : "PAK1",
+        "argument-type" : "entity",
+        "type" : "controller",
+        "object-type" : "argument",
+        "index" : 0,
+        "arg" : "ment-api37-UAZ-r1-Reach-0-3315"
+      } ],
+      "type" : "regulation",
+      "frame-type" : "event-mention",
+      "subtype" : "positive-regulation",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 41,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 16,
+        "object-type" : "relative-pos"
+      },
+      "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+      "sentence" : "sent-api37-UAZ-r1-Reach-0",
+      "verbose-text" : "1 Introduction\r\nPAK1 phosphorylates AURKA."
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T12:06:43Z",
+      "doc-id" : "api37",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T12:06:25Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "entities" : {
+    "frames" : [ {
+      "text" : "PAK1",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-0-3315",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 20,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 16,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q13153"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q16512"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "baker's yeast",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q08E52"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "caenorhabditis elegans",
+        "object-type" : "db-reference",
+        "id" : "Q17850"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fission yeast",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "O88643"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P35465"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q63433"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P38990"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "saccharomyces cerevisiae (strain atcc 204508 / s288c)",
+        "object-type" : "db-reference",
+        "id" : "P40494"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "schizosaccharomyces pombe (strain 972 / atcc 24843)",
+        "object-type" : "db-reference",
+        "id" : "P50527"
+      } ]
+    }, {
+      "text" : "AURKA",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-0-3314",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 41,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 36,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-0",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O14965"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "Q2TA06"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P97477"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P59241"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "A5GFW1"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91819"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "Q91820"
+      } ]
+    }, {
+      "text" : "€ F",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-11-3316",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1321,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uaz",
+        "object-type" : "db-reference",
+        "id" : "UAZE282AC2046"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1318,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-11"
+    }, {
+      "text" : "gene expression",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-12-3317",
+      "type" : "bioprocess",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1473,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "go",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "GO:0010467"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1458,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-12"
+    }, {
+      "text" : "PBN",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-15-3318",
+      "type" : "simple-chemical",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1740,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "pubchem",
+        "object-type" : "db-reference",
+        "id" : "5352425"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1737,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-15",
+      "alt-xrefs" : [ {
+        "namespace" : "pubchem",
+        "object-type" : "db-reference",
+        "id" : "5352425"
+      } ]
+    }, {
+      "text" : "Pn",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-17-3320",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2007,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15063"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2005,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q15063"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q15063"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bacteriophage lambda",
+        "object-type" : "db-reference",
+        "id" : "P03045"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "escherichia phage lambda",
+        "object-type" : "db-reference",
+        "id" : "P03045"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "great pond snail",
+        "object-type" : "db-reference",
+        "id" : "P19802#PRO_0000009674"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "helix stagnalis",
+        "object-type" : "db-reference",
+        "id" : "P19802#PRO_0000009674"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "lymnaea stagnalis",
+        "object-type" : "db-reference",
+        "id" : "P19802#PRO_0000009674"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "Q62009"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "Q62009"
+      } ]
+    }, {
+      "text" : "P11",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-17-3319",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1970,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P21128"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1967,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P21128"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P60903"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q5RKV6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P21128"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P60903"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q5RKV6"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "acyrthosiphon pisum secondary endosymbiont phage 1",
+        "object-type" : "db-reference",
+        "id" : "Q9T1T7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "african clawed frog",
+        "object-type" : "db-reference",
+        "id" : "P27004"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "arabidopsis thaliana",
+        "object-type" : "db-reference",
+        "id" : "Q96519"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bacteriophage apse-1",
+        "object-type" : "db-reference",
+        "id" : "Q9T1T7"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bacteriophage phi-6",
+        "object-type" : "db-reference",
+        "id" : "P07582"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bos taurus",
+        "object-type" : "db-reference",
+        "id" : "P60902"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bovine",
+        "object-type" : "db-reference",
+        "id" : "P60902"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "chicken",
+        "object-type" : "db-reference",
+        "id" : "P27003"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "drosophila melanogaster",
+        "object-type" : "db-reference",
+        "id" : "Q9VLR5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "fruit fly",
+        "object-type" : "db-reference",
+        "id" : "Q9VLR5"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "gallus gallus",
+        "object-type" : "db-reference",
+        "id" : "P27003"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P08207"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse-ear cress",
+        "object-type" : "db-reference",
+        "id" : "Q96519"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P08207"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pig",
+        "object-type" : "db-reference",
+        "id" : "P04163"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "pseudomonas phage phi6",
+        "object-type" : "db-reference",
+        "id" : "P07582"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P05943"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "Q924P2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P05943"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "Q924P2"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "spinach",
+        "object-type" : "db-reference",
+        "id" : "P82657"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "spinacia oleracea",
+        "object-type" : "db-reference",
+        "id" : "P82657"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "sus scrofa",
+        "object-type" : "db-reference",
+        "id" : "P04163"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "xenopus laevis",
+        "object-type" : "db-reference",
+        "id" : "P27004"
+      } ]
+    }, {
+      "text" : "Pnk",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-17-3321",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2025,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O00764"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2022,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-17",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "O00764"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "Q96T60"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "O00764"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "Q96T60"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "bacteriophage t4",
+        "object-type" : "db-reference",
+        "id" : "P06855"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "enterobacteria phage t4",
+        "object-type" : "db-reference",
+        "id" : "P06855"
+      } ]
+    }, {
+      "text" : "step",
+      "frame-id" : "ment-api37-UAZ-r1-Reach-21-3322",
+      "type" : "protein",
+      "frame-type" : "entity-mention",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2623,
+        "object-type" : "relative-pos"
+      },
+      "xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P54829"
+      } ],
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2619,
+        "object-type" : "relative-pos"
+      },
+      "sentence" : "sent-api37-UAZ-r1-Reach-21",
+      "alt-xrefs" : [ {
+        "namespace" : "uniprot",
+        "species" : "homo sapiens",
+        "object-type" : "db-reference",
+        "id" : "P54829"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "human",
+        "object-type" : "db-reference",
+        "id" : "P54829"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mouse",
+        "object-type" : "db-reference",
+        "id" : "P54830"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "mus musculus",
+        "object-type" : "db-reference",
+        "id" : "P54830"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rat",
+        "object-type" : "db-reference",
+        "id" : "P35234"
+      }, {
+        "namespace" : "uniprot",
+        "species" : "rattus norvegicus",
+        "object-type" : "db-reference",
+        "id" : "P35234"
+      } ]
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T12:06:43Z",
+      "doc-id" : "api37",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T12:06:25Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  },
+  "sentences" : {
+    "frames" : [ {
+      "text" : "1 Introduction\r PAK1 phosphorylates AURKA.\r BoolNet is an R package that provides tools for assembling, analyzing and visualizing synchronous and asynchronous Boolean networks as well as probabilistic\r Boolean networks. This document gives an introduction to the usage of the\r software and includes examples for use cases.\r BoolNet supports four types of networks:\r Synchronous Boolean networks consist of a set of Boolean variables\r X = {X1,...,Xn}\r and a set of transition functions\r F=({fi,.--,fn},\r one for each variable. These transition functions map an input of the\r Boolean variables in X to a Boolean value (0 or 1). We call a Boolean\r vector x(t) = (@1(t),...,%n(t)) the state of the network at time t. Then,\r the next state of the network x(t) is calculated by applying all transition\r functions f;(x(t — 1)).\r In a biological context, genes can be modeled as Boolean variables (active/expressed or inactive/not expressed), and the transition functions model\r the dependencies among these genes. In the synchronous model, the assumption is that all genes are updated at the same time. This simplification facilitates the analysis of the networks.\r Asynchronous Boolean networks have the same structure as synchronous\r Boolean networks. Yet, at each point of time t, only one of the transition\r functions f; € F is chosen at random, and the corresponding Boolean\r variable is updated. This corresponds to the assumption that in a genetic\r network, gene expression levels are likely to change at different points\r of time. In the most common model, the gene to be updated is chosen\r uniformly among all genes. Moreover, BoolNet supports specifying nonuniform update probabilities for the genes.\r Probabilistic Boolean networks (PBN) allow for specifying more than one\r transition function per variable/gene. Each of these functions has a probability to be chosen, where the probabilities of all functions for one variable\r sum up to 1. Formally\r R= {{( fii, P11) yar (fiks > Pik) } genes {(fints Pn) giney (frnkn>Pnk,)}}\r where k; is the number of alternative transition functions for variable 2,\r and p;; is the probability that function 7 is chosen for variable 7. A state\r transition is performed by selecting one function for each gene based on\r the probabilities and applying the chosen functions synchronously.\r Temporal Boolean networks are Boolean networks that incorporate temporal predicates and discrete time delays. Here, the next state x(t) may\r not only depend on «(t — 1), but can depend on any predecessor state\r a(t — A), A € {1,2,...}. Furthermore, x(t) may also directly depend on\r the time step ¢ itself.",
+      "frame-id" : "pass-api37-UAZ-r1-Reach",
+      "section-id" : "NoSection",
+      "frame-type" : "passage",
+      "is-title" : false,
+      "section-name" : "NoSection",
+      "object-type" : "frame",
+      "index" : "Reach",
+      "object-meta" : {
+        "component" : "nxml2fries",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "1 Introduction  PAK1 phosphorylates AURKA .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-0",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 42,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 0,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "BoolNet is an R package that provides tools for assembling , analyzing and visualizing synchronous and asynchronous Boolean networks as well as probabilistic  Boolean networks .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-1",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 219,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 44,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "This document gives an introduction to the usage of the  software and includes examples for use cases .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-2",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 322,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 220,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "BoolNet supports four types of networks :  Synchronous Boolean networks consist of a set of Boolean variables  X = { X1 ,..., Xn }  and a set of transition functions  F =( { fi ,.--, fn } ,  one for each variable .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-3",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 525,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 324,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "These transition functions map an input of the  Boolean variables in X to a Boolean value ( 0 or 1 ) .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-4",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 625,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 526,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "We call a Boolean  vector x( t ) = ( @ 1 ( t ) ,..., % n ( t ) ) the state of the network at time t.",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-5",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 712,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 626,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Then ,  the next state of the network x( t ) is calculated by applying all transition  functions f ;( x( t — 1 ) ) .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-6",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 820,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 713,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "In a biological context , genes can be modeled as Boolean variables ( active / expressed or inactive / not expressed ) , and the transition functions model  the dependencies among these genes .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-7",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1006,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 822,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "In the synchronous model , the assumption is that all genes are updated at the same time .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-8",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1095,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1007,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "This simplification facilitates the analysis of the networks .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-9",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1157,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1096,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Asynchronous Boolean networks have the same structure as synchronous  Boolean networks .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-10",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1246,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1159,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Yet , at each point of time t , only one of the transition  functions f ; € F is chosen at random , and the corresponding Boolean  variable is updated .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-11",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1394,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1247,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "This corresponds to the assumption that in a genetic  network , gene expression levels are likely to change at different points  of time .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-12",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1531,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1395,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "In the most common model , the gene to be updated is chosen  uniformly among all genes .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-13",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1618,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1532,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Moreover , BoolNet supports specifying nonuniform update probabilities for the genes .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-14",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1703,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1619,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Probabilistic Boolean networks ( PBN ) allow for specifying more than one  transition function per variable / gene .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-15",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1816,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1705,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Each of these functions has a probability to be chosen , where the probabilities of all functions for one variable  sum up to 1 .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-16",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1944,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1817,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Formally  R = { { ( fii , P11 ) yar ( fiks > Pik ) } genes { ( fints Pn ) giney ( frnkn > Pnk , ) } }  where k ; is the number of alternative transition functions for variable 2 ,  and p ;; is the probability that function 7 is chosen for variable 7 .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-17",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2175,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 1945,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "A state  transition is performed by selecting one function for each gene based on  the probabilities and applying the chosen functions synchronously .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-18",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2325,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2176,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Temporal Boolean networks are Boolean networks that incorporate temporal predicates and discrete time delays .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-19",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2436,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2327,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Here , the next state x( t ) may  not only depend on « ( t — 1 ) , but can depend on any predecessor state  a ( t — A ) , A € { 1,2 ,... } .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-20",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2562,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2437,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    }, {
+      "text" : "Furthermore , x( t ) may also directly depend on  the time step ¢ itself .",
+      "frame-id" : "sent-api37-UAZ-r1-Reach-21",
+      "passage" : "pass-api37-UAZ-r1-Reach",
+      "frame-type" : "sentence",
+      "end-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2633,
+        "object-type" : "relative-pos"
+      },
+      "object-type" : "frame",
+      "start-pos" : {
+        "reference" : "pass-api37-UAZ-r1-Reach",
+        "offset" : 2563,
+        "object-type" : "relative-pos"
+      },
+      "object-meta" : {
+        "component" : "BioNLPProcessor",
+        "object-type" : "meta-info"
+      }
+    } ],
+    "object-type" : "frame-collection",
+    "object-meta" : {
+      "processing-end" : "2021-08-30T12:06:43Z",
+      "doc-id" : "api37",
+      "component-type" : "machine",
+      "component" : "Reach",
+      "processing-start" : "2021-08-30T12:06:25Z",
+      "object-type" : "meta-info",
+      "organization" : "UAZ"
+    }
+  }
+}

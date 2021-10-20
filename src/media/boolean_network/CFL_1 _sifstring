@@ -1,0 +1,60 @@
+PAK1 1 LIMK1
+AURKA -1 TWIST1
+AURKA 1 CFL1
+AURKA 1 slingshot-1L
+AURKA 1 SSH1
+CFL1 1 cell population proliferation
+CFL1 -1 cell migration
+CFL1 1 Neoplasms
+CFL1 1 RAC1
+CFL1 -1 apoptotic process
+CFL1 -1 BAX
+LIMK1 -1 CFL1
+PRKD1 -1 CTNNB1
+PRKD1 1 TCF7L2
+AKT -1 GSK3B
+AKT 1 cdk-4
+AKT 1 CCND1
+CASP14 -1 CFL1
+Neoplasms 1 PARP1
+Neoplasms 1 Cc
+TWIST1 1 CD44
+TWIST1 -1 apoptotic process
+TWIST1 -1 CDH1
+CD44 1 STAT3
+CD44 -1 apoptotic process
+CD44 1 CFL1
+PAK4 1 LIMK1
+PAK4 -1 RHOA
+ROCK 1 LIMK1
+F_actin 1 SSH1
+RHOA 1 PRKD1
+RHOA 1 TCF7L2
+PI3K 1 RAC1
+PI3K 1 AKT
+RAC1 1 PAK1
+RAC1 1 PAK4
+RAC1 1 AURKA
+RAC1 1 Actin
+CDH1 -1 CTNNB1
+GSK3B -1 MYC
+CCND1 -1 RB1
+STAT3 1 AKT1
+STAT3 1 cell population proliferation
+STAT3 1 Cyclin
+STAT3 -1 apoptotic process
+STAT3 1 MYC
+STAT3 1 AKT
+CYCS 1 Caspase
+RAS 1 CFL1
+RAS 1 Actin
+Actin 1 CFL1
+KRAS 1 Actin
+Death_receptor 1 apoptotic process
+CDKN1A -1 cell cycle
+doxycycline 1 CFL1
+TCF7L2 1 CFL1
+MYC 1 CCND1
+STAT 1 BCL2L1
+STAT 1 MCL1
+protein kinase 1 TCF7L2

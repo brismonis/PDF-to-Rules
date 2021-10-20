@@ -79,7 +79,7 @@
                                     <td>{{ file.date }}</td>
                                     <td> <a href="{{ file.pdf.url }}" class="btn btn-outline-primary" target="_blank">View PDF</a></td>
                                     <td>{% if file.ocrtext %}
-                                        <a class="btn btn-outline-primary" href="data:text/plain;charset=UTF-8,{{file.ocrtext}}" download="{{file.filename}}" style="text-decoration: none;">Download OCR</a>
+                                        <a class="btn btn-outline-primary" href="data:application/txt;charset=UTF-8,{{file.ocrtext}}" download="{{file.filename}}" style="text-decoration: none;">Download OCR</a>
                                         {% else %}
                                         <span class="text-muted">No OCR</span>
                                         {% endif %}</td></a></td>

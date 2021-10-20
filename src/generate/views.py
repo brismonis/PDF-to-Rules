@@ -277,7 +277,7 @@ def save_changes_table(request, *args, **kwargs):
         foundFile = request.POST.get('fileId') 
         file = Files.objects.get(id=foundFile)
         att = request.POST.getlist('tableedit')
-        print(att)
+        #print(att)
         file.filename = att[0]
         file.authors = att[1]
         file.literature = att[2]
@@ -319,7 +319,7 @@ def save_changes_rules(request, *args, **kwargs):
         # file.evidence = list2
 
         new_rules = request.POST.getlist('value')
-        print(new_rules)
+        #print(new_rules)
         file.ruleslist = new_rules
         # file.save()
         
@@ -443,7 +443,7 @@ def processing_nlp(request, *args, **kwargs):
     ty_res = time.gmtime(duration)
     minutes = time.strftime("%M minutes and %S seconds",ty_res)
     #minutes = str(datetime.timedelta(seconds=duration))
-    print(minutes)
+    #print(minutes)
     if file.rules is None:
         messages.warning(request, 'No Rules found!')
         return redirect('home')

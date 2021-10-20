@@ -1,9 +1,11 @@
 import os, json
 from django.db import models
+from django.db.models.fields import TextField
 from django.utils import timezone
 from .validators import validate_file_extension
 from django.core.validators import FileExtensionValidator
 from pdftorules.settings import MEDIA_ROOT
+from django.contrib.postgres.fields import ArrayField
 
 class Setting(models.Model):
     default_language = models.CharField(max_length=20, default="eng")
@@ -28,7 +30,36 @@ class Files(models.Model):
     stm = models.TextField(blank=True, null=True)
     evidence = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)
-    #postproc = models.BooleanField()
+    
+    #stmlist = ArrayField(models.TextField(blank=True), default=0)
+    #ruleslist = ArrayField(models.TextField(blank=True), default=0)
+
+    # switching to Arrays   
+    # def get_evlist_default():
+    #     list = ['default', 'default']
+    #     return list
+
+    stmlist = ArrayField(
+        models.TextField(blank=True, default=list), 
+        blank=True, 
+        null = True,
+        
+    )
+
+    evlist = ArrayField(
+        models.TextField(blank=True, default=list), 
+        blank=True, 
+        null = True,
+        
+    )
+
+    ruleslist = ArrayField(
+        models.TextField(blank=True, default=list), 
+        blank=True, 
+        null = True,
+        
+    )
+
 
     def get_filename(self):
         return self.filename

@@ -17,7 +17,6 @@ def get_session():
     return thread_local.session
 
 def nlp_file(f):
-    # TODO: getting Object 
     all_statements = []
     PDF_file = Files.get_filename(f)
     JSON_folder = os.path.join(MEDIA_ROOT, 'json') # path to json Folder
@@ -29,17 +28,7 @@ def nlp_file(f):
     #trips_processor = trips.process_text(ocrtext) 
     reach_processor = reach.process_text(text=ocrtext, output_fname=JSON_file, url=reach.local_text_url)
     duration = time.time() - start_time
-    #print(duration)
-    #all_statements = trips_processor.statements
     all_statements = reach_processor.statements
-    # test = []
-    # for b in all_statements:
-    #     test.append(str(b))
-    # for t in test:
-    #     t.replace("\n", ",")
-    # print("...........................")
-    # print(test)
-
 
     all_evidence = []
     for ev in all_statements:
@@ -47,7 +36,7 @@ def nlp_file(f):
         evid = '%s with evidence "%s"' % (ev, ev.evidence[0].text)
         e = str(evid).replace("\n", " ").replace(" \n", " ").replace("\n ", " ").replace(" \n ", " ")
         #e = e + '\n'
-        print(e)
+        #print(e)
         all_evidence.append(e)
         
         #Files.set_evidence(f, evid)
@@ -56,18 +45,28 @@ def nlp_file(f):
     #Files.set_evidence(f, all_evidence)
     # print(Files.get_evidence(f))
     # print (f.evidence)
-    print("----------------------------")
-    f.stm = all_statements
-    f.evidence = all_evidence
-    # print(f.stm)
+    # print("----------------------------")
+
+    # calvin = User.objects.get(username='snoop')
+    # calvin.rep.skillz = ['ballin', 'rappin', 'talk show host', 'merchandizn']
+    # calvin.rep.save()
+    #Files(evlist = all_evidence) # Array
+    
+    # print (f.evlist)
+    # for blub in f.evlist:
+    #     print (blub)
     # print("*****************************")
+    f.stmlist = all_statements
+    f.evidence = all_evidence
+    f.evlist = all_evidence
+    
     # for a in all_evidence:
     #     f.evidence = f.evidence + a + "\n"
     # #f.evidence = all_evidence
     # print(f.evidence)
-    print("----------------------------")
+    #print("----------------------------")
 
-    # # OLD
+    # # OLD CODE, calling non local API
     # max_index = 5000
     # index = 0
     # string_length = len(ocrtext)
@@ -142,6 +141,9 @@ def nlp_file(f):
     BN_file = os.path.join(BN_folder, f.filename)
     sa = sif.SifAssembler(stmts=all_statements)
     sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=True)
+    #sa.make_model(use_name_as_key=True, include_mods=True)
+    #sa.make_model(use_name_as_key=True)
+    #sa.make_model()
     sa.save_model(fname=BN_file + "_sifstring")
     sa.print_boolean_net(out_file=BN_file + "_boolnet")
     #bf = ''
@@ -167,7 +169,7 @@ def nlp_file(f):
     # print(lines)
     
     rangel = len(bool_list) - 1
-    print(rangel)
+    #print(rangel)
     for bf in range(0, rangel):
         nb = bool_list[bf].replace(" not ", " ! ")
         nb = nb.replace("*", "")
@@ -177,7 +179,7 @@ def nlp_file(f):
         #words = bf.split()
         # removes repeating words by using regex
         nb = re.sub(r'\b(.+)\s+\1\b', r'\1', nb)
-        print(nb)
+        #print(nb)
         #print (len(nb))
         bool_list[bf] = nb
         #print(bf)
@@ -189,8 +191,9 @@ def nlp_file(f):
 
     # deleting last item in array because it's empty
     del bool_list[-1]
-    print(bool_list)
+    #print(bool_list)
     readfile.close()
+    f.ruleslist = bool_list
     f.rules = bool_list
     f.save()
 
@@ -204,6 +207,3 @@ def nlp_file(f):
     #str = sa.print_boolean_net(out_file=BN_file)
     #sa.make_model
     #print(sifstring)
-
-
-    #TODO: Boolsche Funktionen als csv speichern + download

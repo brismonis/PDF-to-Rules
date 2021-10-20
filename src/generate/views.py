@@ -99,7 +99,7 @@ def tables_view(request):
 def settings_view(request, *args, **kwargs):
     setting = "English"
     try:
-        obj = Setting.objects.get(id=31)
+        obj = Setting.objects.get(id=1)
         setting = Setting.get_language(obj)
         print(setting)
     except:
@@ -167,28 +167,39 @@ def edit_table(request, id):
 
 def view_rules(request, id):
     file = Files.objects.get(id=id)
-    list = file.rules
-    list = list.replace("[","")
-    list = list.replace("]","")
-    list = list.replace("'","")
-    nl = list.split(", ")
-    file.rules = nl
+    #rul = file.rules
     # converting model TextField into array again
-    list = file.evidence
-    list = list.replace("[","")
-    list = list.replace("]","")
-    nl = []
-    nl = list.split("\'")
-    c = ''
-    b = ', '
-    while c in nl:
-        nl.remove(c)
-    while b in nl:
-        nl.remove(b)
-    list2 = []
-    for i in nl:
-        list2.append(i)
-    file.evidence = list2
+    # rul = rul.replace("[","")
+    # rul = rul.replace("]","")
+    # nr = []
+    # nr = rul.split("\'")
+    # c = ''
+    # b = ', '
+    # while c in nr:
+    #     nr.remove(c)
+    # while b in nr:
+    #     nr.remove(b)
+    # list = []
+    # for i in nr:
+    #     list.append(i)
+    
+    # # converting model TextField into array again
+    # ev = file.evidence
+    # ev = ev.replace("[","")
+    # ev = ev.replace("]","")
+    # nl = []
+    # nl = ev.split("\'")
+
+    # while c in nl:
+    #     nl.remove(c)
+    # while b in nl:
+    #     nl.remove(b)
+    # list2 = []
+    # for i in nl:
+    #     list2.append(i)
+
+    # file.rules = list 
+    # file.evidence = list2
     #file.save()
     #return render(request,'index.html')
     return render(request, "rules_view.html", {
@@ -226,25 +237,25 @@ def save_changes_nlp(request, *args, **kwargs):
         duration = request.POST.get('duration') 
         file = Files.objects.get(id=foundFile)
         # converting model TextField into array again
-        list = file.evidence
-        list = list.replace("[","")
-        list = list.replace("]","")
-        nl = []
-        nl = list.split("\'")
-        c = ''
-        b = ', '
-        while c in nl:
-            nl.remove(c)
-        while b in nl:
-            nl.remove(b)
-        list2 = []
-        for i in nl:
-            list2.append(i)
+        # list = file.evidence
+        # list = list.replace("[","")
+        # list = list.replace("]","")
+        # nl = []
+        # nl = list.split("\'")
+        # c = ''
+        # b = ', '
+        # while c in nl:
+        #     nl.remove(c)
+        # while b in nl:
+        #     nl.remove(b)
+        # list2 = []
+        # for i in nl:
+        #     list2.append(i)
 
         new_rules = request.POST.getlist('value')
 
-        file.evidence = list2
-        file.rules = new_rules
+        #file.evidence = list2
+        file.ruleslist = new_rules
         file.save()
         
         #changedText = request.POST.get('my_textarea')
@@ -291,30 +302,31 @@ def save_changes_rules(request, *args, **kwargs):
         foundFile = request.POST.get('fileId') 
         file = Files.objects.get(id=foundFile)
         # converting model TextField into array again
-        list = file.evidence
-        list = list.replace("[","")
-        list = list.replace("]","")
-        nl = []
-        nl = list.split("\'")
-        c = ''
-        b = ', '
-        while c in nl:
-            nl.remove(c)
-        while b in nl:
-            nl.remove(b)
-        list2 = []
-        for i in nl:
-            list2.append(i)
-        file.evidence = list2
+        # list = file.evidence
+        # list = list.replace("[","")
+        # list = list.replace("]","")
+        # nl = []
+        # nl = list.split("\'")
+        # c = ''
+        # b = ', '
+        # while c in nl:
+        #     nl.remove(c)
+        # while b in nl:
+        #     nl.remove(b)
+        # list2 = []
+        # for i in nl:
+        #     list2.append(i)
+        # file.evidence = list2
 
         new_rules = request.POST.getlist('value')
-        file.rules = new_rules
-        file.save()
+        print(new_rules)
+        file.ruleslist = new_rules
+        # file.save()
         
-        #changedText = request.POST.get('my_textarea')
-        #print(changedText)
-        #file.rules = changedText
-        #file.save()
+        # changedText = request.POST.get('my_textarea')
+        # print(changedText)
+        # file.rules = changedText
+        file.save()
         messages.success(request, 'Changes saved!')
         return redirect('view_rules', id=file.id)
         # return render(request, "rules_view.html", {
@@ -324,27 +336,26 @@ def save_changes_rules(request, *args, **kwargs):
         messages.warning(request, 'Saving was not successfull, try again!')
         return redirect("rules_view.html") # wird zurückgeleitet zu home
 
-def split_PDF(pdf, fr, to):
-    fr = int(fr)
-    to = int(to)
-    pdf_input = PdfFileReader(pdf)
-    #pdf_output = PdfFileWriter()
-    page_count = pdf_input.getNumPages()
-    #print (page_count)
-    if (page_count >= fr or page_count >= to or fr < to):
-        #now split pdf by given range
-        pdf_output = PdfFileWriter # Example a PDF file writer
-        for i in range(fr, to):
-            print(i)
-            pdf_output.addPage(pdf_input.getPage(i)) 
-        with open(pdf, "wb") as outputStream:
-            pdf_output.write(outputStream)
-        outputStream.close()
-        return pdf_output
-    else:
+# def split_PDF(pdf, fr, to):
+#     fr = int(fr)
+#     to = int(to)
+#     pdf_input = PdfFileReader(pdf)
+#     #pdf_output = PdfFileWriter()
+#     page_count = pdf_input.getNumPages()
+#     #print (page_count)
+#     if (page_count >= fr or page_count >= to or fr < to):
+#         #now split pdf by given range
+#         pdf_output = PdfFileWriter # Example a PDF file writer
+#         for i in range(fr, to):
+#             print(i)
+#             pdf_output.addPage(pdf_input.getPage(i)) 
+#         with open(pdf, "wb") as outputStream:
+#             pdf_output.write(outputStream)
+#         outputStream.close()
+#         return pdf_output
+#     else:
 
-        return 0    
-
+#         return 0    
 
 
 # Method for uploading and saving file to DB, also passing object to template
@@ -404,7 +415,12 @@ def processing_ocr(request, *args, **kwargs):
     # print(foundFile)
     file = Files.objects.get(id=foundFile)
     #messages.info(request, 'Please wait for the OCR to finish!')
+    start_time = time.time()
     ocr_file(file, from_page, to_page)
+    duration = time.time() - start_time
+    ty_res = time.gmtime(duration)
+    minutes = time.strftime("%M minutes and %S seconds",ty_res)
+    #print(minutes)
     if file.ocrtext is None:
         messages.warning(request, 'OCR was not successfull, try again!')
         return redirect('home')
@@ -427,7 +443,7 @@ def processing_nlp(request, *args, **kwargs):
     ty_res = time.gmtime(duration)
     minutes = time.strftime("%M minutes and %S seconds",ty_res)
     #minutes = str(datetime.timedelta(seconds=duration))
-    #print(duration)
+    print(minutes)
     if file.rules is None:
         messages.warning(request, 'No Rules found!')
         return redirect('home')
@@ -450,7 +466,7 @@ def processing_nlp(request, *args, **kwargs):
     #     return render(request, "nlp_view.html", context)
 
 # def ocrFile(request, *args, **kwargs):
-#     # TODO: ruft ocr.py auf 
+#     # ruft ocr.py auf 
 #     # thisfile = self.get
 #     foundFile = request.POST.get('fileId') #getting file id from button
 #     fid = foundFile.id
@@ -489,25 +505,38 @@ def download_ocr(request, id):
 def download_csv(request):
     foundFile = request.POST.get('fileId')
     file = Files.objects.get(id=foundFile)
-    list = file.rules
-    list = list.replace("[","")
-    list = list.replace("]","")
-    list = list.replace("'","")
-    nl = list.split(", ")
+    
+    # converting model TextField into array again
+    # list = file.rules
+    # list = list.replace("[","")
+    # list = list.replace("]","")
+    # nl = []
+    # nl = list.split("\'")
+    # c = ''
+    # b = ', '
+    # while c in nl:
+    #     nl.remove(c)
+    # while b in nl:
+    #     nl.remove(b)
+    # list2 = []
+    # for i in nl:
+    #     list2.append(i)
+    # nl = list.split(", ")
     #print("...............................")
     #print(nl)
-
+    
     # Create the HttpResponse object with the appropriate CSV header.
+    filename = file.filename
     response = HttpResponse(
         content_type='text/csv',
-        headers={'Content-Disposition': 'attachment; filename="rules.csv"'},
+        headers={'Content-Disposition': 'attachment; filename='+ filename +'_Netzwerkregeln.csv'},
     )
     
     # Create the CSV writer using the HttpResponse as the "file"
     writer = csv.writer(response)
     # Write a first row with header information
     writer.writerow(["Rules in " + file.filename])
-    for i in nl:
+    for i in file.ruleslist:
         #print(i)
         writer.writerow([i])
 
@@ -516,12 +545,12 @@ def download_csv(request):
 def save_language(request):
     selection = request.POST.get('selection') 
     #print(selection)
-    if(Setting.objects.filter(id=31).first() is None):
+    if(Setting.objects.filter(id=1).first() is None):
         setting = Setting(default_language=selection)
         setting.save()
         #print("case 1")
     else:
-        newsetting = Setting.objects.get(id=31)
+        newsetting = Setting.objects.get(id=1)
         Setting.set_language(newsetting, selection)
         newsetting.save()
         #print("case 2")

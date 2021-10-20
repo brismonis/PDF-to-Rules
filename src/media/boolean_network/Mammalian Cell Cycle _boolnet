@@ -1,0 +1,23 @@
+ccne1 = False
+PSMD9 = False
+cdk inhibitor = False
+CDK2 = False
+cycA = False
+Cyclin_E = False
+Cyclin_A = False
+CycD = False
+RB1 = False
+CDH1 = False
+Cyclin = False
+CDC20 = False
+ganS = False
+
+ccne1* = cdk inhibitor
+PSMD9* = not (ccne1 or CycD or cycA)
+CDK2* = cdk inhibitor
+cycA* = (cdk inhibitor) and not (CDH1)
+Cyclin_E* = cdk inhibitor
+Cyclin_A* = (cdk inhibitor) and not (CDH1)
+RB1* = (CycD or Cyclin_E) and not (ccne1 or cycA)
+CDH1* = (CDC20) and not (cycA)
+CDC20* = (Cyclin or ganS) and not (CDH1 or RB1)

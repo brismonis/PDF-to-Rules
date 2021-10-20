@@ -45,7 +45,7 @@
                         <!-- <th>Post processed</th> -->
                     </tr>
                     {% if foundFile != None %}
-                        {% for rule in foundFile.rules %}
+                        {% for rule in foundFile.ruleslist %}
                             <tr>
                                 <td style="width: 40px;"><button onclick="deleteRow(parentNode.parentNode.rowIndex)" type="button" class="btn btn-outline-danger btn-sm py-0 style="font-size: 0.8em;"><i class="fas fa-trash-alt"></i></button></td>
                                 <td style="width: 40px;">{{ forloop.counter }}</td>
@@ -127,7 +127,7 @@
                         <tbody>
                             
                             {% if foundFile != None %}
-                                    {% for ev in foundFile.evidence %}
+                                    {% for ev in foundFile.evlist %}
                                     <tr>
                                         <td style="width: 40px;">{{ forloop.counter }}</td>
                                         <td style="text-align: left;">{{ev}}</td>

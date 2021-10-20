@@ -1,0 +1,20 @@
+ccne1 -1 PSMD9
+ccne1 -1 RB1
+cdk inhibitor 1 CDK2
+cdk inhibitor 1 cycA
+cdk inhibitor 1 Cyclin_E
+cdk inhibitor 1 ccne1
+cdk inhibitor 1 Cyclin_A
+cycA -1 PSMD9
+cycA -1 RB1
+cycA -1 CDH1
+Cyclin_E 1 RB1
+CycD -1 PSMD9
+CycD 1 RB1
+RB1 -1 CDC20
+CDH1 -1 CDC20
+CDH1 -1 Cyclin_A
+CDH1 -1 cycA
+Cyclin 1 CDC20
+CDC20 1 CDH1
+ganS 1 CDC20

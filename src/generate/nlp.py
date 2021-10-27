@@ -21,7 +21,7 @@ def nlp_file(f):
     PDF_file = Files.get_filename(f)
     JSON_folder = os.path.join(MEDIA_ROOT, 'json') # path to json Folder
     ocrtext = Files.get_ocrtext(f)
-    JSON_file = os.path.join(JSON_folder, PDF_file + '_reach.json')
+    JSON_file = os.path.join(JSON_folder, PDF_file + '_id' + str(f.id) + '_reach.json')
     # with open(JSON_file, 'x') as outfile:
     #     json.dump(txt, outfile)
     start_time = time.time()
@@ -144,11 +144,11 @@ def nlp_file(f):
     #sa.make_model(use_name_as_key=True, include_mods=True)
     #sa.make_model(use_name_as_key=True)
     #sa.make_model()
-    sa.save_model(fname=BN_file + "_sifstring")
-    sa.print_boolean_net(out_file=BN_file + "_boolnet")
+    sa.save_model(fname=BN_file + '_id' + str(f.id) + "_sifstring")
+    sa.print_boolean_net(out_file=BN_file + '_id' + str(f.id) +  "_boolnet")
     #bf = ''
     #Zeichen ersetzen, Ausgabe anpassen
-    readfile = open(BN_file + "_boolnet", "r")
+    readfile = open(BN_file + '_id' + str(f.id) +  "_boolnet", "r")
     bf = readfile.read()
     x = bf.split("\n\n")
     #print(x[1])

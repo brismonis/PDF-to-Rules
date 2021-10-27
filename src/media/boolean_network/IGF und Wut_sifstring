@@ -1,0 +1,81 @@
+AKT -1 FOXO
+AKT -1 GSK3B
+AKT -1 RAF
+AKT 1 IGF1
+IGF1 1 MTOR
+IGF1 1 RAS
+IGF1 1 Sarcoma
+IGF1 1 Ras-Raf-MAPK
+IGF1 1 AKT
+IGF1 -1 FOXO
+IGF1 1 aging
+IGF1 1 Wnt
+IGF1 1 ERK
+PI3K 1 AKT
+PI3K 1 IGF1
+IRS 1 PI3K
+IRS 1 AKT
+JNK 1 GTPase Rho
+JNK 1 RRAS
+JNK 1 RAC
+JNK 1 RHO
+JNK 1 FOXO
+JNK 1 Wnt
+JNK -1 IRS
+Wnt 1 RRAS
+Wnt 1 RHO
+Wnt 1 RAC
+Wnt 1 GTPase Rho
+Wnt 1 calcium atom
+Wnt 1 aging
+Wnt 1 G_protein
+Wnt 1 PKC
+Wnt 1 IGF1
+RAC 1 MAP3K1
+RAC 1 JNK
+RAC 1 Wnt
+RHO 1 MAP3K1
+RHO 1 PTEN
+RHO -1 PI3K
+KL 1 Wnt
+KL -1 Aging, Premature
+RAS 1 MAPK
+RAS 1 RAF
+RAS 1 PTPN5
+Sarcoma 1 MAPK
+DAG1 1 PLC
+ligand 1 G_protein
+PKC -1 RHO
+PKC 1 RAF
+PKC 1 Wnt
+PTPN5 1 PKC
+AXIN2 1 B-catenin
+AXIN2 -1 Wnt
+DVL -1 factor
+DVL -1 transcription, DNA-templated
+DVL -1 Forkhead
+DVL -1 factor family
+DVL -1 FOXO
+DVL -1 TCF_LEF
+DVL 1 RAS
+TCF_LEF 1 cyclin
+D
+TCF_LEF 1 Wnt
+https://doi.org/10.1371/journal.pone.0195126.g001 1 AKT
+PTEN -1 PI3K
+PI3K Akt -1 Tuberous Sclerosis
+PI3K Akt -1 TSC2
+TSC2 -1 mTORC1
+mTORC1 1 p70-S6 kinase
+ERK -1 TSC2
+ERK -1 GSK3B
+ERK 1 AXIN2
+sok -1 IRS
+GSK3B 1 TSC2
+adenosine 5'-monophosphate -1 mTORC2
+mTORC2 1 AKT
+mTORC2 1 PKC
+GSK3 -1 mTORC2
+IRS JNK -1 IGF1
+GSK38 1 TSC2
+CDKN1A -1 cell cycle

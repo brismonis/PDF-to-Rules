@@ -27,17 +27,10 @@ class Files(models.Model):
     note = models.CharField(blank=True, null=True, max_length=500)
     pdf = models.FileField(upload_to='pdfs/', validators=[FileExtensionValidator( ['pdf'] ) ])
     ocrtext = models.TextField(blank=True, null=True) # TextField is for larger strings
+
     stm = models.TextField(blank=True, null=True)
     evidence = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)
-    
-    #stmlist = ArrayField(models.TextField(blank=True), default=0)
-    #ruleslist = ArrayField(models.TextField(blank=True), default=0)
-
-    # switching to Arrays   
-    # def get_evlist_default():
-    #     list = ['default', 'default']
-    #     return list
 
     stmlist = ArrayField(
         models.TextField(blank=True, default=list), 
@@ -93,9 +86,9 @@ class Files(models.Model):
         BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
         JSON_folder = os.path.join(MEDIA_ROOT, 'json') # path to json Folder
         fname = Files.get_filename(self)
-        JSON_file = os.path.join(JSON_folder, fname + '_reach.json')
-        BN_file = os.path.join(BN_folder, fname + "_boolnet")
-        SIF_file = os.path.join(BN_folder, fname + "_sifstring")
+        JSON_file = os.path.join(JSON_folder, fname + '_id' + str(self.id) + '_reach.json')
+        BN_file = os.path.join(BN_folder, fname + '_id' + str(self.id) + "_boolnet")
+        SIF_file = os.path.join(BN_folder, fname + '_id' + str(self.id) + "_sifstring")
         if os.path.exists(PDF_path):
             os.remove(PDF_path)
         if os.path.exists(BN_file):

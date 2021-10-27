@@ -15,7 +15,7 @@ from pdf2image.exceptions import (
 
 # more efficient method
 def ocr_file(f, fr, to):
-    print (fr)
+    #print (fr)
     PDF_file = Files.get_filename(f)
     JPG_path = os.path.join(MEDIA_ROOT, 'jpgs') # path to jpgs Folder
     path_pdf = Files.get_pdfpath(f)
@@ -25,7 +25,7 @@ def ocr_file(f, fr, to):
     jpg_paths = []
     language = "eng"
     try:
-        obj = Setting.objects.get(id=31)
+        obj = Setting.objects.get(id=1)
         setting = Setting.get_language(obj)
         if(setting == "English"):
             language = "eng"
@@ -86,7 +86,7 @@ def ocr_file(f, fr, to):
     
     # save to database
     f.ocrtext = word
-    print (f.ocrtext)
+    #print (f.ocrtext)
     f.save()
 
 

@@ -27,34 +27,33 @@ def nlp_file(f):
     start_time = time.time()
     #trips_processor = trips.process_text(ocrtext) 
     reach_processor = reach.process_text(text=ocrtext, output_fname=JSON_file, url=reach.local_text_url)
+
+    # Test: Combining indra-statements -> worked
+    # file28 = Files.objects.get(id=33)
+    # test_statements = []
+    # test_file = os.path.join(JSON_folder, 'igf_id28_reach_test.json')
+    # test_processor = reach.process_text(text=file28.ocrtext, output_fname=test_file, url=reach.local_text_url)
+    # test_statements = test_processor.statements
+
     duration = time.time() - start_time
     all_statements = reach_processor.statements
 
+    # Test: Combining indra-statements -> worked
+    #combined_statements = all_statements + test_statements
+    # print (combined_statements)
+
     all_evidence = []
+    # for ev in all_statements:
+    #     evid = '%s with evidence "%s"' % (ev, ev.evidence[0].text)
+    #     e = str(evid).replace("\n", " ").replace(" \n", " ").replace("\n ", " ").replace(" \n ", " ")
+    #     all_evidence.append(e)
+
     for ev in all_statements:
-        #print('%s with evidence "%s"' % (ev, ev.evidence[0].text))
         evid = '%s with evidence "%s"' % (ev, ev.evidence[0].text)
         e = str(evid).replace("\n", " ").replace(" \n", " ").replace("\n ", " ").replace(" \n ", " ")
-        #e = e + '\n'
-        #print(e)
         all_evidence.append(e)
-        
-        #Files.set_evidence(f, evid)
-        #Files.set_evidence(f, ('%s with evidence "%s"' % (ev, ev.evidence[0].text)))
 
-    #Files.set_evidence(f, all_evidence)
-    # print(Files.get_evidence(f))
-    # print (f.evidence)
-    # print("----------------------------")
-
-    # calvin = User.objects.get(username='snoop')
-    # calvin.rep.skillz = ['ballin', 'rappin', 'talk show host', 'merchandizn']
-    # calvin.rep.save()
-    #Files(evlist = all_evidence) # Array
     
-    # print (f.evlist)
-    # for blub in f.evlist:
-    #     print (blub)
     # print("*****************************")
     f.stmlist = all_statements
     f.evidence = all_evidence
@@ -139,8 +138,25 @@ def nlp_file(f):
     #INDRA-Rules umwandeln zu boolschen Funktionen
     BN_folder = os.path.join(MEDIA_ROOT, 'boolean_network') # path to bn Folder
     BN_file = os.path.join(BN_folder, f.filename)
-    sa = sif.SifAssembler(stmts=all_statements)
+
+    #test
+    # file30 = Files.objects.get(id=30)
+    # file29 = Files.objects.get(id=29)
+    # stm2930 = file30.stmlist + file29.stmlist
+
+    # file28 = Files.objects.get(id=28)
+    # #sa = sif.SifAssembler(stmts=file28.stmlist)
+    # readtest = open('igf_id28_sifstring', "r")
+    # test = readtest.read()
+    # test.mak
+
+    # Test: Combining indra-statements -> worked
+    # sa = sif.SifAssembler(stmts=combined_statements)
+
+    #print(all_statements)
+    sa = sif.SifAssembler(f.stmlist)
     sa.make_model(use_name_as_key=True, include_mods=True, include_complexes=True)
+    #print(sa)
     #sa.make_model(use_name_as_key=True, include_mods=True)
     #sa.make_model(use_name_as_key=True)
     #sa.make_model()

@@ -1,7 +1,7 @@
 {
   "events" : {
     "frames" : [ {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1652",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1683",
       "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2",
       "arguments" : [ {
         "text" : "phosphorylates AURKA\nTCF7L2",
@@ -9,36 +9,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1649"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1680"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12028"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12097"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "negative-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 65,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Negative_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1640",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1671",
       "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1 expression",
@@ -46,36 +46,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1639"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1670"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12028"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12097"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "negative-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1646",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1677",
       "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
@@ -83,36 +83,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1638"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1669"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12028"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12097"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "negative-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Negative_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1639",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1670",
       "text" : "CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1",
@@ -120,29 +120,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12026"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12095"
       } ],
       "type" : "transcription",
       "frame-type" : "event-mention",
       "subtype" : "transcription",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "expression",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 76,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "expression_1",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1647",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1678",
       "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
@@ -150,36 +150,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1648"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1679"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12028"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12097"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "negative-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Negative_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1653",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1684",
       "text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "PAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
@@ -187,36 +187,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1641"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1672"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12028"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12097"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "negative-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Negative_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1649",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1680",
       "text" : "phosphorylates AURKA\nTCF7L2",
       "arguments" : [ {
         "text" : "AURKA\nTCF7L2",
@@ -224,29 +224,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12034"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12103"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "phosphorylation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 65,
         "object-type" : "relative-pos"
       },
       "trigger" : "phosphorylates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 38,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Phosphorylation_token_5_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1641",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1672",
       "text" : "PAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1 expression",
@@ -254,36 +254,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1639"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1670"
       }, {
         "text" : "PAK1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12029"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12098"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 33,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1648",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1679",
       "text" : "phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1 expression",
@@ -291,36 +291,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1639"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1670"
       }, {
         "text" : "phosphorylates AURKA\nTCF7L2",
         "argument-type" : "event",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1649"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1680"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 38,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-0-1638",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-0-1669",
       "text" : "TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1 expression",
@@ -328,36 +328,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-0-1639"
+        "arg" : "evem-api33-UAZ-r1-Reach-0-1670"
       }, {
         "text" : "TCF7L2",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-0-12027"
+        "arg" : "ment-api33-UAZ-r1-Reach-0-12096"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 91,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 15,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "PRKD1 inhibits TCF7L2 expression\nPAK1 phosphorylates AURKA\nTCF7L2 activates CFL1 expression [11]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-1-1645",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-1-1676",
       "text" : "CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1",
@@ -365,29 +365,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-1-12032"
+        "arg" : "ment-api33-UAZ-r1-Reach-1-12101"
       } ],
       "type" : "transcription",
       "frame-type" : "event-mention",
       "subtype" : "transcription",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 126,
         "object-type" : "relative-pos"
       },
       "trigger" : "expression",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 111,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-1",
+      "sentence" : "sent-api33-UAZ-r1-Reach-1",
       "found-by" : "expression_1",
       "verbose-text" : "CD44 induces CFL1 expression [50,51]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-1-1644",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-1-1675",
       "text" : "CD44 induces CFL1 expression",
       "arguments" : [ {
         "text" : "CFL1 expression",
@@ -395,36 +395,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-1-1645"
+        "arg" : "evem-api33-UAZ-r1-Reach-1-1676"
       }, {
         "text" : "CD44",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-1-12033"
+        "arg" : "ment-api33-UAZ-r1-Reach-1-12102"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 126,
         "object-type" : "relative-pos"
       },
       "trigger" : "induces",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 98,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-1",
+      "sentence" : "sent-api33-UAZ-r1-Reach-1",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "CD44 induces CFL1 expression [50,51]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-2-1660",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-2-1691",
       "text" : "LIMK inhibits CFL1",
       "arguments" : [ {
         "text" : "CFL1",
@@ -432,71 +432,71 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-2-12038"
+        "arg" : "ment-api33-UAZ-r1-Reach-2-12107"
       }, {
         "text" : "LIMK",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-2-12037"
+        "arg" : "ment-api33-UAZ-r1-Reach-2-12106"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "negative-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 154,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 136,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-2",
+      "sentence" : "sent-api33-UAZ-r1-Reach-2",
       "found-by" : "Negative_activation_syntax_1_verb",
       "verbose-text" : "LIMK inhibits CFL1 [52—57]."
     }, {
       "text" : "SSH1L dephosphorylates CFL1",
-      "frame-id" : "evem-api32-UAZ-r1-Reach-4-1636",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-4-1667",
       "arguments" : [ {
         "text" : "dephosphorylates CFL1",
         "argument-type" : "event",
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-4-1637"
+        "arg" : "evem-api33-UAZ-r1-Reach-4-1668"
       }, {
         "text" : "SSH1L",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-4-12025"
+        "arg" : "ment-api33-UAZ-r1-Reach-4-12094"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 264,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 237,
         "object-type" : "relative-pos"
       },
       "found-by" : "Dephosphorylation_syntax_1a_verb + toRelationMention",
-      "sentence" : "sent-api32-UAZ-r1-Reach-4",
+      "sentence" : "sent-api33-UAZ-r1-Reach-4",
       "verbose-text" : "SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-4-1637",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-4-1668",
       "text" : "dephosphorylates CFL1",
       "arguments" : [ {
         "text" : "CFL1",
@@ -504,64 +504,64 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-4-12024"
+        "arg" : "ment-api33-UAZ-r1-Reach-4-12093"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "dephosphorylation",
       "is-direct" : true,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 264,
         "object-type" : "relative-pos"
       },
       "trigger" : "dephosphorylates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 243,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-4",
+      "sentence" : "sent-api33-UAZ-r1-Reach-4",
       "found-by" : "Dephosphorylation_syntax_1a_verb",
       "verbose-text" : "SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]."
     }, {
       "text" : "LIMK phosphorylates CFL1",
-      "frame-id" : "evem-api32-UAZ-r1-Reach-5-1642",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-5-1673",
       "arguments" : [ {
         "text" : "phosphorylates CFL1",
         "argument-type" : "event",
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-5-1643"
+        "arg" : "evem-api33-UAZ-r1-Reach-5-1674"
       }, {
         "text" : "LIMK",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-5-12031"
+        "arg" : "ment-api33-UAZ-r1-Reach-5-12100"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 310,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 286,
         "object-type" : "relative-pos"
       },
       "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
-      "sentence" : "sent-api32-UAZ-r1-Reach-5",
+      "sentence" : "sent-api33-UAZ-r1-Reach-5",
       "verbose-text" : "LIMK phosphorylates CFL1 [12,52,53,56,58]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-5-1643",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-5-1674",
       "text" : "phosphorylates CFL1",
       "arguments" : [ {
         "text" : "CFL1",
@@ -569,29 +569,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-5-12030"
+        "arg" : "ment-api33-UAZ-r1-Reach-5-12099"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "phosphorylation",
       "is-direct" : true,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 310,
         "object-type" : "relative-pos"
       },
       "trigger" : "phosphorylates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 291,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-5",
+      "sentence" : "sent-api33-UAZ-r1-Reach-5",
       "found-by" : "Phosphorylation_syntax_1a_verb",
       "verbose-text" : "LIMK phosphorylates CFL1 [12,52,53,56,58]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-6-1662",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-6-1693",
       "text" : "dephosphorylation of SSH1L",
       "arguments" : [ {
         "text" : "SSH1L",
@@ -599,29 +599,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-6-12045"
+        "arg" : "ment-api33-UAZ-r1-Reach-6-12114"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "dephosphorylation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 428,
         "object-type" : "relative-pos"
       },
       "trigger" : "dephosphorylation",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 402,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-6",
+      "sentence" : "sent-api33-UAZ-r1-Reach-6",
       "found-by" : "Dephosphorylation_syntax_1a_noun",
       "verbose-text" : "If SSH1L and LIMK are present,\nLIMK may restore phosphorylation, but the dephosphorylation of SSH1L is more pronounced [58—60]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-7-1656",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-7-1687",
       "text" : "dephosphorylation of PAK1, PAK4",
       "arguments" : [ {
         "text" : "PAK4",
@@ -629,29 +629,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-7-12050"
+        "arg" : "ment-api33-UAZ-r1-Reach-7-12119"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "dephosphorylation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 570,
         "object-type" : "relative-pos"
       },
       "trigger" : "dephosphorylation",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 539,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "found-by" : "Dephosphorylation_syntax_1a_noun",
       "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-7-1657",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-7-1688",
       "text" : "dephosphorylation of PAK1",
       "arguments" : [ {
         "text" : "PAK1",
@@ -659,29 +659,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-7-12049"
+        "arg" : "ment-api33-UAZ-r1-Reach-7-12118"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "dephosphorylation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 564,
         "object-type" : "relative-pos"
       },
       "trigger" : "dephosphorylation",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 539,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "found-by" : "Dephosphorylation_syntax_1a_noun",
       "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-7-1659",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-7-1690",
       "text" : "TWIST1 upregulates CD44\nAURKA",
       "arguments" : [ {
         "text" : "TWIST1",
@@ -689,36 +689,36 @@
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-7-12046"
+        "arg" : "ment-api33-UAZ-r1-Reach-7-12115"
       }, {
         "text" : "CD44\nAURKA",
         "argument-type" : "entity",
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-7-12047"
+        "arg" : "ment-api33-UAZ-r1-Reach-7-12116"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "negative-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 486,
         "object-type" : "relative-pos"
       },
       "trigger" : "upregulates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 457,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "found-by" : "Positive_activation_token_1_verb",
       "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-7-1658",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-7-1689",
       "text" : "dephosphorylation of PAK1, PAK4 and ROCK",
       "arguments" : [ {
         "text" : "ROCK",
@@ -726,29 +726,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-7-12051"
+        "arg" : "ment-api33-UAZ-r1-Reach-7-12120"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "dephosphorylation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 579,
         "object-type" : "relative-pos"
       },
       "trigger" : "dephosphorylation",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 539,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "found-by" : "Dephosphorylation_syntax_1a_noun",
       "verbose-text" : "TWIST1 upregulates CD44\nAURKA inhibits degradation of TWIST1\nLIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-9-1663",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-9-1694",
       "text" : "F-actin enhances SSH1L",
       "arguments" : [ {
         "text" : "SSH1L",
@@ -756,71 +756,71 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-9-12056"
+        "arg" : "ment-api33-UAZ-r1-Reach-9-12125"
       }, {
         "text" : "F-actin",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-9-12055"
+        "arg" : "ment-api33-UAZ-r1-Reach-9-12124"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "positive-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 730,
         "object-type" : "relative-pos"
       },
       "trigger" : "enhances",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 708,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-9",
+      "sentence" : "sent-api33-UAZ-r1-Reach-9",
       "found-by" : "Positive_activation_syntax_1_verb",
       "verbose-text" : "F-actin enhances SSH1L activity [52,57,59,61]."
     }, {
       "text" : "PRKD1 phosphorylates SSH1L",
-      "frame-id" : "evem-api32-UAZ-r1-Reach-10-1634",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-10-1665",
       "arguments" : [ {
         "text" : "phosphorylates SSH1L",
         "argument-type" : "event",
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-10-1635"
+        "arg" : "evem-api33-UAZ-r1-Reach-10-1666"
       }, {
         "text" : "PRKD1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-10-12023"
+        "arg" : "ment-api33-UAZ-r1-Reach-10-12092"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 781,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 755,
         "object-type" : "relative-pos"
       },
       "found-by" : "Phosphorylation_syntax_1a_verb + toRelationMention",
-      "sentence" : "sent-api32-UAZ-r1-Reach-10",
+      "sentence" : "sent-api33-UAZ-r1-Reach-10",
       "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-10-1635",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-10-1666",
       "text" : "phosphorylates SSH1L",
       "arguments" : [ {
         "text" : "SSH1L",
@@ -828,29 +828,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-10-12022"
+        "arg" : "ment-api33-UAZ-r1-Reach-10-12091"
       } ],
       "type" : "protein-modification",
       "frame-type" : "event-mention",
       "subtype" : "phosphorylation",
       "is-direct" : true,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 781,
         "object-type" : "relative-pos"
       },
       "trigger" : "phosphorylates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 761,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-10",
+      "sentence" : "sent-api33-UAZ-r1-Reach-10",
       "found-by" : "Phosphorylation_syntax_1a_verb",
       "verbose-text" : "PRKD1 phosphorylates SSH1L [52,53,61]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-11-1650",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-11-1681",
       "text" : "AURKA induces\nSSH1L expression",
       "arguments" : [ {
         "text" : "SSH1L expression",
@@ -858,36 +858,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "evem-api32-UAZ-r1-Reach-11-1651"
+        "arg" : "evem-api33-UAZ-r1-Reach-11-1682"
       }, {
         "text" : "AURKA",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-11-12036"
+        "arg" : "ment-api33-UAZ-r1-Reach-11-12105"
       } ],
       "type" : "regulation",
       "frame-type" : "event-mention",
       "subtype" : "positive-regulation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 849,
         "object-type" : "relative-pos"
       },
       "trigger" : "induces",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 819,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-11",
+      "sentence" : "sent-api33-UAZ-r1-Reach-11",
       "found-by" : "Positive_regulation_syntax_1_verb",
       "verbose-text" : "In the presence of PI3K, AURKA induces\nSSH1L expression [54,56,57]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-11-1651",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-11-1682",
       "text" : "SSH1L expression",
       "arguments" : [ {
         "text" : "SSH1L",
@@ -895,29 +895,29 @@
         "type" : "theme",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-11-12035"
+        "arg" : "ment-api33-UAZ-r1-Reach-11-12104"
       } ],
       "type" : "transcription",
       "frame-type" : "event-mention",
       "subtype" : "transcription",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 849,
         "object-type" : "relative-pos"
       },
       "trigger" : "expression",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 833,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-11",
+      "sentence" : "sent-api33-UAZ-r1-Reach-11",
       "found-by" : "expression_1",
       "verbose-text" : "In the presence of PI3K, AURKA induces\nSSH1L expression [54,56,57]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-23-1655",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-23-1686",
       "text" : "RHOA activates PRKD1",
       "arguments" : [ {
         "text" : "PRKD1",
@@ -925,36 +925,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-23-12082"
+        "arg" : "ment-api33-UAZ-r1-Reach-23-12151"
       }, {
         "text" : "RHOA",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-23-12081"
+        "arg" : "ment-api33-UAZ-r1-Reach-23-12150"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "positive-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1695,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1675,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-23",
+      "sentence" : "sent-api33-UAZ-r1-Reach-23",
       "found-by" : "Positive_activation_syntax_1_verb",
       "verbose-text" : "RHOA activates PRKD1 [11,52,53,65]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-24-1654",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-24-1685",
       "text" : "PAK4 inhibits RHOA",
       "arguments" : [ {
         "text" : "RHOA",
@@ -962,36 +962,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-24-12084"
+        "arg" : "ment-api33-UAZ-r1-Reach-24-12153"
       }, {
         "text" : "PAK4",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-24-12083"
+        "arg" : "ment-api33-UAZ-r1-Reach-24-12152"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "negative-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1729,
         "object-type" : "relative-pos"
       },
       "trigger" : "inhibits",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1711,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-24",
+      "sentence" : "sent-api33-UAZ-r1-Reach-24",
       "found-by" : "Negative_activation_syntax_1_verb",
       "verbose-text" : "PAK4 inhibits RHOA [83]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-25-1664",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-25-1695",
       "text" : "RAC1 is activated by PI3K",
       "arguments" : [ {
         "text" : "RAC1",
@@ -999,36 +999,36 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-25-12085"
+        "arg" : "ment-api33-UAZ-r1-Reach-25-12154"
       }, {
         "text" : "PI3K",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-25-12086"
+        "arg" : "ment-api33-UAZ-r1-Reach-25-12155"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "positive-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1761,
         "object-type" : "relative-pos"
       },
       "trigger" : "activated",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1736,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-25",
+      "sentence" : "sent-api33-UAZ-r1-Reach-25",
       "found-by" : "Positive_activation_syntax_2_verb",
       "verbose-text" : "RAC1 is activated by PI3K [54,80,84]."
     }, {
-      "frame-id" : "evem-api32-UAZ-r1-Reach-26-1661",
+      "frame-id" : "evem-api33-UAZ-r1-Reach-26-1692",
       "text" : "CFL1 activates RAC1",
       "arguments" : [ {
         "text" : "RAC1",
@@ -1036,42 +1036,42 @@
         "type" : "controlled",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-26-12088"
+        "arg" : "ment-api33-UAZ-r1-Reach-26-12157"
       }, {
         "text" : "CFL1",
         "argument-type" : "entity",
         "type" : "controller",
         "object-type" : "argument",
         "index" : 0,
-        "arg" : "ment-api32-UAZ-r1-Reach-26-12087"
+        "arg" : "ment-api33-UAZ-r1-Reach-26-12156"
       } ],
       "type" : "activation",
       "frame-type" : "event-mention",
       "subtype" : "positive-activation",
       "is-direct" : false,
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1808,
         "object-type" : "relative-pos"
       },
       "trigger" : "activates",
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1789,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-26",
+      "sentence" : "sent-api33-UAZ-r1-Reach-26",
       "found-by" : "Positive_activation_syntax_1_verb",
       "verbose-text" : "Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK (here with delay) [85]."
     } ],
     "object-type" : "frame-collection",
     "object-meta" : {
-      "processing-end" : "2021-10-28T17:40:16Z",
-      "doc-id" : "api32",
+      "processing-end" : "2021-10-28T17:46:34Z",
+      "doc-id" : "api33",
       "component-type" : "machine",
       "component" : "Reach",
-      "processing-start" : "2021-10-28T17:40:09Z",
+      "processing-start" : "2021-10-28T17:46:28Z",
       "object-type" : "meta-info",
       "organization" : "UAZ"
     }
@@ -1079,11 +1079,11 @@
   "entities" : {
     "frames" : [ {
       "text" : "AURKA\nTCF7L2",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-0-12034",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-0-12103",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 65,
         "object-type" : "relative-pos"
       },
@@ -1094,18 +1094,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 53,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0"
+      "sentence" : "sent-api33-UAZ-r1-Reach-0"
     }, {
       "text" : "PAK1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-0-12029",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-0-12098",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 37,
         "object-type" : "relative-pos"
       },
@@ -1117,11 +1117,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 33,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1220,11 +1220,11 @@
       } ]
     }, {
       "text" : "TCF7L2",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-0-12027",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-0-12096",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 21,
         "object-type" : "relative-pos"
       },
@@ -1236,11 +1236,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 15,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1264,11 +1264,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-0-12026",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-0-12095",
       "type" : "gene",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 80,
         "object-type" : "relative-pos"
       },
@@ -1280,11 +1280,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 76,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1403,11 +1403,11 @@
       } ]
     }, {
       "text" : "PRKD1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-0-12028",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-0-12097",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 5,
         "object-type" : "relative-pos"
       },
@@ -1419,11 +1419,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-0",
+      "sentence" : "sent-api33-UAZ-r1-Reach-0",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1457,11 +1457,11 @@
       } ]
     }, {
       "text" : "CD44",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-1-12033",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-1-12102",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 102,
         "object-type" : "relative-pos"
       },
@@ -1473,11 +1473,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 98,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-1",
+      "sentence" : "sent-api33-UAZ-r1-Reach-1",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1581,11 +1581,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-1-12032",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-1-12101",
       "type" : "gene",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 115,
         "object-type" : "relative-pos"
       },
@@ -1597,11 +1597,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 111,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-1",
+      "sentence" : "sent-api33-UAZ-r1-Reach-1",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1720,11 +1720,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-2-12037",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-2-12106",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 140,
         "object-type" : "relative-pos"
       },
@@ -1736,11 +1736,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 136,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-2",
+      "sentence" : "sent-api33-UAZ-r1-Reach-2",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1794,11 +1794,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-2-12038",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-2-12107",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 154,
         "object-type" : "relative-pos"
       },
@@ -1810,11 +1810,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 150,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-2",
+      "sentence" : "sent-api33-UAZ-r1-Reach-2",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1933,11 +1933,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-3-12039",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-3-12108",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 178,
         "object-type" : "relative-pos"
       },
@@ -1949,11 +1949,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 173,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-3",
+      "sentence" : "sent-api33-UAZ-r1-Reach-3",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -1977,11 +1977,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-3-12040",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-3-12109",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 187,
         "object-type" : "relative-pos"
       },
@@ -1993,11 +1993,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 183,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-3",
+      "sentence" : "sent-api33-UAZ-r1-Reach-3",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2051,11 +2051,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-3-12041",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-3-12110",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 204,
         "object-type" : "relative-pos"
       },
@@ -2067,11 +2067,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 200,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-3",
+      "sentence" : "sent-api33-UAZ-r1-Reach-3",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2190,11 +2190,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-4-12025",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-4-12094",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 242,
         "object-type" : "relative-pos"
       },
@@ -2206,11 +2206,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 237,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-4",
+      "sentence" : "sent-api33-UAZ-r1-Reach-4",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2234,11 +2234,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-4-12024",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-4-12093",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 264,
         "object-type" : "relative-pos"
       },
@@ -2250,11 +2250,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 260,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-4",
+      "sentence" : "sent-api33-UAZ-r1-Reach-4",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2373,11 +2373,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-5-12030",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-5-12099",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 310,
         "object-type" : "relative-pos"
       },
@@ -2389,11 +2389,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 306,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-5",
+      "sentence" : "sent-api33-UAZ-r1-Reach-5",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2512,11 +2512,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-5-12031",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-5-12100",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 290,
         "object-type" : "relative-pos"
       },
@@ -2528,11 +2528,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 286,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-5",
+      "sentence" : "sent-api33-UAZ-r1-Reach-5",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2586,11 +2586,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-6-12043",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-6-12112",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 346,
         "object-type" : "relative-pos"
       },
@@ -2602,11 +2602,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 342,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-6",
+      "sentence" : "sent-api33-UAZ-r1-Reach-6",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2660,11 +2660,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-6-12044",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-6-12113",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 364,
         "object-type" : "relative-pos"
       },
@@ -2676,11 +2676,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 360,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-6",
+      "sentence" : "sent-api33-UAZ-r1-Reach-6",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2734,11 +2734,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-6-12045",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-6-12114",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 428,
         "object-type" : "relative-pos"
       },
@@ -2750,11 +2750,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 423,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-6",
+      "sentence" : "sent-api33-UAZ-r1-Reach-6",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2778,11 +2778,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-6-12042",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-6-12111",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 337,
         "object-type" : "relative-pos"
       },
@@ -2794,11 +2794,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 332,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-6",
+      "sentence" : "sent-api33-UAZ-r1-Reach-6",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2822,11 +2822,11 @@
       } ]
     }, {
       "text" : "TWIST1\nLIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12048",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12117",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 522,
         "object-type" : "relative-pos"
       },
@@ -2837,18 +2837,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 511,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7"
+      "sentence" : "sent-api33-UAZ-r1-Reach-7"
     }, {
       "text" : "PAK1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12049",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12118",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 564,
         "object-type" : "relative-pos"
       },
@@ -2860,11 +2860,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 560,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -2963,11 +2963,11 @@
       } ]
     }, {
       "text" : "PAK4",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12050",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12119",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 570,
         "object-type" : "relative-pos"
       },
@@ -2979,11 +2979,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 566,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3007,11 +3007,11 @@
       } ]
     }, {
       "text" : "TWIST1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12046",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12115",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 463,
         "object-type" : "relative-pos"
       },
@@ -3023,11 +3023,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 457,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3171,11 +3171,11 @@
       } ]
     }, {
       "text" : "CD44\nAURKA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12047",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12116",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 486,
         "object-type" : "relative-pos"
       },
@@ -3186,18 +3186,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 476,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7"
+      "sentence" : "sent-api33-UAZ-r1-Reach-7"
     }, {
       "text" : "ROCK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12051",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12120",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 579,
         "object-type" : "relative-pos"
       },
@@ -3209,18 +3209,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 575,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7"
+      "sentence" : "sent-api33-UAZ-r1-Reach-7"
     }, {
       "text" : "RHOA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-7-12052",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-7-12121",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 599,
         "object-type" : "relative-pos"
       },
@@ -3232,11 +3232,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 595,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-7",
+      "sentence" : "sent-api33-UAZ-r1-Reach-7",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3325,11 +3325,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-8-12054",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-8-12123",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 639,
         "object-type" : "relative-pos"
       },
@@ -3341,11 +3341,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 634,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-8",
+      "sentence" : "sent-api33-UAZ-r1-Reach-8",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3369,11 +3369,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-8-12053",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-8-12122",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 629,
         "object-type" : "relative-pos"
       },
@@ -3385,11 +3385,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 625,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-8",
+      "sentence" : "sent-api33-UAZ-r1-Reach-8",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3443,11 +3443,11 @@
       } ]
     }, {
       "text" : "F-actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-9-12055",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-9-12124",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 715,
         "object-type" : "relative-pos"
       },
@@ -3458,18 +3458,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 708,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-9"
+      "sentence" : "sent-api33-UAZ-r1-Reach-9"
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-9-12056",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-9-12125",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 730,
         "object-type" : "relative-pos"
       },
@@ -3481,11 +3481,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 725,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-9",
+      "sentence" : "sent-api33-UAZ-r1-Reach-9",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3509,11 +3509,11 @@
       } ]
     }, {
       "text" : "PRKD1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-10-12023",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-10-12092",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 760,
         "object-type" : "relative-pos"
       },
@@ -3525,11 +3525,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 755,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-10",
+      "sentence" : "sent-api33-UAZ-r1-Reach-10",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3563,11 +3563,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-10-12022",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-10-12091",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 781,
         "object-type" : "relative-pos"
       },
@@ -3579,11 +3579,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 776,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-10",
+      "sentence" : "sent-api33-UAZ-r1-Reach-10",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3607,11 +3607,11 @@
       } ]
     }, {
       "text" : "AURKA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-11-12036",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-11-12105",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 824,
         "object-type" : "relative-pos"
       },
@@ -3623,11 +3623,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 819,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-11",
+      "sentence" : "sent-api33-UAZ-r1-Reach-11",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3701,11 +3701,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-11-12035",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-11-12104",
       "type" : "gene",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 838,
         "object-type" : "relative-pos"
       },
@@ -3717,11 +3717,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 833,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-11",
+      "sentence" : "sent-api33-UAZ-r1-Reach-11",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3745,11 +3745,11 @@
       } ]
     }, {
       "text" : "PI3K",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-11-12057",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-11-12126",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 817,
         "object-type" : "relative-pos"
       },
@@ -3761,11 +3761,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 813,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-11",
+      "sentence" : "sent-api33-UAZ-r1-Reach-11",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "species" : "human",
@@ -3774,11 +3774,11 @@
       } ]
     }, {
       "text" : "SSH1L",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-12-12059",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-12-12128",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 876,
         "object-type" : "relative-pos"
       },
@@ -3790,11 +3790,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 871,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-12",
+      "sentence" : "sent-api33-UAZ-r1-Reach-12",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3818,11 +3818,11 @@
       } ]
     }, {
       "text" : "LIMK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-12-12058",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-12-12127",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 866,
         "object-type" : "relative-pos"
       },
@@ -3834,11 +3834,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 862,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-12",
+      "sentence" : "sent-api33-UAZ-r1-Reach-12",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -3892,11 +3892,11 @@
       } ]
     }, {
       "text" : "ARP2/3",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-13-12061",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-13-12130",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 960,
         "object-type" : "relative-pos"
       },
@@ -3907,11 +3907,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 954,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-13",
+      "sentence" : "sent-api33-UAZ-r1-Reach-13",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "object-type" : "db-reference",
@@ -3919,11 +3919,11 @@
       } ]
     }, {
       "text" : "actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-13-12062",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-13-12131",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1005,
         "object-type" : "relative-pos"
       },
@@ -3935,11 +3935,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1000,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-13",
+      "sentence" : "sent-api33-UAZ-r1-Reach-13",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "species" : "human",
@@ -3948,11 +3948,11 @@
       } ]
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-13-12060",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-13-12129",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 949,
         "object-type" : "relative-pos"
       },
@@ -3964,11 +3964,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 945,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-13",
+      "sentence" : "sent-api33-UAZ-r1-Reach-13",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4087,11 +4087,11 @@
       } ]
     }, {
       "text" : "F-actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-14-12064",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-14-12133",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1066,
         "object-type" : "relative-pos"
       },
@@ -4102,18 +4102,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1059,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-14"
+      "sentence" : "sent-api33-UAZ-r1-Reach-14"
     }, {
       "text" : "RHOA/ROCK/DIA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-14-12063",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-14-12132",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1038,
         "object-type" : "relative-pos"
       },
@@ -4124,18 +4124,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1025,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-14"
+      "sentence" : "sent-api33-UAZ-r1-Reach-14"
     }, {
       "text" : "F-actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-15-12066",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-15-12135",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1116,
         "object-type" : "relative-pos"
       },
@@ -4146,18 +4146,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1109,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-15"
+      "sentence" : "sent-api33-UAZ-r1-Reach-15"
     }, {
       "text" : "old ADP-F-actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-15-12067",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-15-12136",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1154,
         "object-type" : "relative-pos"
       },
@@ -4168,18 +4168,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1139,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-15"
+      "sentence" : "sent-api33-UAZ-r1-Reach-15"
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-15-12065",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-15-12134",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1101,
         "object-type" : "relative-pos"
       },
@@ -4191,11 +4191,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1097,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-15",
+      "sentence" : "sent-api33-UAZ-r1-Reach-15",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4314,11 +4314,11 @@
       } ]
     }, {
       "text" : "actin",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-16-12068",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-16-12137",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1188,
         "object-type" : "relative-pos"
       },
@@ -4330,11 +4330,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1183,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-16",
+      "sentence" : "sent-api33-UAZ-r1-Reach-16",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "species" : "human",
@@ -4343,11 +4343,11 @@
       } ]
     }, {
       "text" : "RAC1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-17-12069",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-17-12138",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1269,
         "object-type" : "relative-pos"
       },
@@ -4359,18 +4359,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1265,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-17"
+      "sentence" : "sent-api33-UAZ-r1-Reach-17"
     }, {
       "text" : "RAC1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-17-12073",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-17-12142",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1322,
         "object-type" : "relative-pos"
       },
@@ -4382,18 +4382,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1318,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-17"
+      "sentence" : "sent-api33-UAZ-r1-Reach-17"
     }, {
       "text" : "ARP2/3",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-17-12070",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-17-12139",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1277,
         "object-type" : "relative-pos"
       },
@@ -4404,11 +4404,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1271,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-17",
+      "sentence" : "sent-api33-UAZ-r1-Reach-17",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "object-type" : "db-reference",
@@ -4416,11 +4416,11 @@
       } ]
     }, {
       "text" : "WASP",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-17-12072",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-17-12141",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1306,
         "object-type" : "relative-pos"
       },
@@ -4432,11 +4432,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1302,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-17",
+      "sentence" : "sent-api33-UAZ-r1-Reach-17",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4460,11 +4460,11 @@
       } ]
     }, {
       "text" : "WAVE",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-17-12071",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-17-12140",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1298,
         "object-type" : "relative-pos"
       },
@@ -4476,11 +4476,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1294,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-17",
+      "sentence" : "sent-api33-UAZ-r1-Reach-17",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4494,7 +4494,7 @@
       } ]
     }, {
       "text" : "KRAS",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-18-12074",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-18-12143",
       "modifications" : [ {
         "type" : "mutation",
         "object-type" : "modification",
@@ -4503,7 +4503,7 @@
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1357,
         "object-type" : "relative-pos"
       },
@@ -4515,11 +4515,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1353,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-18",
+      "sentence" : "sent-api33-UAZ-r1-Reach-18",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "human",
@@ -4528,11 +4528,11 @@
       } ]
     }, {
       "text" : "KRAS",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-19-12075",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-19-12144",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1462,
         "object-type" : "relative-pos"
       },
@@ -4544,11 +4544,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1458,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-19",
+      "sentence" : "sent-api33-UAZ-r1-Reach-19",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "human",
@@ -4557,11 +4557,11 @@
       } ]
     }, {
       "text" : "RAS",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-21-12076",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-21-12145",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1606,
         "object-type" : "relative-pos"
       },
@@ -4573,18 +4573,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1603,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-21"
+      "sentence" : "sent-api33-UAZ-r1-Reach-21"
     }, {
       "text" : "CD44",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-22-12077",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-22-12146",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1617,
         "object-type" : "relative-pos"
       },
@@ -4596,11 +4596,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1613,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-22",
+      "sentence" : "sent-api33-UAZ-r1-Reach-22",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4704,11 +4704,11 @@
       } ]
     }, {
       "text" : "CD44 receptor",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-22-12078",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-22-12147",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1626,
         "object-type" : "relative-pos"
       },
@@ -4719,18 +4719,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1613,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-22"
+      "sentence" : "sent-api33-UAZ-r1-Reach-22"
     }, {
       "text" : "PISK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-22-12079",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-22-12148",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1649,
         "object-type" : "relative-pos"
       },
@@ -4741,18 +4741,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1645,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-22"
+      "sentence" : "sent-api33-UAZ-r1-Reach-22"
     }, {
       "text" : "AKT",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-22-12080",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-22-12149",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1653,
         "object-type" : "relative-pos"
       },
@@ -4764,11 +4764,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1650,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-22",
+      "sentence" : "sent-api33-UAZ-r1-Reach-22",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "species" : "human",
@@ -4777,11 +4777,11 @@
       } ]
     }, {
       "text" : "RHOA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-23-12081",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-23-12150",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1679,
         "object-type" : "relative-pos"
       },
@@ -4793,11 +4793,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1675,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-23",
+      "sentence" : "sent-api33-UAZ-r1-Reach-23",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4886,11 +4886,11 @@
       } ]
     }, {
       "text" : "PRKD1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-23-12082",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-23-12151",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1695,
         "object-type" : "relative-pos"
       },
@@ -4902,11 +4902,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1690,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-23",
+      "sentence" : "sent-api33-UAZ-r1-Reach-23",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -4940,11 +4940,11 @@
       } ]
     }, {
       "text" : "RHOA",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-24-12084",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-24-12153",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1729,
         "object-type" : "relative-pos"
       },
@@ -4956,11 +4956,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1725,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-24",
+      "sentence" : "sent-api33-UAZ-r1-Reach-24",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -5049,11 +5049,11 @@
       } ]
     }, {
       "text" : "PAK4",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-24-12083",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-24-12152",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1715,
         "object-type" : "relative-pos"
       },
@@ -5065,11 +5065,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1711,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-24",
+      "sentence" : "sent-api33-UAZ-r1-Reach-24",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -5093,11 +5093,11 @@
       } ]
     }, {
       "text" : "PI3K",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-25-12086",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-25-12155",
       "type" : "family",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1761,
         "object-type" : "relative-pos"
       },
@@ -5109,11 +5109,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1757,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-25",
+      "sentence" : "sent-api33-UAZ-r1-Reach-25",
       "alt-xrefs" : [ {
         "namespace" : "fplx",
         "species" : "human",
@@ -5122,11 +5122,11 @@
       } ]
     }, {
       "text" : "RAC1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-25-12085",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-25-12154",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1740,
         "object-type" : "relative-pos"
       },
@@ -5138,14 +5138,14 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1736,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-25"
+      "sentence" : "sent-api33-UAZ-r1-Reach-25"
     }, {
       "text" : "CFL1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-26-12087",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-26-12156",
       "modifications" : [ {
         "type" : "Phosphorylation",
         "object-type" : "modification",
@@ -5154,7 +5154,7 @@
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1793,
         "object-type" : "relative-pos"
       },
@@ -5166,11 +5166,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1789,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-26",
+      "sentence" : "sent-api33-UAZ-r1-Reach-26",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -5289,11 +5289,11 @@
       } ]
     }, {
       "text" : "PLD1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-26-12089",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-26-12158",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1817,
         "object-type" : "relative-pos"
       },
@@ -5305,11 +5305,11 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1813,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-26",
+      "sentence" : "sent-api33-UAZ-r1-Reach-26",
       "alt-xrefs" : [ {
         "namespace" : "uniprot",
         "species" : "homo sapiens",
@@ -5548,11 +5548,11 @@
       } ]
     }, {
       "text" : "RAC1",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-26-12088",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-26-12157",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1808,
         "object-type" : "relative-pos"
       },
@@ -5564,18 +5564,18 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1804,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-26"
+      "sentence" : "sent-api33-UAZ-r1-Reach-26"
     }, {
       "text" : "DOCK",
-      "frame-id" : "ment-api32-UAZ-r1-Reach-26-12090",
+      "frame-id" : "ment-api33-UAZ-r1-Reach-26-12159",
       "type" : "protein",
       "frame-type" : "entity-mention",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1826,
         "object-type" : "relative-pos"
       },
@@ -5586,19 +5586,19 @@
       } ],
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1822,
         "object-type" : "relative-pos"
       },
-      "sentence" : "sent-api32-UAZ-r1-Reach-26"
+      "sentence" : "sent-api33-UAZ-r1-Reach-26"
     } ],
     "object-type" : "frame-collection",
     "object-meta" : {
-      "processing-end" : "2021-10-28T17:40:16Z",
-      "doc-id" : "api32",
+      "processing-end" : "2021-10-28T17:46:34Z",
+      "doc-id" : "api33",
       "component-type" : "machine",
       "component" : "Reach",
-      "processing-start" : "2021-10-28T17:40:09Z",
+      "processing-start" : "2021-10-28T17:46:28Z",
       "object-type" : "meta-info",
       "organization" : "UAZ"
     }
@@ -5606,7 +5606,7 @@
   "sentences" : {
     "frames" : [ {
       "text" : "PRKD1 inhibits TCF7L2 expression PAK1 phosphorylates AURKA TCF7L2 activates CFL1 expression [11]. CD44 induces CFL1 expression [50,51]. LIMK inhibits CFL1 [52—57]. If both, SSH1L and LIMK are active, CFL1 stays unphosphorylated [58—60]. SSH1L dephosphorylates CFL1 [12,52—54,56—58,61]. LIMK phosphorylates CFL1 [12,52,53,56,58]. If SSH1L and LIMK are present, LIMK may restore phosphorylation, but the dephosphorylation of SSH1L is more pronounced [58—60]. TWIST1 upregulates CD44 AURKA inhibits degradation of TWIST1 LIMK is activated by dephosphorylation of PAK1, PAK4 and ROCK (downstream of RHOA) [48,53,55,59,61,64—66]. LIMK and SSH1L can build a complex that effectively dephosphorylates both [59,60]. F-actin enhances SSH1L activity [52,57,59,61]. PRKD1 phosphorylates SSH1L [52,53,61]. In the presence of PI3K, AURKA induces SSH1L expression [54,56,57]. LIMK and SSH1L can build a complex that effectively dephosphorylates both [59,60]. CFL1 and ARP2/3 work in synergy to create new branched actin fibres [58,67—72]. RHOA/ROCK/DIA pathway polymerizes F-actin (here RHOA delay) [64,73—75]. CFL1 severs F-actin [52,65,67] preferring old ADP-F-actin [58,68,76,77]. Newly formed actin fibres are built, prolonged and thus converted into old ones. Downstream of RAC1, ARP2/3 is activated by WAVE or WASP (here by a RAC1 delay) [58,64,69]. Activating KRAS mutations are present in more than 90% of PDAC patients [3,46, 78,79]. For this reason, the protein KRAS is assumed to be always active. Therefore, we modeled it as active (1). The PI3K-pathway is one of the main effector pathways downstream of RAS [80]. CD44 receptor binding activates PISK/AKT pathway [62,81 ,82]. RHOA activates PRKD1 [11,52,53,65]. PAK4 inhibits RHOA [83]. RAC1 is activated by PI3K [54,80,84]. Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK (here with delay) [85].",
-      "frame-id" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "pass-api33-UAZ-r1-Reach",
       "section-id" : "NoSection",
       "frame-type" : "passage",
       "is-title" : false,
@@ -5619,17 +5619,17 @@
       }
     }, {
       "text" : "PRKD1 inhibits TCF7L2 expression PAK1 phosphorylates AURKA TCF7L2 activates CFL1 expression [ 11 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-0",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-0",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 97,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 0,
         "object-type" : "relative-pos"
       },
@@ -5639,17 +5639,17 @@
       }
     }, {
       "text" : "CD44 induces CFL1 expression [ 50,51 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-1",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-1",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 135,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 98,
         "object-type" : "relative-pos"
       },
@@ -5659,17 +5659,17 @@
       }
     }, {
       "text" : "LIMK inhibits CFL1 [ 52 — 57 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-2",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-2",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 163,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 136,
         "object-type" : "relative-pos"
       },
@@ -5679,17 +5679,17 @@
       }
     }, {
       "text" : "If both , SSH1L and LIMK are active , CFL1 stays unphosphorylated [ 58 — 60 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-3",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-3",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 236,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 164,
         "object-type" : "relative-pos"
       },
@@ -5699,17 +5699,17 @@
       }
     }, {
       "text" : "SSH1L dephosphorylates CFL1 [ 12,52 — 54,56 — 58,61 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-4",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-4",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 285,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 237,
         "object-type" : "relative-pos"
       },
@@ -5719,17 +5719,17 @@
       }
     }, {
       "text" : "LIMK phosphorylates CFL1 [ 12,52,53,56,58 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-5",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-5",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 328,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 286,
         "object-type" : "relative-pos"
       },
@@ -5739,17 +5739,17 @@
       }
     }, {
       "text" : "If SSH1L and LIMK are present , LIMK may restore phosphorylation , but the dephosphorylation of SSH1L is more pronounced [ 58 — 60 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-6",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-6",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 456,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 329,
         "object-type" : "relative-pos"
       },
@@ -5759,17 +5759,17 @@
       }
     }, {
       "text" : "TWIST1 upregulates CD44 AURKA inhibits degradation of TWIST1 LIMK is activated by dephosphorylation of PAK1 , PAK4 and ROCK ( downstream of RHOA ) [ 48,53,55,59,61,64 — 66 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-7",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-7",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 624,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 457,
         "object-type" : "relative-pos"
       },
@@ -5779,17 +5779,17 @@
       }
     }, {
       "text" : "LIMK and SSH1L can build a complex that effectively dephosphorylates both [ 59,60 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-8",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-8",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 707,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 625,
         "object-type" : "relative-pos"
       },
@@ -5799,17 +5799,17 @@
       }
     }, {
       "text" : "F-actin enhances SSH1L activity [ 52,57,59,61 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-9",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-9",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 754,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 708,
         "object-type" : "relative-pos"
       },
@@ -5819,17 +5819,17 @@
       }
     }, {
       "text" : "PRKD1 phosphorylates SSH1L [ 52,53,61 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-10",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-10",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 793,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 755,
         "object-type" : "relative-pos"
       },
@@ -5839,17 +5839,17 @@
       }
     }, {
       "text" : "In the presence of PI3K , AURKA induces SSH1L expression [ 54,56,57 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-11",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-11",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 861,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 794,
         "object-type" : "relative-pos"
       },
@@ -5859,17 +5859,17 @@
       }
     }, {
       "text" : "LIMK and SSH1L can build a complex that effectively dephosphorylates both [ 59,60 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-12",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-12",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 944,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 862,
         "object-type" : "relative-pos"
       },
@@ -5879,17 +5879,17 @@
       }
     }, {
       "text" : "CFL1 and ARP2/3 work in synergy to create new branched actin fibres [ 58,67 — 72 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-13",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-13",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1024,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 945,
         "object-type" : "relative-pos"
       },
@@ -5899,17 +5899,17 @@
       }
     }, {
       "text" : "RHOA/ROCK/DIA pathway polymerizes F-actin ( here RHOA delay ) [ 64,73 — 75 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-14",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-14",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1096,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1025,
         "object-type" : "relative-pos"
       },
@@ -5919,17 +5919,17 @@
       }
     }, {
       "text" : "CFL1 severs F-actin [ 52,65,67 ] preferring old ADP-F-actin [ 58,68,76,77 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-15",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-15",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1169,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1097,
         "object-type" : "relative-pos"
       },
@@ -5939,17 +5939,17 @@
       }
     }, {
       "text" : "Newly formed actin fibres are built , prolonged and thus converted into old ones .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-16",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-16",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1250,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1170,
         "object-type" : "relative-pos"
       },
@@ -5959,17 +5959,17 @@
       }
     }, {
       "text" : "Downstream of RAC1 , ARP2/3 is activated by WAVE or WASP ( here by a RAC1 delay ) [ 58,64,69 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-17",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-17",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1341,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1251,
         "object-type" : "relative-pos"
       },
@@ -5979,17 +5979,17 @@
       }
     }, {
       "text" : "Activating KRAS mutations are present in more than 90 % of PDAC patients [ 3,46 , 78,79 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-18",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-18",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1428,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1342,
         "object-type" : "relative-pos"
       },
@@ -5999,17 +5999,17 @@
       }
     }, {
       "text" : "For this reason , the protein KRAS is assumed to be always active .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-19",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-19",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1494,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1429,
         "object-type" : "relative-pos"
       },
@@ -6019,17 +6019,17 @@
       }
     }, {
       "text" : "Therefore , we modeled it as active ( 1 ) .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-20",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-20",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1534,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1495,
         "object-type" : "relative-pos"
       },
@@ -6039,17 +6039,17 @@
       }
     }, {
       "text" : "The PI3K-pathway is one of the main effector pathways downstream of RAS [ 80 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-21",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-21",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1612,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1535,
         "object-type" : "relative-pos"
       },
@@ -6059,17 +6059,17 @@
       }
     }, {
       "text" : "CD44 receptor binding activates PISK / AKT pathway [ 62,81 ,82 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-22",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-22",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1674,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1613,
         "object-type" : "relative-pos"
       },
@@ -6079,17 +6079,17 @@
       }
     }, {
       "text" : "RHOA activates PRKD1 [ 11,52,53,65 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-23",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-23",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1710,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1675,
         "object-type" : "relative-pos"
       },
@@ -6099,17 +6099,17 @@
       }
     }, {
       "text" : "PAK4 inhibits RHOA [ 83 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-24",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-24",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1735,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1711,
         "object-type" : "relative-pos"
       },
@@ -6119,17 +6119,17 @@
       }
     }, {
       "text" : "RAC1 is activated by PI3K [ 54,80,84 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-25",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-25",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1773,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1736,
         "object-type" : "relative-pos"
       },
@@ -6139,17 +6139,17 @@
       }
     }, {
       "text" : "Phosphorylated CFL1 activates RAC1 via PLD1 and DOCK ( here with delay ) [ 85 ] .",
-      "frame-id" : "sent-api32-UAZ-r1-Reach-26",
-      "passage" : "pass-api32-UAZ-r1-Reach",
+      "frame-id" : "sent-api33-UAZ-r1-Reach-26",
+      "passage" : "pass-api33-UAZ-r1-Reach",
       "frame-type" : "sentence",
       "end-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1850,
         "object-type" : "relative-pos"
       },
       "object-type" : "frame",
       "start-pos" : {
-        "reference" : "pass-api32-UAZ-r1-Reach",
+        "reference" : "pass-api33-UAZ-r1-Reach",
         "offset" : 1774,
         "object-type" : "relative-pos"
       },
@@ -6160,11 +6160,11 @@
     } ],
     "object-type" : "frame-collection",
     "object-meta" : {
-      "processing-end" : "2021-10-28T17:40:16Z",
-      "doc-id" : "api32",
+      "processing-end" : "2021-10-28T17:46:34Z",
+      "doc-id" : "api33",
       "component-type" : "machine",
       "component" : "Reach",
-      "processing-start" : "2021-10-28T17:40:09Z",
+      "processing-start" : "2021-10-28T17:46:28Z",
       "object-type" : "meta-info",
       "organization" : "UAZ"
     }

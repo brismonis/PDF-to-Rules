@@ -28,6 +28,7 @@ class Files(models.Model):
     pdf = models.FileField(upload_to='pdfs/', validators=[FileExtensionValidator( ['pdf'] ) ])
     ocrtext = models.TextField(blank=True, null=True) # TextField is for larger strings
 
+    # nicht mehr genutzt, durch Arrays ersetzt
     stm = models.TextField(blank=True, null=True)
     evidence = models.TextField(blank=True, null=True)
     rules = models.TextField(blank=True, null=True)

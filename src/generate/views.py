@@ -27,26 +27,7 @@ from django.template import RequestContext, context
 from django.contrib import messages
 
 from django.db.utils import Error, OperationalError
-# format_list = [('', '(all)')]
-# geom_type_list = [('', '(all)')]
-# try:
-#     format_list.extend([(i[0],i[0]) 
-#         for i in format.objects.values_list('name')])
-#     geom_type_list.extend([(i[0],i[0]) 
-#         for i in geom_type_list.objects.values_list('name')])
-# except OperationalError:
-#     pass  # happens when db doesn't exist yet, views.py should be
-#           # importable without this side effect
-
 from django.template import *
-from django.http import HttpRequest
-t = Template("{{ request.META.HTTP_REFERER }}")
-req = HttpRequest()
-# req.META
-# {}
-req.META['HTTP_REFERER'] = 'google.com'
-c = Context({'request': req})
-# t.render(c)
 
 # creating homepage view
 def homepage_view(request, *args, **kwargs):
@@ -105,16 +86,6 @@ def settings_view(request, *args, **kwargs):
     except:
         print("No Settings Object yet")
     
-        #Setting.set_language()
-    # finally:
-    #     setting.save()
-    # try:
-    #     setting = Setting.objects.get(id=0)
-    # except:
-    #     setting = "English"
-    #print(setting)
-    
-    
     return render(request, "settings_view.html", {
         "selection":setting, # passing ID to template to show and find file again
         #'form': form # for displaying form again
@@ -151,57 +122,10 @@ def edit_table(request, id):
         #'form': form # for displaying form again
     })
 
-# def save_table(request, *args, **kwargs):
-#     if request.method == 'POST':
-#         foundFile = request.POST.get('fileId') #getting file id from button
-#         att = request.POST.getlist('tableedit')
-#         print(att)
-#         # print(foundFile)
-#         file = Files.objects.get(id=foundFile)
-#         messages.success(request, 'Changes saved!')
-#         return redirect('view_rules', id=file.id)
-#     else:
-#         messages.warning(request, 'Saving was not successfull, try again!')
-#         return redirect("table_edit.html") # wird zurückgeleitet zu home
-
 
 def view_rules(request, id):
     file = Files.objects.get(id=id)
-    #rul = file.rules
-    # converting model TextField into array again
-    # rul = rul.replace("[","")
-    # rul = rul.replace("]","")
-    # nr = []
-    # nr = rul.split("\'")
-    # c = ''
-    # b = ', '
-    # while c in nr:
-    #     nr.remove(c)
-    # while b in nr:
-    #     nr.remove(b)
-    # list = []
-    # for i in nr:
-    #     list.append(i)
     
-    # # converting model TextField into array again
-    # ev = file.evidence
-    # ev = ev.replace("[","")
-    # ev = ev.replace("]","")
-    # nl = []
-    # nl = ev.split("\'")
-
-    # while c in nl:
-    #     nl.remove(c)
-    # while b in nl:
-    #     nl.remove(b)
-    # list2 = []
-    # for i in nl:
-    #     list2.append(i)
-
-    # file.rules = list 
-    # file.evidence = list2
-    #file.save()
-    #return render(request,'index.html')
     return render(request, "rules_view.html", {
         "foundFile":file, # passing ID to template to show and find file again
         #'form': form # for displaying form again
@@ -225,10 +149,7 @@ def save_changes(request, *args, **kwargs):
     else:
         messages.warning(request, 'Saving was not successfull, try again!')
         return redirect("ocr_view.html") # wird zurückgeleitet zu home
-    # object = Files.objects.get(id=id)
-    # object.delete()
-    #return render(request,'index.html')
-    #return redirect('home')
+    
 
 def save_changes_nlp(request, *args, **kwargs):
     if request.method == 'POST':
@@ -236,32 +157,12 @@ def save_changes_nlp(request, *args, **kwargs):
         foundFile = request.POST.get('fileId') 
         duration = request.POST.get('duration') 
         file = Files.objects.get(id=foundFile)
-        # converting model TextField into array again
-        # list = file.evidence
-        # list = list.replace("[","")
-        # list = list.replace("]","")
-        # nl = []
-        # nl = list.split("\'")
-        # c = ''
-        # b = ', '
-        # while c in nl:
-        #     nl.remove(c)
-        # while b in nl:
-        #     nl.remove(b)
-        # list2 = []
-        # for i in nl:
-        #     list2.append(i)
 
         new_rules = request.POST.getlist('value')
 
-        #file.evidence = list2
         file.ruleslist = new_rules
         file.save()
         
-        #changedText = request.POST.get('my_textarea')
-        #print(changedText)
-        #file.rules = changedText
-        #file.save()
         messages.success(request, 'Changes saved!')
         return render(request, "nlp_view.html", {
         "foundFile":file, # passing ID to template to show and find file again
@@ -301,22 +202,6 @@ def save_changes_rules(request, *args, **kwargs):
         #getting file id from form
         foundFile = request.POST.get('fileId') 
         file = Files.objects.get(id=foundFile)
-        # converting model TextField into array again
-        # list = file.evidence
-        # list = list.replace("[","")
-        # list = list.replace("]","")
-        # nl = []
-        # nl = list.split("\'")
-        # c = ''
-        # b = ', '
-        # while c in nl:
-        #     nl.remove(c)
-        # while b in nl:
-        #     nl.remove(b)
-        # list2 = []
-        # for i in nl:
-        #     list2.append(i)
-        # file.evidence = list2
 
         new_rules = request.POST.getlist('value')
         #print(new_rules)
@@ -390,14 +275,6 @@ def uploadFile(request, *args, **kwargs):
             'to_page': to_page,
         })
 
-        # TODO: split pdf
-        # pdfname = pdf
-        # print(pdf)
-        # pdf_ranged = split_PDF(pdf, from_page, to_page, pdfname)
-        # print (pdf_ranged)
-        # if (pdf_ranged == 0):
-        #     messages.warning(request, 'File not uploaded: Page Range was not valid, please check and try again!')
-        #     return redirect('home') # wird zurückgeleitet zu home
     else:
     	messages.warning(request, 'Files was not submitted successfully, try again!')
     	return redirect('home') # wird zurückgeleitet zu home
@@ -465,22 +342,6 @@ def processing_nlp(request, *args, **kwargs):
     #         }
     #     return render(request, "nlp_view.html", context)
 
-# def ocrFile(request, *args, **kwargs):
-#     # ruft ocr.py auf 
-#     # thisfile = self.get
-#     foundFile = request.POST.get('fileId') #getting file id from button
-#     fid = foundFile.id
-#     print (fid)
-#     # foundFile = Files.objects.get(id=fileId)
-#     # print(foundFile.filena me)
-#     if request.method == 'POST':
-#         #file = Files.objects.get(filename=test)
-#         #ocr_file(foundFile)
-#         return render(request, 'ocr_view.html', {
-#             'fileId': fid # passing ID to template to show and find file again
-#         })
-#         #return redirect('ocr_view')
-
 
 def download_ocr(request, id):
    # some code
@@ -505,25 +366,6 @@ def download_ocr(request, id):
 def download_csv(request):
     foundFile = request.POST.get('fileId')
     file = Files.objects.get(id=foundFile)
-    
-    # converting model TextField into array again
-    # list = file.rules
-    # list = list.replace("[","")
-    # list = list.replace("]","")
-    # nl = []
-    # nl = list.split("\'")
-    # c = ''
-    # b = ', '
-    # while c in nl:
-    #     nl.remove(c)
-    # while b in nl:
-    #     nl.remove(b)
-    # list2 = []
-    # for i in nl:
-    #     list2.append(i)
-    # nl = list.split(", ")
-    #print("...............................")
-    #print(nl)
     
     # Create the HttpResponse object with the appropriate CSV header.
     filename = file.filename

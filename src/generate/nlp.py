@@ -109,14 +109,6 @@ def nlp_file(f):
     #f.stm = all_statements
     #f.save()
 
-# def process_reach(text, json_dir):
-#     print("**************************")
-#     stm = []
-#     session = get_session()
-#     rp = reach.process_text(text=text, output_fname=json_dir)
-#     stm = rp.statements
-#     return stm
-
 
 
 # def process_all_text(text, json_dir):
@@ -177,13 +169,6 @@ def nlp_file(f):
         bool_list.append("NO RULES FOUND")
     
     
-    # boolnet = y.replace(" not ", " ¬ ")
-    # boolnet = boolnet.replace("*", "")
-    # boolnet = boolnet.replace(" or ", " v ")
-    # boolnet = boolnet.replace(" and ", " ∧ ")
-    # lines = boolnet.readlines() str' object has no attribute 'readlines'
-    # print(lines)
-    
     rangel = len(bool_list) - 1
     #print(rangel)
     for bf in range(0, rangel):
@@ -212,14 +197,3 @@ def nlp_file(f):
     f.ruleslist = bool_list
     f.rules = bool_list
     f.save()
-
-
-
-    #sa.print_loopy(BN_file + "_loopy")
-    
-    #sifstring = sa.print_model
-    #sa2 = sif.SifAssembler(all_statements).save_model(fname=BN_file + ".txt")
-    #print(sa2)
-    #str = sa.print_boolean_net(out_file=BN_file)
-    #sa.make_model
-    #print(sifstring)

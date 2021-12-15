@@ -151,8 +151,6 @@ STATIC_URL = '/static/'
 # Add these new lines
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-    # '/Users/susannebair/WebDev/pdftorules/src/static',
-    # 'src/static/js/scripts.js',
     # man kann mehrere Directories für static files angeben
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

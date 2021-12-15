@@ -21,11 +21,6 @@
             <!-- {% endfor %}      -->
         {% endif %}
 
-        <!-- CONTAINER -->
-        <!-- <div class="container pt-3 my-3 border bg-dark text-white">  -->
-        <!-- <div class="container-fluid pt-3 my-3 border bg-light"> 
-            <p>Following text was extracted by the OCR for File "{{foundFile.filename}}". Please check for correctness. You can edit the text directly, don't forget to "Save Changes".</p>
-        </div> -->
 
         <div class="card mb-4 bg-light">
             <div class="card-body">
@@ -42,22 +37,6 @@
 
         </form>
 
-        <!-- <textarea id="txt" style="font-family: Arial;font-size: 12pt;width:100%;height:100vw">{{foundFile.ocrtext}}</textarea> -->
-
-        <!-- <form action="{% url 'save' %}" method="POST">
-            <input type="text" name="changes" value="txt">
-            <div id="txt" contenteditable="true">
-                {{foundFile.ocrtext}}
-            </div> 
-            </input>
-            
-        </div>
-
-            {% csrf_token %}
-
-            <button {% if foundFile.ocrtext == TEXTAREA %} disabled{% endif %} type="submit" class="btn btn-primary btn-lg" style="float: left;">Save Changes</button>
-
-        </form> -->
         
         <!-- NLP / INDRA BUTTON + PASSING FILE ID -->
         <form action="{% url 'processingNlp' %}" name="fileId" value="{{fileId}}" method="POST">
@@ -69,11 +48,6 @@
 
         </form>
         
-        <!-- <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>  -->
-        <!-- {% csrf_token %} -->
-        <!-- <button id="ocr_download" type="submit" class="btn btn-primary btn-lg" style="float: left;">Download OCR Result</button> -->
-        <!-- <button id="testen" value="{{foundFile.ocrtext}}" download="{{foundFile.filename}}" type="submit" class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;">Testen</button> -->
-        <!-- UNTERES KLAPPT IN FIREFOX ABER NICHT SAFARI -->
         <button class="btn btn-primary btn-lg" style="float: left; margin-left: 10px;"><a href="data:application/txt;charset=UTF-8,{{foundFile.ocrtext}}" download="{{foundFile.filename}}" style="color: white; text-decoration: none;">Download OCR Result</a></button> 
 
 

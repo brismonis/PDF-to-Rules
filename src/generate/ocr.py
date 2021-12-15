@@ -63,6 +63,7 @@ def ocr_file(f, fr, to):
     except PDFSyntaxError:
         print("Exception raised when convert_from_path or convert_from_bytes is called using strict=True and the input PDF contained a syntax error. Simply use strict=False will usually solve this issue.")
     
+    # IMAGE COUNTER useful for progress bar etc.
     # image_counter = 1
     # for page in pages:
     #     image_counter = image_counter + 1

@@ -1,0 +1,25 @@
+SSH1 = False
+CFL1 = False
+LIMK1 = False
+PRKD1 = False
+TWIST1 = False
+CD44 = False
+AURKA = False
+ROCK = False
+PAK4 = False
+PAK1 = False
+F_actin = False
+RHOA = False
+PI3K = False
+RAC1 = False
+TCF7L2 = False
+
+SSH1* = F_actin or AURKA
+CFL1* = (TCF7L2 or CD44) and not (LIMK1)
+LIMK1* = ROCK or PAK4 or PAK1
+PRKD1* = RHOA
+TWIST1* = not (AURKA)
+CD44* = TWIST1
+RHOA* = not (PAK4)
+RAC1* = PI3K or CFL1
+TCF7L2* = not (PRKD1)
